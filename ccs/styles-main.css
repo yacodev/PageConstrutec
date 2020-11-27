@@ -11,4 +11,66 @@
   --grey:#bababa;
   --off-white:#faf8f7;
   --just-white:#fff;
+  --space-between-text:15px;
 }
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
+}
+.mainCpip{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: 60px;
+  text-align: center;
+}
+
+.bannerImagen-cpip{
+  width: 181px;
+  height: 152px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  background-image: url('/images/Banner-cpip-phone.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.mainCpip-description h1{
+  width: 90%;
+  font-size: 2.0rem;
+  min-width: 288px;
+  margin: 0 auto;
+  color: var(--blue-construtec);
+  font-weight: bold;
+  margin-bottom: var(--space-between-text);
+}
+.mainCpip-description h2{
+  width: 90%;
+  font-size: 1.6rem;
+  min-width: 288px;
+  margin: 0 auto;
+  color: var(--blue-construtec);
+  margin-bottom: var(--space-between-text);
+  }
+  .mainCpip-description--question{
+
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--blue-construtec);
+    margin-bottom: var(--space-between-text);
+  }
+  .mainCpip-description--information{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--warn-black);
+  }
