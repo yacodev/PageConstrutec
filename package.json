@@ -1,0 +1,16 @@
+{
+  "name": "pageconstrutec",
+  "version": "1.0.0",
+  "description": "Page's Construtec",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Construtec",
+    "cpip",
+    "sespo"
+  ],
+  "author": "Carlos Yaco",
+  "license": "MIT"
+}
