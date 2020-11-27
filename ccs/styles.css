@@ -42,6 +42,10 @@ header{
   padding-left: 20px;
   padding-right: 20px;
 }
+.header--main-menu img{
+  width: 24px;
+  height: 26px;
+}
 .header--main-menu ul{
   display: none;
   list-style: none;
@@ -72,10 +76,6 @@ header{
   text-decoration: underline;
 }
 
-.header--main-menu img{
-  width: 24px;
-  height: 26px;
-}
 .header--title-container{
   width: 100%;
   min-width: 288px;
