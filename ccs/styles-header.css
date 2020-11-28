@@ -3,7 +3,7 @@
   --blue-light:#3399FF;
   --blue-hard:#074685;
   --red-construtec:#D1342A;
-  --background-color:#CED2D6;
+  --background-color:#E6F1F9;
   --text-black:#343538;
   --text-black-light:#343538;
   --warn-black:#201E1C;
@@ -54,7 +54,8 @@ header{
   text-align: right;
   left:calc(100% - 155px);
   width: 140px;
-  margin: 0px 0px 0px 0px;
+  margin: 5px 5px 5px 5px;
+  /* background: linear-gradient(204.96deg, #33B5FF 2.08%, #33B5FF 2.09%, #1474D2 100%); */
   background-color: var(--blue-construtec);
   border-radius: 10px;
 

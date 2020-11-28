@@ -3,16 +3,17 @@
   --blue-light:#3399FF;
   --blue-hard:#074685;
   --red-construtec:#D1342A;
-  --background-color:#CED2D6;
+  --background-color:#E6F1F9;
   --text-black:#343538;
-  --text-black-light:#343538;
+  --text-black-light:#070707;
   --warn-black:#201E1C;
   --black:#282623;
-  --grey:#bababa;
+  --grey:#757575;
   --off-white:#faf8f7;
   --just-white:#fff;
   --space-between-text:15px;
 }
+
 main{
   width: 100%;
   height: auto;
@@ -72,5 +73,461 @@ main{
     width: 90%;
     min-width: 288px;
     margin: 0 auto;
-    color: var(--warn-black);
+    color: var(--black);
+    margin-bottom: 30px;
+  }
+
+  /* ------------------------BENEF --SESPO------------------------ */
+  .mainCpip-benef{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--background-color);
+  }
+  .mainCpip-benef--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin:0 auto;
+    margin-top:15px;
+    text-align: center;
+    color: var(--blue-construtec);
+    font-size: 1.6rem;
+  }
+  .mainCpip-benef--card{
+    width: 90%;
+    min-width: 288px;
+    max-width: 400px;
+    height: 150px;
+    margin: 15px auto;
+    padding: 15px;
+    background-color: var(--off-white);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    border: 2px solid var(--blue-construtec);
+  }
+  .benefCpip-card--title .time{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/icons8-clock-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+  .benefCpip-card--title .safe{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/icons8-data-quality-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+  .benefCpip-card--title .organization{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("/images/icons-folder-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+  }
+  .benefCpip-card--title{
+    display:flex;
+    align-items: center;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black);
+  }
+  .benefCpip-card--information{
+    margin-top: 15px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color:var(--black)
+  }
+  /* ------------------------BUY CPIP------------------------ */
+  .mainCpip-plans{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+  }
+  .mainCpip-plans--tittle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  .mainCpip-plans--tittle h2{
+    padding-top: 50px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blue-construtec);
+  }
+  .mainCpip-plans--tittle p{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+  }
+  .plansCpip-container-slider{
+    display: flex;
+    height: 316px;
+    justify-content: center;
+  }
+  .plansCpip-container--card{
+    position: relative;
+    width: 50%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 230px;
+    margin:50px 5px 0;
+    padding: 0 15px;
+    border: 2px solid var(--blue-construtec);
+    background-color: var(--background-color);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
+
+  }
+  .buyCpip{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left:calc(50% - 60px);
+    top:-15px;
+    font-size: 1.4rem;
+    background-color: var(--blue-construtec);
+    border-radius: 8px;
+    color:var(--just-white);
+  }
+  .planCpip-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black)
+  }
+  .planCpip-card--price{
+    padding: 5px 0px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+  }
+  .planCpip-card--price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+  }
+  .planCpip-card-saving{
+    font-size: 1.2rem;
+    color: var(--grey);
+  }
+  .planCpip-card--buy{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--just-white);
+    border: 2px solid var(--blue-construtec);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black);
+  }
+  .planCpip-card--buy span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/arrow-right-buy.svg');
+    vertical-align: text-bottom;
+  }
+  .mainCpip-plans--moreInfo{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+  }
+  /* ------------------------SESPO------------------------ */
+  .mainSespo{
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding-top: 30px;
+    text-align: center;
+    background-color: var(--background-color);
+    padding-bottom: 15px;
+  }
+  
+  .bannerImagen-Sespo{
+    width: 220px;
+    height: 292px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    background-image: url('/images/banner-sespo-phone.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .mainSespo-description h1{
+    width: 90%;
+    font-size: 2.0rem;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--red-construtec);
+    font-weight: bold;
+    margin-bottom: var(--space-between-text);
+  }
+  .mainSespo-description h2{
+    width: 90%;
+    font-size: 1.6rem;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--red-construtec);
+    margin-bottom: var(--space-between-text);
+    }
+  .mainSespo-description--question{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--red-construtec);
+    margin-bottom: var(--space-between-text);
+    }
+  .mainSespo-description--information{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    width: 90%;
+    min-width: 288px;
+    margin: 0 auto;
+    color: var(--black);
+    margin-bottom: 30px;
+    }
+    /* -------------------BENEF --SESPO------------------------ */
+    .mainSespo-benef{
+      position: relative;
+      width: 100%;
+      min-width: 320px;
+      height: auto;
+      padding: 20px 10px;
+      background-color: var(--just-white);
+    }
+    .mainSespo-benef--title{
+      width: 90%;
+      min-width: 288px;
+      height: auto;
+      margin:0 auto;
+      margin-top:15px;
+      text-align: center;
+      color: var(--red-construtec);
+      font-size: 1.6rem;
+    }
+    .mainSespo-benef--card{
+      width: 90%;
+      min-width: 288px;
+      max-width: 400px;
+      height: 150px;
+      margin: 15px auto;
+      padding: 15px;
+      background-color: var(--off-white);
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+      border: 2px solid var(--red-construtec);
+    }
+    .benefSespo-card--title .digital{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-image: url("/images/icon-iphone-50.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
+    .benefSespo-card--title .safe{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-image: url("/images/icon-cloud-refresh-50.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
+    .benefSespo-card--title .settings{
+      display: inline-block;
+      width: 25px;
+      height: 25px;
+      background-image: url("/images/icon-pass-configurable-50.png");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: 10px;
+    }
+    .benefSespo-card--title{
+      display:flex;
+      align-items: center;
+      font-size: 1.6rem;
+      font-weight: bold;
+      line-height: 1.8rem;
+      color:var(--black);
+    }
+    .benefSespo-card--information{
+      margin-top: 15px;
+      font-size: 1.4rem;
+      font-weight: 500;
+      line-height: 1.8rem;
+      color:var(--black)
+    }
+    /* ------------------------DESCRIPTION SESPO------------------------ */
+  .mainSespo-description{
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 30px;
+    text-align: center;
+    background-color: var(--background-color);
+  }
+  .mainSespo-description--tittle{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  .mainSespo-description--tittle h2{
+    padding-top: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--red-construtec);
+  }
+  .mainSespo-description--tittle p{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+  }
+  .mainSespo-description--client{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+  }
+  .mainSespo-description--client ul{
+    padding-top:20px;
+    padding-left: 40px;
+    text-align: start;
+  }
+/* ------------------------BUY SESPO------------------------ */
+  .mainSespo-buy{
+    text-align: center;
+  }
+  .mainSespo-buy h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--red-construtec);
+  }
+  .plansSespo-container-slider{
+    display: flex;
+    height: 316px;
+    justify-content: center;
+  }
+  .plansSespo-container--card{
+    position: relative;
+    width: 50%;
+    min-width: 190px;
+    max-width: 300px;
+    height: 230px;
+    margin:50px 5px 0;
+    padding: 0 15px;
+    border: 2px solid var(--red-construtec);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
+
+  }
+  .buySespo{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left:calc(50% - 60px);
+    top:-15px;
+    font-size: 1.4rem;
+    background-color: var(--red-construtec);
+    border-radius: 8px;
+    color:var(--just-white);
+  }
+  .planSespo-card--title{
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black)
+  }
+  .planSespo-card--price{
+    padding: 5px 0px;
+    font-size: 5.2rem;
+    font-weight: bold;
+    line-height: 5.3rem;
+    color: var(--black);
+  }
+  .planSespo-card--price span{
+    font-size: 1.2rem;
+    font-weight: 300;
+    vertical-align: text-top;
+  }
+  .planSespo-card-saving{
+    font-size: 1.2rem;
+    color: var(--grey);
+  }
+  .planSespo-card--buy{
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: var(--just-white);
+    border: 2px solid var(--red-construtec);
+    border-radius: 4px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color:var(--black);
+  }
+  .planSespo-card--buy span{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/images/arrow-right-buy.svg');
+    vertical-align: text-bottom;
+  }
+  .mainSespo-plans--moreInfo{
+    padding-top: 20px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
   }
