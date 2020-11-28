@@ -4,7 +4,7 @@
   --blue-hard:#074685;
   --red-construtec:#D1342A;
   --background-color:#E6F1F9;
-  --text-black:#343538;
+  --background-black:#343538;
   --text-black-light:#070707;
   --warn-black:#201E1C;
   --black:#282623;
@@ -530,4 +530,81 @@ main{
     min-width: 288px;
     height: auto;
     margin: 0 auto;
+    padding-bottom: 20px;
+  }
+  /* -------------------FOOTER------------------------ */
+  footer{
+    width: 100%;
+    height: auto;
+    background-color: var(--background-black);
+    text-align: center;
+  }
+  footer h2{
+    width: 90%;
+    padding-top: 10px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+  }
+  footer p{
+    width: 90%;
+    padding-top: 10px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+  }
+  .footer-redSocial{
+    width: 90%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-width: 230px;
+    max-width: 300px;
+    height: auto;
+    margin:0 auto;
+  }
+  .footer-redSocial table{
+    width: 100%;
+    height: 100%;
+  }
+  .footer-redSocial-whatsApp span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url("/images/icon-whatsapp-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .footer-redSocial-facebook span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url("/images/icon-facebook-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .footer-redSocial-youtube span{
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: 0 auto;
+    background-image: url("/images/icon-youtube-50.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .footer-redSocial a{
+    font-size: 1.4rem;
+    text-align: center;
+    text-decoration: none;
+    color:var(--just-white);
+  }
+  .autorRight{
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
   }
