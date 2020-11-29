@@ -189,7 +189,7 @@ main{
     position: relative;
     width: 50%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 220px;
     height: 230px;
     margin:50px 5px 0;
     padding: 0 15px;
@@ -440,6 +440,7 @@ main{
 /* ------------------------BUY SESPO------------------------ */
   .mainSespo-buy{
     text-align: center;
+    min-width: 320px;
   }
   .mainSespo-buy h2{
     padding-top: 30px;
@@ -458,7 +459,7 @@ main{
     position: relative;
     width: 50%;
     min-width: 190px;
-    max-width: 300px;
+    max-width: 220px;
     height: 230px;
     margin:50px 5px 0;
     padding: 0 15px;
@@ -518,7 +519,7 @@ main{
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url('/images/arrow-right-buy.svg');
+    background-image: url('/images/arrow-right-sespo.svg');
     vertical-align: text-bottom;
   }
   .mainSespo-plans--moreInfo{
@@ -535,24 +536,27 @@ main{
   /* -------------------FOOTER------------------------ */
   footer{
     width: 100%;
+    min-width: 320px;
     height: auto;
     background-color: var(--background-black);
     text-align: center;
   }
   footer h2{
     width: 90%;
+    margin: 0 auto;
     padding-top: 10px;
-    font-size: 2.4rem;
+    font-size: 2.0rem;
     font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
+    line-height: 2.4rem;
+    color: var(--off-white);
   }
   footer p{
     width: 90%;
+    margin: 0 auto;
     padding-top: 10px;
     font-size: 1.4rem;
     line-height: 1.8rem;
-    color: var(--just-white);
+    color: var(--off-white);
   }
   .footer-redSocial{
     width: 90%;
@@ -598,13 +602,13 @@ main{
     background-repeat: no-repeat;
   }
   .footer-redSocial a{
-    font-size: 1.4rem;
+    font-size: 1.0rem;
     text-align: center;
     text-decoration: none;
-    color:var(--just-white);
+    color:var(--off-white);
   }
   .autorRight{
     font-size: 1.4rem;
     line-height: 1.8rem;
-    color: var(--just-white);
+    color: var(--off-white);
   }
