@@ -17,7 +17,7 @@
 main{
   width: 100%;
   height: auto;
-  background-color: var(--off-white);
+  background-color: var(--just-white);
 }
 .mainCpip{
   width: 100%;
@@ -103,7 +103,7 @@ main{
     height: 150px;
     margin: 15px auto;
     padding: 15px;
-    background-color: var(--off-white);
+    background-color: var(--just-white);
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     border: 2px solid var(--blue-construtec);
@@ -348,7 +348,7 @@ main{
       height: 150px;
       margin: 15px auto;
       padding: 15px;
-      background-color: var(--off-white);
+      background-color: var(--just-white);
       border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
       border: 2px solid var(--red-construtec);
