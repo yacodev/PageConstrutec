@@ -1,17 +1,4 @@
-:root{
-  --blue-construtec:#1474D2;
-  --blue-light:#3399FF;
-  --blue-hard:#074685;
-  --red-construtec:#D1342A;
-  --background-color:#E6F1F9;
-  --background-black:#343538;
-  --text-black-light:#343538;
-  --warn-black:#201E1C;
-  --black:#282623;
-  --grey:#bababa;
-  --off-white:#faf8f7;
-  --just-white:#fff;
-}
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -58,7 +45,6 @@ header{
   /* background: linear-gradient(204.96deg, #33B5FF 2.08%, #33B5FF 2.09%, #1474D2 100%); */
   background-color: var(--blue-construtec);
   border-radius: 10px;
-
 }
 .header--main-menu:hover ul,ul:hover{
   display: block;
@@ -77,30 +63,52 @@ header{
   text-decoration: underline;
 }
 /*---------------------HEADER-------------------*/
-.header--title-container{
+.header--container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "title"
+                        "subtitle"
+                        "imagen"
+                        "texto"
+                        "button";
   width: 100%;
   min-width: 288px;
-  height: 345px;
+  height: 285px;
   margin-top: 10px;
   text-align: center;
   align-self: center;
-  background: linear-gradient(204.96deg, #33B5FF 2.08%, #33B5FF 2.09%, #1474D2 100%);
+  background: linear-gradient(225.16deg, #1474D2 2.72%, #3399FF 28.65%, #3399FF 65.13%);
 }
-.header--title-container h1{
+.headerSecondSlider{
+  background: linear-gradient(226.52deg, rgba(232, 121, 106, 0.97) 4.72%, #3399FF 43.7%, #3399FF 74.63%);
+}
+.header--container h1{
+  grid-area: title;
   margin-top: 10px;
-  padding: 20px 20px 0px 10px;
+  padding: 7px 10px;
   font-size: 2.4rem;
   font-weight: bold;
   line-height: 2.6rem;
+  background:var(--blue-construtec);
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  display: block;
+  margin:auto;
   color: var(--just-white);
 }
-.header--title-container h2{
+.header--container h2{
+  grid-area:subtitle;
   padding: 0px 20px;
   font-weight: bold;
   line-height: 2.2rem;
   color: var(--just-white);
 }
-.header--title-container p{
+.header--container-textQuestion{
+  Display:none;
+}
+.header--container-text{
+  grid-area: texto;
   padding: 0px 20px 10px 20px;
   font-size: 1.4rem;
   font-weight: 500;
@@ -108,7 +116,8 @@ header{
   color: var(--just-white);
 }
 
-.header--title-container .header--button{
+.header--container .header--button{
+  grid-area: button;
   position: absolute;
   left:calc(50% - 118px);
   top: 310px;
@@ -134,9 +143,19 @@ header{
   background-image: url('/images/icon-arrow-right.svg');
 }
 
-.header--title-container img{
+.header--container-imagen{
+  grid-area: imagen;
   width: 195px;
   height: 130px;
+  display:block;
+  margin: auto;
+}
+.header--container-imagenDos{
+  grid-area: imagen;
+  width: 195px;
+  height: 130px;
+  display:block;
+  margin: auto;
 }
 /*-------------------SLIDER-------------------*/
 .slider{
@@ -146,7 +165,7 @@ header{
   display: flex;
   padding: 0;
   width: 200%;
-  animation: cambio 10s infinite alternate;
+  animation: cambio 5s infinite alternate;
 }
 .slider ul:hover{
   animation-play-state: pause;
@@ -171,4 +190,64 @@ header{
   100%{
     margin-left: -100%;
   }
+}
+@media screen and (min-width:768px){
+  header{
+    height: 445px;
+  }
+  
+  .header--container{
+  grid-template: 100px 90px 60px 60px 50px/50% 50% ;
+  grid-template-areas: "title imagen"
+                      "subtitle imagen"
+                      "textQuestion imagen"
+                      "texto imagen"
+                      "button imagen";
+  height: 385px;
+  }
+  .header--container h1{
+    padding-top:7px;
+    width: 250px;
+    font-size: 2.8rem;
+    line-height: 3.0rem;
+    background:var(--blue-construtec)
+  }
+  .header--container h2{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .header--container-textQuestion{
+    grid-area: textQuestion;
+    Display:block;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-weight: 500;
+    line-height: 2.0rem;
+    color: var(--just-white);
+  }
+  .header--container-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.0rem;
+  }
+
+  .header--container-imagen{
+    margin-top: 50px;
+    width: 480px;
+    height: 320px;
+    content: url("/images/Imagen-laptop-Cpip-p1.png");
+  }
+  .header--container-imagenDos{
+    margin-top: 50px;
+    width: 480px;
+    height: 300px;
+    content: url("/images/SmartPhone-Sespo-web.png");
+  }
+  .header--container .header--button{
+    position: static;
+    display: block;
+    margin: auto;
+  }
+
 }
