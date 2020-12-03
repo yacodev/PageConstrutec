@@ -42,7 +42,6 @@ header{
   left:calc(100% - 155px);
   width: 140px;
   margin: 5px 5px 5px 5px;
-  /* background: linear-gradient(204.96deg, #33B5FF 2.08%, #33B5FF 2.09%, #1474D2 100%); */
   background-color: var(--blue-construtec);
   border-radius: 10px;
 }
@@ -75,6 +74,7 @@ header{
   min-width: 288px;
   height: 285px;
   margin-top: 10px;
+  padding-top:10px;
   text-align: center;
   align-self: center;
   background: linear-gradient(225.16deg, #1474D2 2.72%, #3399FF 28.65%, #3399FF 65.13%);
@@ -190,64 +190,4 @@ header{
   100%{
     margin-left: -100%;
   }
-}
-@media screen and (min-width:768px){
-  header{
-    height: 445px;
-  }
-  
-  .header--container{
-  grid-template: 100px 90px 60px 60px 50px/50% 50% ;
-  grid-template-areas: "title imagen"
-                      "subtitle imagen"
-                      "textQuestion imagen"
-                      "texto imagen"
-                      "button imagen";
-  height: 385px;
-  }
-  .header--container h1{
-    padding-top:7px;
-    width: 250px;
-    font-size: 2.8rem;
-    line-height: 3.0rem;
-    background:var(--blue-construtec)
-  }
-  .header--container h2{
-    font-size: 2.2rem;
-    line-height: 2.8rem;
-  }
-  .header--container-textQuestion{
-    grid-area: textQuestion;
-    Display:block;
-    padding: 0px 20px 0px 20px;
-    font-size: 1.7rem;
-    font-weight: bold;
-    font-weight: 500;
-    line-height: 2.0rem;
-    color: var(--just-white);
-  }
-  .header--container-text{
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 2.0rem;
-  }
-
-  .header--container-imagen{
-    margin-top: 50px;
-    width: 480px;
-    height: 320px;
-    content: url("/images/Imagen-laptop-Cpip-p1.png");
-  }
-  .header--container-imagenDos{
-    margin-top: 50px;
-    width: 480px;
-    height: 300px;
-    content: url("/images/SmartPhone-Sespo-web.png");
-  }
-  .header--container .header--button{
-    position: static;
-    display: block;
-    margin: auto;
-  }
-
 }

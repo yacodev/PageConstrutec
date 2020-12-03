@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Construtec -Desarrollo de Software para la construscción</title>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./ccs/styles-header.css">
-  <link rel="stylesheet" href="./ccs/styles-main.css">
+  <link rel="stylesheet" href="./css/styles-header.css">
+  <link rel="stylesheet" href="./css/styles-main.css">
+  <link rel="stylesheet" href="./css/laptop.css" media="(min-width: 900px)">
 </head>
 <body>
   <header>
@@ -63,24 +64,29 @@
       <div class="mainCpip-benef--title">
         <h2>Beneficios de utilizar el CPIP:</h2>
       </div>
-      <section class="mainCpip-benef--card">
-        <article>
-          <p class="benefCpip-card--title"><span class="time"></span> Optimizar </p>
-          <p class="benefCpip-card--information">Te ayuda a disminuir el tiempo necesario para que elabores tu informe mensual hasta en un 50%.</p>
-        </article>
-      </section>
-      <section class="mainCpip-benef--card">
-        <article>
-          <p class="benefCpip-card--title"><span class="safe"></span> Seguridad </p>
-          <p class="benefCpip-card--information">Te permite disminuir la cantidad de errores de los informes mensuales hasta en un 30%, gracias al sistema de control de errores del CPIP.</p>
-        </article>
-      </section>
-      <section class="mainCpip-benef--card">
-        <article>
-          <p class="benefCpip-card--title"><span class="organization"></span> Organización </p>
-          <p class="benefCpip-card--information">En un solo archivo tienes todos los informes mensuales organizados y entrelazados, olvidate de tener un excel por cada mes.</p>
-        </article>
-      </section>
+      <div class="container-mainCpip-benef">
+        <section class="mainCpip-benef--card">
+          <article>
+            <span class="time"></span>
+            <p class="benefCpip-card--title"> Optimizar </p>
+            <p class="benefCpip-card--information">Te ayuda a disminuir el tiempo necesario para que elabores tu informe mensual hasta en un 50%.</p>
+          </article>
+        </section>
+        <section class="mainCpip-benef--card">
+          <article>
+            <span class="safe"></span>
+            <p class="benefCpip-card--title"> Seguridad </p>
+            <p class="benefCpip-card--information">Te permite disminuir la cantidad de errores de los informes mensuales hasta en un 30%, gracias al sistema de control de errores del CPIP.</p>
+          </article>
+        </section>
+        <section class="mainCpip-benef--card">
+          <article>
+            <span class="organization"></span>
+            <p class="benefCpip-card--title"> Organización </p>
+            <p class="benefCpip-card--information">En un solo archivo tienes todos los informes mensuales organizados y entrelazados, olvidate de tener un excel por cada mes.</p>
+          </article>
+        </section>
+      </div>
     </section>
     <section class="mainCpip-description">
       <div class="mainCpip-description--tittle">

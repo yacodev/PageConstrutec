@@ -1,0 +1,126 @@
+
+@media screen and (min-width:900px){
+
+
+
+  /*------------------HEADER----------------*/
+  header{
+    height: 445px;
+  }
+  
+  .header--container{
+  grid-template: 100px 90px 60px 60px 50px/50% 50% ;
+  grid-template-areas: "title imagen"
+                      "subtitle imagen"
+                      "textQuestion imagen"
+                      "texto imagen"
+                      "button imagen";
+  height: 385px;
+  }
+  .header--container h1{
+    padding-top:7px;
+    width: 250px;
+    font-size: 2.8rem;
+    line-height: 3.0rem;
+    background:var(--blue-construtec);
+  }
+  .header--container h2{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .header--container-textQuestion{
+    grid-area: textQuestion;
+    Display:block;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-weight: 500;
+    line-height: 2.0rem;
+    color: var(--just-white);
+  }
+  .header--container-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.0rem;
+  }
+
+  .header--container-imagen{
+    margin-top: 50px;
+    width: 480px;
+    height: 320px;
+    content: url("/images/Imagen-laptop-Cpip-p1.png");
+  }
+  .header--container-imagenDos{
+    margin-top: 50px;
+    width: 480px;
+    height: 300px;
+    content: url("/images/SmartPhone-Sespo-web.png");
+  }
+  .header--container .header--button{
+    position: static;
+    display: block;
+    margin: auto;
+  }
+  /*------------------MAIN CPIP----------------*/
+  .mainCpip{
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "description-cpip banner-cpip";
+    padding-left:50px;
+    padding-right: 50px;
+}
+  .bannerImagen-cpip{
+    width: 408px;
+    height: 300px;
+    background-image: url('/images/Banner-cpip-web.png');
+  }
+}
+/*------------------BENEF CPIP----------------*/
+.container-mainCpip-benef{
+  display: flex;
+  padding-left:calc(450px - 3 * 120px);
+  padding-right: calc(450px - 3 * 120px);
+}
+.mainCpip-benef--card{
+  width: 240px;
+  min-width: 240px;
+  height: 310px;
+}
+.mainCpip-benef--card article{
+  grid-template-columns: 100%;
+  grid-template-areas: "icon-benef-cpip"
+                        "title-benef-cpip"
+                        "description-benef-cpip ";
+}
+.benefCpip-card--title{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.mainCpip-benef--card .time{
+width: 60px;
+height: 60px;
+background-image: url("/images/icons8-clock-100.png");
+display: block;
+margin: auto;
+margin-bottom: 20px;
+}
+.mainCpip-benef--card .safe{
+  width: 60px;
+  height: 60px;
+  background-image: url("/images/icons8-data-quality-100.png");
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.mainCpip-benef--card .organization{
+  width: 60px;
+  height: 60px;
+  background-image: url("/images/icons8-folder-100.png");
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+.benefCpip-card--information{
+  display: block;
+  text-align: center;
+}
