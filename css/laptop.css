@@ -121,7 +121,7 @@
     display: block;
     text-align: center;
   }
- /* ------------------------BUY SESPO------------------------ */
+ /* ------------------------BUY CPIP------------------------ */
   .container-mainCpip-information{
     grid-template-columns: 70% 30%;
     grid-template-areas: "fm-video-cpip plansCpip-container-slider";
@@ -216,6 +216,16 @@
     .plansSespo-container--card{
       align-items: center;
     }
+/* ------------------------BUY SESPO------------------------ */
+.plansSespo-container--slider{
+  justify-content: center;
+}
+.small-left-arrow{
+  display: none;
+}
+.small-right-arrow{
+  display: none;
+}
 /* -------------------FOOTER------------------------ */
   .footer-redSocial-whatsApp span{
     width: 50px;

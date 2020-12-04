@@ -519,15 +519,20 @@ main{
   .plansSespo-container-slider{
     display: flex;
     height: 316px;
-    justify-content: center;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+    margin-right: 20px;
+    margin-left: 20px;
   }
   .plansSespo-container--card{
     position: relative;
+    scroll-snap-align: center;
     width: 50%;
-    min-width: 190px;
+    width: 190px;
     max-width: 220px;
     height: 230px;
-    margin:50px 5px 0;
+    margin:50px 15px 0;
     padding: 0 15px;
     border: 2px solid var(--red-construtec);
     border-radius: 15px;
@@ -535,6 +540,30 @@ main{
 
   }
   .buySespo{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left:calc(50% - 55px);
+    top:-15px;
+    font-size: 1.4rem;
+    background-color: var(--red-construtec);
+    border-radius: 8px;
+    color:var(--just-white);
+  }
+  .downloadSespo{
+    position: absolute;
+    width: 120px;
+    height: 31px;
+    padding: 6px;
+    left:calc(50% - 60px);
+    top:-15px;
+    font-size: 1.4rem;
+    background-color: var(--red-construtec);
+    border-radius: 8px;
+    color:var(--just-white);
+  }
+  .suscriptSespo{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -566,13 +595,14 @@ main{
     vertical-align: text-top;
   }
   .planSespo-card-saving{
+    height: 50px;
     font-size: 1.2rem;
     color: var(--grey);
   }
   .planSespo-card--buy{
-    width: 150px;
+    width: 160px;
     height: 48px;
-    margin-top: 20px;
+    margin-top: 30px;
     background-color: var(--just-white);
     border: 2px solid var(--red-construtec);
     border-radius: 4px;
@@ -599,6 +629,29 @@ main{
     margin: 0 auto;
     padding-bottom: 20px;
   }
+.small-left-arrow{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 45%;
+  left:-30px;
+  background-image: url("/images/icons8-back-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.small-right-arrow{
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 45%;
+  left:190px;
+  background-image: url("/images/icons8-forward-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
   /* -------------------FOOTER------------------------ */
   footer{
     width: 100%;
