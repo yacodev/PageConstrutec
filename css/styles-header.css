@@ -29,6 +29,7 @@ header{
   padding-left: 20px;
   padding-right: 20px;
 }
+/*---------------------MENU-------------------*/
 .header--main-menu img{
   width: 24px;
   height: 26px;
@@ -42,12 +43,11 @@ header{
   left:calc(100% - 155px);
   width: 140px;
   margin: 5px 5px 5px 5px;
-  background-color: var(--blue-construtec);
+  background-color: var(--background-black);
   border-radius: 10px;
 }
 .header--main-menu:hover ul,ul:hover{
   display: block;
-
 }
 .header--main-menu a{
   color: white;

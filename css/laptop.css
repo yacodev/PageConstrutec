@@ -1,5 +1,27 @@
 
 @media screen and (min-width:900px){
+  /*------------------MENU----------------*/
+  .header--main-menu ul{
+    display: flex;
+    position: absolute;
+    top:0px;
+    left: 270px;
+    width: calc(100% - 270px);
+    justify-content: flex-end;
+  }
+  .header--main-menu img{
+    display: none;
+  }
+  .header--main-menu:hover ul,ul:hover{
+    display:flex;
+  }
+  .header--main-menu li{
+    display: block;
+    padding: 10px 20px;
+}
+.header--main-menu li:hover{
+  background:rgba(0,0,0,0.3);
+}
   /*------------------HEADER----------------*/
   header{
     height: 445px;
@@ -217,7 +239,7 @@
       align-items: center;
     }
 /* ------------------------BUY SESPO------------------------ */
-.plansSespo-container--slider{
+.plansSespo-container-slider{
   justify-content: center;
 }
 .small-left-arrow{
