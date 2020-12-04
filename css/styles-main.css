@@ -174,41 +174,53 @@ main{
     color:var(--black)
   }
   /* ------------------------BUY CPIP------------------------ */
-  .mainCpip-description{
+  .mainCpip-information{
     width: 100%;
     min-width: 320px;
     padding-bottom: 70px;
     text-align: center;
   }
-  .mainCpip-description--tittle{
+  .mainCpip-information--tittle{
     width: 90%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 50px;
   }
-  .mainCpip-description--tittle h2{
+  .mainCpip-information--tittle h2{
     padding-top: 50px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--blue-construtec);
   }
-  .mainCpip-description--tittle p{
+  .mainCpip-information--tittle p{
     padding-top: 20px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--black);
   }
+  .container-mainCpip-information{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "fm-video-cpip"
+                        "plansCpip-container-slider";
+  }
+  .fm-video-cpip{
+    grid-area: fm-video-cpip;
+    display: block;
+    margin: auto;
+    align-items: center;
+  }
   .plansCpip-container-slider{
+    grid-area: plansCpip-container-slider;
     display: flex;
     height: 316px;
     justify-content: center;
   }
   .plansCpip-container--card{
     position: relative;
-    width: 50%;
-    min-width: 190px;
+    width: 190px;
     max-width: 220px;
     height: 230px;
     margin:50px 5px 0;
@@ -285,6 +297,10 @@ main{
   }
   /* ------------------------SESPO------------------------ */
   .mainSespo{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "banner-sespo"
+                          "description-sespo";
     width: 100%;
     min-width: 320px;
     height: auto;
@@ -295,6 +311,7 @@ main{
   }
   
   .bannerImagen-Sespo{
+    grid-area: banner-sespo;
     width: 220px;
     height: 292px;
     margin: 0 auto;
@@ -303,6 +320,9 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+  .mainSespo-description{
+    grid-area: description-sespo;
   }
   
   .mainSespo-description h1{
@@ -361,6 +381,7 @@ main{
       color: var(--red-construtec);
       font-size: 1.6rem;
     }
+
     .mainSespo-benef--card{
       width: 90%;
       min-width: 288px;
@@ -373,7 +394,15 @@ main{
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
       border: 2px solid var(--red-construtec);
     }
-    .benefSespo-card--title .digital{
+
+    .mainSespo-benef--card article{
+      display:grid;
+      grid-template-columns: 10% 90%;
+      grid-template-areas: "icon-benef-sespo title-benef-sespo"
+                          "description-benef-sespo description-benef-sespo";
+    }
+    .mainSespo-benef--card .digital{
+      grid-area: icon-benef-sespo;
       display: inline-block;
       width: 25px;
       height: 25px;
@@ -383,7 +412,8 @@ main{
       background-repeat: no-repeat;
       margin-right: 10px;
     }
-    .benefSespo-card--title .safe{
+    .mainSespo-benef--card .safe{
+      grid-area: icon-benef-sespo;
       display: inline-block;
       width: 25px;
       height: 25px;
@@ -393,7 +423,8 @@ main{
       background-repeat: no-repeat;
       margin-right: 10px;
     }
-    .benefSespo-card--title .settings{
+    .mainSespo-benef--card .settings{
+      grid-area: icon-benef-sespo;
       display: inline-block;
       width: 25px;
       height: 25px;
@@ -404,6 +435,7 @@ main{
       margin-right: 10px;
     }
     .benefSespo-card--title{
+      grid-area: title-benef-sespo;
       display:flex;
       align-items: center;
       font-size: 1.6rem;
@@ -412,47 +444,61 @@ main{
       color:var(--black);
     }
     .benefSespo-card--information{
+      grid-area: description-benef-sespo;
       margin-top: 15px;
       font-size: 1.4rem;
       font-weight: 500;
       line-height: 1.8rem;
       color:var(--black)
     }
-    /* ------------------------DESCRIPTION SESPO------------------------ */
-  .mainSespo-description{
+    /* ------------------------INFORMATION SESPO------------------------ */
+  .mainSespo-information{
     width: 100%;
     min-width: 320px;
     padding-bottom: 30px;
     text-align: center;
     background-color: var(--background-color);
   }
-  .mainSespo-description--tittle{
+  .mainSespo-information--tittle{
     width: 90%;
     min-width: 288px;
     height: auto;
     margin: 0 auto;
     margin-bottom: 30px;
   }
-  .mainSespo-description--tittle h2{
+  .mainSespo-information--tittle h2{
     padding-top: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
     color: var(--red-construtec);
   }
-  .mainSespo-description--tittle p{
+  .mainSespo-information--tittle p{
     padding-top: 20px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--black);
   }
-  .mainSespo-description--client{
+  .container-mainSespo-information{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-areas: "fm-video-sespo"
+                        "mainSespo-information--client";
+  }
+  .fm-video-sespo{
+    grid-area: fm-video-sespo;
+    display: block;
+    margin: auto;
+    align-items: center;
+  }
+  .mainSespo-information--client{
+    grid-area:mainSespo-information--client;
     padding-top: 30px;
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--black);
   }
-  .mainSespo-description--client ul{
+  .mainSespo-information--client ul{
     padding-top:20px;
     padding-left: 40px;
     text-align: start;
@@ -620,6 +666,7 @@ main{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    
   }
   .footer-redSocial a{
     font-size: 1.0rem;
@@ -631,6 +678,7 @@ main{
     font-size: 1.4rem;
     line-height: 1.8rem;
     color: var(--off-white);
+    padding-bottom: 20px;
   }
 /* -------------------VIDEO------------------------ */
 
