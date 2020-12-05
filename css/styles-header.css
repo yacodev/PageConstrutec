@@ -118,6 +118,7 @@ header{
 .headerSecondSlider{
   background: linear-gradient(226.52deg, rgba(232, 121, 106, 0.97) 4.72%, #3399FF 43.7%, #3399FF 74.63%);
 }
+
 .header--container h1{
   grid-area: title;
   display: block;
@@ -133,6 +134,7 @@ header{
   border-radius: 10px;
   background: var(--just-white);
 }
+
 .header--container h2{
   grid-area:subtitle;
   padding: 0px 20px;
