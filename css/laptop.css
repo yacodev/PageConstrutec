@@ -1,6 +1,6 @@
 
 @media screen and (min-width:900px){
-  .header--main-logo{
+  .header__logo{
     width: 400px;
     height: 59px;
     margin-left: 20px;
@@ -14,7 +14,7 @@
     grid-template-areas: "main-logo"
                           "main-menu";
   }
-  .main-menu-options{
+  .header__menu-options{
     width: 100%;
     margin:auto;
     background: var(--background-black);
@@ -22,20 +22,20 @@
   #btn-menu{
     display: none;
   }
-  #btn-menu:checked ~ .main-menu-options{
+  #btn-menu:checked ~ .header__menu-options{
     margin-left:0px;
   }
-.header--main-menu label{
+.header__menu label{
   display: none;
   width: 30px;
   height: 30px;
   padding: 10px;
 }
-.header--main-menu:hover{
+.header__menu:hover{
   cursor:pointer;
   background: var(--background-black);
 }
-.main-menu-options ul{
+.header__menu-options ul{
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
@@ -43,7 +43,7 @@
   margin:0px;
   list-style: none;
 }
-.main-menu-options li:hover{
+.header__menu-options li:hover{
   background:rgba(0,0,0,0.3);
 } 
 
@@ -52,7 +52,7 @@
     height: 545px;
   }
   
-  .header--container{
+  .header__slider{
   grid-template: 100px 90px 60px 60px 50px/50% 50% ;
   grid-template-areas: "title imagen"
                       "subtitle imagen"
@@ -62,18 +62,18 @@
   height: 385px;
   margin-top: 77px;
   }
-  .header--container h1{
+  .header__slider h1{
     padding-top:7px;
     width: 250px;
     font-size: 2.8rem;
     line-height: 3.0rem;
     background:var(--just-white);
   }
-  .header--container h2{
+  .header__slider h2{
     font-size: 2.2rem;
     line-height: 2.8rem;
   }
-  .header--container-textQuestion{
+  .header__slider-textQuestion{
     grid-area: textQuestion;
     Display:block;
     padding: 0px 20px 0px 20px;
@@ -83,25 +83,25 @@
     line-height: 2.0rem;
     color: var(--just-white);
   }
-  .header--container-text{
+  .header__slider-text{
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 2.0rem;
   }
 
-  .header--container-imagen{
+  .header__slider-imagen{
     margin-top: 50px;
     width: 480px;
     height: 320px;
     content: url("/images/Imagen-laptop-Cpip-p1.png");
   }
-  .header--container-imagenDos{
+  .header__slider-imagenTwo{
     margin-top: 50px;
     width: 480px;
     height: 300px;
     content: url("/images/SmartPhone-Sespo-web.png");
   }
-  .header--container .header--button{
+  .header__slider .header__slider-button{
     position: static;
     display: block;
     margin: auto;

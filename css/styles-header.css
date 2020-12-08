@@ -46,16 +46,16 @@ header{
   align-items: center;
 }
 /*---------------------MENU-------------------*/
-.header--main-logo{
+.header__logo{
   grid-area: main-logo;
   margin-left:20px;
 }
-.header--main-menu{
+.header__menu{
   grid-area:main-menu;
   background:var(--just-white);
   align-items: center;
 }
-.header--main-menu img{
+.header__menu img{
   display: block;
   margin: auto;
   width: 40px;
@@ -64,18 +64,18 @@ header{
 #btn-menu{
   display: none;
 }
-.header--main-menu label{
+.header__menu label{
   display: block;
   width: 40px;
   height: 40px;
 }
-.main-menu-options{
+.header__menu-options{
   position: absolute;
   width: 150px;
   margin-left:-170%;
   background: var(--background-black);
 }
-.main-menu-options ul{
+.header__menu-options ul{
   display: flex;
   flex-direction: column;
   margin:0px;
@@ -83,7 +83,7 @@ header{
   list-style: none;
 }
 
-.main-menu-options li a {
+.header__menu-options li a {
   display: block;
   padding: 15px 15px;
   text-decoration: none;
@@ -91,14 +91,14 @@ header{
   font-size: 1.6rem;
   line-height: 2.0rem;
 }
-#btn-menu:checked ~ .main-menu-options{
+#btn-menu:checked ~ .header__menu-options{
   margin-left:-110px;
 }
-.main-menu-options li:hover{
+.header__menu-options li:hover{
   background:rgba(0,0,0,0.3);
 } 
 /*---------------------HEADER-------------------*/
-.header--container{
+.header__slider{
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "title"
@@ -115,11 +115,11 @@ header{
   align-self: center;
   background: linear-gradient(225.16deg, #1474D2 2.72%, #3399FF 28.65%, #3399FF 65.13%);
 }
-.headerSecondSlider{
+.header__slider--second{
   background: linear-gradient(226.52deg, rgba(232, 121, 106, 0.97) 4.72%, #3399FF 43.7%, #3399FF 74.63%);
 }
 
-.header--container h1{
+.header__slider h1{
   grid-area: title;
   display: block;
   width: 150px;
@@ -135,17 +135,17 @@ header{
   background: var(--just-white);
 }
 
-.header--container h2{
+.header__slider h2{
   grid-area:subtitle;
   padding: 0px 20px;
   font-weight: bold;
   line-height: 2.2rem;
   color: var(--just-white);
 }
-.header--container-textQuestion{
+.header__slider-textQuestion{
   Display:none;
 }
-.header--container-text{
+.header__slider-text{
   grid-area: texto;
   padding: 0px 20px 30px 20px;
   font-size: 1.4rem;
@@ -154,7 +154,7 @@ header{
   color: var(--just-white);
 }
 
-.header--container .header--button{
+.header__slider .header__slider-button{
   grid-area: button;
   position: absolute;
   display: block;
@@ -173,7 +173,7 @@ header{
   text-decoration: none;
   color: var(--black);
 }
-.header--button span{
+.header__slider-button span{
   display: inline-block;
   width: 8px;
   height: 12px;
@@ -181,14 +181,14 @@ header{
   background-image: url('/images/icon-arrow-right.svg');
 }
 
-.header--container-imagen{
+.header__slider-imagen{
   grid-area: imagen;
   display:block;
   width: 195px;
   height: 130px;
   margin: auto;
 }
-.header--container-imagenDos{
+.header__slider-imagenTwo{
   grid-area: imagen;
   display:block;
   width: 195px;
