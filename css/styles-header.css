@@ -32,7 +32,6 @@ header{
   min-width: 320px;
   height: 345px;
   text-align: center;
-
 }
 .header--main{
   display: grid;
@@ -97,135 +96,84 @@ header{
 .header__menu-options li:hover{
   background:rgba(0,0,0,0.3);
 } 
-/*---------------------HEADER-------------------*/
-.header__slider{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "title"
-                        "subtitle"
-                        "imagen"
-                        "texto"
-                        "button";
+/*------------------FOOTER-----------------*/
+footer{
   width: 100%;
-  min-width: 288px;
-  height: 285px;
-  margin-top: 10px;
-  padding-top:10px;
+  min-width: 320px;
+  height: auto;
+  background-color: var(--background-black);
   text-align: center;
-  align-self: center;
-  background: linear-gradient(225.16deg, #1474D2 2.72%, #3399FF 28.65%, #3399FF 65.13%);
 }
-.header__slider--second{
-  background: linear-gradient(226.52deg, rgba(232, 121, 106, 0.97) 4.72%, #3399FF 43.7%, #3399FF 74.63%);
-}
-
-.header__slider h1{
-  grid-area: title;
-  display: block;
-  width: 150px;
-  height: 40px;
-  margin:auto;
-  margin-top: 10px;
-  padding: 7px 10px;
-  font-size: 2.4rem;
+footer h2{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 15px;
+  font-size: 2.0rem;
   font-weight: bold;
-  line-height: 2.6rem;
-  color:var(--blue-construtec);
-  border-radius: 10px;
-  background: var(--just-white);
+  line-height: 2.4rem;
+  color: var(--off-white);
 }
-
-.header__slider h2{
-  grid-area:subtitle;
-  padding: 0px 20px;
-  font-weight: bold;
-  line-height: 2.2rem;
-  color: var(--just-white);
-}
-.header__slider-textQuestion{
-  Display:none;
-}
-.header__slider-text{
-  grid-area: texto;
-  padding: 0px 20px 30px 20px;
+footer p{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 10px;
   font-size: 1.4rem;
-  font-weight: 500;
   line-height: 1.8rem;
-  color: var(--just-white);
+  color: var(--off-white);
 }
-
-.header__slider .header__slider-button{
-  grid-area: button;
-  position: absolute;
-  display: block;
-  left:calc(50% - 118px);
-  top: 310px;
-  margin-top:10px;
-  padding: 15px;
-  width: 229px;
-  height: 48px;
-  background-color: var(--off-white);
-  box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
-  border:none;
-  border-radius: 10px;
-  font-size: 1.4rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--black);
+.footer-redSocial{
+  width: 90%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  min-width: 230px;
+  max-width: 300px;
+  height: auto;
+  margin:0 auto;
 }
-.header__slider-button span{
-  display: inline-block;
-  width: 8px;
-  height: 12px;
-  margin-left: 10px;
-  background-image: url('/images/icon-arrow-right.svg');
-}
-
-.header__slider-imagen{
-  grid-area: imagen;
-  display:block;
-  width: 195px;
-  height: 130px;
-  margin: auto;
-}
-.header__slider-imagenTwo{
-  grid-area: imagen;
-  display:block;
-  width: 195px;
-  height: 130px;
-  margin: auto;
-}
-/*-------------------SLIDER-------------------*/
-.slider{
-  overflow: hidden;
-}
-.slider ul{
-  display: flex;
-  padding: 0;
-  width: 200%;
-  animation: cambio 5s infinite alternate;
-}
-.slider ul:hover{
-  animation-play-state: pause;
-  cursor:pointer;
-}
-.slider li{
+.footer-redSocial table{
   width: 100%;
-  list-style: none; 
+  height: 100%;
 }
-
-@keyframes cambio{
-  0%{
-    margin-left: 0%;
-  }
-  45%{
-    margin-left: 0%;
-  }
+.footer-redSocial-whatsApp span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  background-image: url("/images/icon-whatsapp-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-redSocial-facebook span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  background-image: url("/images/icon-facebook-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.footer-redSocial-youtube span{
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0 auto;
+  background-image: url("/images/icon-youtube-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   
-  50%{
-    margin-left: -100%;
-  }
-  100%{
-    margin-left: -100%;
-  }
+}
+.footer-redSocial a{
+  font-size: 1.0rem;
+  text-align: center;
+  text-decoration: none;
+  color:var(--off-white);
+}
+.autorRight{
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--off-white);
+  padding-bottom: 20px;
 }

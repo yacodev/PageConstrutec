@@ -1,0 +1,473 @@
+:root{
+  --space-sections:30px;
+  --space-after-img:20px;
+  --space-after-title:10px;
+  --space-between-text:15px;
+  --space-between-cards:15px;
+  --width-elements:90%;
+  --width-cards:80%;
+  --width-card-buy:190px;
+  --width-botton-buy:150px;
+  --width-card-header:120px;
+  --width-card-button:150px;
+  --width-icon:25px;
+  --width-user:50px;
+  --height-botton-buy:48px;
+  --height-card-header:30px;
+  --height-card-button:48px;
+  --height-car-buy:230px;
+  --height-icon:25px;
+  --height-user:50px;
+  --height-cards:170px;
+  --max-width-card-buy:220px;
+  --max-width-cards:380px;
+  --max-width-container:400px;
+  --min-width-elements: 288px;
+  --font-size__h1 : 2.0rem;
+  --font-size__h2 : 1.6rem;
+  --font-size__text:1.4rem;
+  --line-height__text:1.8rem;
+  --border-radius:10px;
+
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+}
+/*-------------------CPIP DESCRIPTION-------------------*/
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--just-white);
+}
+.cpipDescription{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "imagen-cpip"
+                        "description-cpip";
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  text-align: center;
+}
+.cpipDescription__imagen{
+  grid-area:imagen-cpip;
+  width: 275px;
+  height: 190px;
+  margin:0 auto;
+  margin-bottom: var(--space-after-img);
+  background-image:url('/images/Banner-macbookair-Cpip-phone.png') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cpipDescription__text{
+grid-area: description-cpip;
+}
+.cpipDescription__text h1{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  font-size: var(--font-size__h1);
+  color: var(--blue-construtec);
+  margin-bottom: var(--space-between-text);
+}
+.cpipDescription__text h2{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  font-size: var(--font-size__h2);
+  color: var(--blue-construtec);
+  margin-bottom: var(--space-between-text);
+}
+.cpipDescription__text p{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+}
+/*-------------------CPIP MODULES-------------------*/
+.cpipModules{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  background-color: var(--background-color);
+}
+.cpipModules h2{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h2);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.cpipModules__container-cards{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+}
+.cpipModules__card{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: var(--height-cards);
+  margin:var(--space-between-cards) auto;
+  padding: 15px;
+  background-color: var(--just-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.cpipModules__card article{
+  display:grid;
+  grid-template-columns: 10% 90%;
+  grid-template-areas: "icon-module-cpip title-module-cpip"
+                        "description-module-cpip description-module-cpip";
+}
+.icon-modules{
+  grid-area:icon-module-cpip;
+  display: flex;
+  align-items: center;
+  width: var(--width-icon);
+  height: var(--height-icon);
+}
+.module-ficha{
+  background-image: url("/images/Icon-modulo-ficha-tecnica-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cpipModules__card-title{
+  grid-area:title-module-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.cpipModules__card-information{
+  grid-area:description-module-cpip;
+  margin-top: var(--space-after-title);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color:var(--black);
+}
+
+.module-metrados{
+  background-image: url("/images/Icon-modulo-metrado-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-almacen{
+  background-image: url("/images/Icon-modulo-almacen-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-maquinaria{
+  background-image: url("/images/Icon-modulo-maquinaria-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-archivo{
+  background-image: url("/images/Icon-modulo-archivo-fotografico-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-personal{
+  background-image: url("/images/Icon-modulo-personal-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-gastos{
+  background-image: url("/images/Icon-modulo-financiero-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-reportes{
+  background-image: url("/images/Icon-modulo-reporte-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/*-------------------CPIP FEATURES-------------------*/
+.cpipFeatures{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  text-align: center;
+}
+.cpipFeatures__title{
+  width: var(--width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h2);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.cpipFeatures__description{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+.cpipFeatures-video-buy{
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "feature-video-cpip"
+                        "plansCpip-container";
+}
+.cpipFeatures__video{
+  grid-area: feature-video-cpip;
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+.cpipFeatures__buy{
+  grid-area: plansCpip-container;
+  display: flex;
+  height: 316px;
+  justify-content: center;
+  padding-top: var(--space-sections);
+}
+.cpipFeatures__card-container{
+  position: relative;
+  width: var(--width-card-buy);
+  max-width: var(--max-width-card-buy);
+  height: var(--height-car-buy);
+  margin:var(--space-after-title) auto;
+  padding: 0 15px;
+  border: 2px solid var(--blue-construtec);
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
+}
+.cpipFeatures__card-header {
+  position: absolute;
+  width: var(--width-card-header);
+  height: var(--height-card-header);
+  padding: 6px;
+  left:calc(50% - 60px);
+  top:-15px;
+  font-size: var(--font-size__text);
+  background-color: var(--blue-construtec);
+  border-radius: var(--border-radius);
+  color:var(--just-white);
+}
+
+.cpipFeatures__card-title{
+  padding-top: var(--space-sections);
+  font-size: var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black)
+}
+.cpipFeatures__card-price{
+  padding: var(--space-after-title) 0px;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: var(--black);
+}
+.cpipFeatures__card-price span{
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: text-top;
+}
+.cpipFeatures__card-description{
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--grey);
+}
+.cpipFeatures__button-buy{
+  width: var(--width-botton-buy);
+  height: var(--height-botton-buy);
+  margin-top: 10px;
+  background-color: var(--just-white);
+  border: 2px solid var(--blue-construtec);
+  border-radius: var(--border-radius);
+  font-size: var(--font-size__text);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+}
+.cpipFeatures__button-buy span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/arrow-right-buy.svg');
+  vertical-align: text-bottom;
+}
+/*-------------------CPIP OPINIONS-------------------*/
+.cpipOpinions{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  background-color: var(--background-color);
+}
+.cpipOpinions__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h2);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.cpipOpinions__description{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+
+.cpipOpinions__container-cards{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+}
+.cpipOpinion__card{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: var(--height-cards);
+  margin:var(--space-between-cards) auto;
+  padding: 15px;
+  background-color: var(--just-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.cpipOpinion__card article{
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "icon-user title-opinion-cpip"
+                        "icon-user subtitle-opinion-cpip"
+                        "description-opinion-cpip description-opinion-cpip";
+}
+.icon-user{
+  grid-area:icon-user;
+  display: flex;
+  align-items: center;
+  width: var(--width-user);
+  height: var(--height-user);
+  background-image: url("/images/icon-client-cpip-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.cpipOpinion__card-title{
+  grid-area:title-opinion-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.cpipOpinion__card-subtitle{
+  grid-area:subtitle-opinion-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.cpipOpinion__card-information{
+  grid-area:description-opinion-cpip;
+  margin-top: var(--space-after-title);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color:var(--black);
+}
+/*-------------------CPIP TUTORIALS-------------------*/
+.cpipTutorials{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+}
+.cpipTutorials__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h2);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.cpipTutorials__description{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+.cpipTutorials__newProject{
+  display: block;
+}
+.cpipTutoriales__titleVideo{
+  display: block;
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 15px auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h2);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.video__newProject{
+  display: flex;
+  justify-content: center;
+}
