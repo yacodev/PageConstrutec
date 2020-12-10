@@ -1,7 +1,5 @@
 @media screen and (min-width:1140px){
   :root{
-    --space-sections:30px;
-    --space-after-img:20px;
     --width-cards-web:230px;
     --height-cards-web:300px;
     --width-icon-web:50px;

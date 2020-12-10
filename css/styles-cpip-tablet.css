@@ -1,16 +1,14 @@
 @media screen and (min-width:768px) and (max-width:1139px){
   :root{
-    --space-sections:30px;
-    --space-after-img:20px;
     --width-cards-web:230px;
     --height-cards-web:300px;
     --width-icon-web:50px;
     --height-icon-web:50px;
     --width-elements-web:80%;
-    --width-video-web:600px;
-    --height-video-web:343px;
-    --width-videoTutorials-web:450px;
-    --height-videoTutorials-web:260px;
+    --width-video-tablet:450px;
+    --height-video-tablet:258px;
+    --width-videoTutorials-tablet:300px;
+    --height-videoTutorials-tablet:172px;
   }
   .cpipDescription{
     grid-template-columns: 40% 60%;
@@ -23,9 +21,7 @@
   .cpipDescription__imagen{
     display: block;
     margin: auto;
-    width: 350px;
-    height: 240px;
-    background-image:url('/images/Banner-macbookair-Cpip-web.png') ;
+    background-image:url('/images/Banner-macbookair-Cpip-phone.png') ;
   }
 /*-------------------CPIP MODULES-------------------*/
 .cpipModules__container-cards{
@@ -68,8 +64,8 @@
   margin-right:auto;
 }
 .cpipFeatures__video{
-  width: var(--width-video-web);
-  height: var(--height-video-web);
+  width: var(--width-video-tablet);
+  height: var(--height-video-tablet);
 }
 .cpipFeatures__buy{
   display: block;
@@ -94,12 +90,12 @@
   margin-right:auto;
 }
 .cpipTutorials__video{
-  width: var(--width-videoTutorials-web);
-  height: var(--height-videoTutorials-web);
+  width: var(--width-videoTutorials-tablet);
+  height: var(--height-videoTutorials-tablet);
 }
 .cpipTutorials__video video{
-  width: var(--width-videoTutorials-web);
-  height: var(--height-videoTutorials-web);
+  width: var(--width-videoTutorials-tablet);
+  height: var(--height-videoTutorials-tablet);
 }
 
 }
