@@ -1,0 +1,68 @@
+@media screen and (min-width:900px){
+  .header__logo{
+    width: 400px;
+    height: 59px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    content: url("/images/Logo-construtec-movil.png");
+  }
+  /*------------------MENU----------------*/
+  .header--main{
+    grid-template: 40px 45px/100%;
+    grid-template-areas: "main-logo"
+                          "main-menu";
+  }
+  .header__menu-options{
+    width: 100%;
+    margin:auto;
+    background: var(--background-black);
+  }
+  #btn-menu{
+    display: none;
+  }
+  #btn-menu:checked ~ .header__menu-options{
+    margin-left:0px;
+  }
+.header__menu label{
+  display: none;
+  width: 30px;
+  height: 30px;
+  padding: 10px;
+}
+.header__menu:hover{
+  cursor:pointer;
+  background: var(--background-black);
+}
+.header__menu-options ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  padding: 0px;
+  margin:0px;
+  list-style: none;
+}
+.header__menu-options li:hover{
+  background:rgba(0,0,0,0.3);
+} 
+
+  /*------------------HEADER----------------*/
+
+/* -------------------FOOTER------------------------ */
+  .footer-redSocial-whatsApp span{
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/icon-whatsapp-100.png");
+  }
+  .footer-redSocial-facebook span{
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/icon-facebook-100.png")
+  }
+  .footer-redSocial-youtube span{
+    width: 50px;
+    height: 50px;
+    background-image: url("/images/icon-youtube-100.png")
+  }
+
+  }

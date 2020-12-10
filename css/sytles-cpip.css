@@ -454,7 +454,7 @@ grid-area: description-cpip;
   margin-bottom: var(--space-between-text);
   text-align: center;
 }
-.cpipTutorials__newProject{
+.cpipTutorials__content{
   display: block;
 }
 .cpipTutoriales__titleVideo{
@@ -467,7 +467,7 @@ grid-area: description-cpip;
   text-align: center;
   color: var(--blue-construtec);
 }
-.video__newProject{
+.cpipTutorials__video{
   display: flex;
   justify-content: center;
 }
