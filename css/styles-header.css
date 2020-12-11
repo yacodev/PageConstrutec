@@ -12,7 +12,6 @@
   --grey:#757575;
   --off-white:#faf8f7;
   --just-white:#fff;
-  --space-between-text:15px;
 }
 *{
   box-sizing: border-box;
@@ -33,7 +32,7 @@ header{
   height: 345px;
   text-align: center;
 }
-.header--main{
+.header{
   display: grid;
   grid-template-columns: 92% 8%;
   grid-template-areas: "main-logo main-menu";
