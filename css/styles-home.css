@@ -3,7 +3,7 @@ main{
   height: auto;
   background-color: var(--just-white);
 }
-.cpipMain{
+.main{
   display:grid;
   grid-template-columns: 100%;
   grid-template-areas: "banner-cpip"
@@ -14,8 +14,7 @@ main{
   padding-top: 30px;
   text-align: center;
 }
-
-.cpipMain__banner{
+.main__banner{
   grid-area: banner-cpip;
   width: 181px;
   height: 152px;
@@ -26,11 +25,11 @@ main{
   background-position: center;
   background-repeat: no-repeat;
 }
-.cpipMain__description{
+.main__description{
   grid-area: description-cpip;
 }
 
-.cpipMain__description h1{
+.main__description h1{
   width: 90%;
   font-size: 2.0rem;
   min-width: 288px;
@@ -39,7 +38,7 @@ main{
   font-weight: bold;
   margin-bottom: var(--space-between-text);
 }
-.cpipMain__description h2{
+.main__description h2{
   width: 90%;
   font-size: 1.6rem;
   min-width: 288px;
@@ -47,7 +46,7 @@ main{
   color: var(--blue-construtec);
   margin-bottom: var(--space-between-text);
 }
-.cpipMain__description--question{
+.main__description-question{
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: bold;
@@ -57,7 +56,7 @@ main{
   color: var(--blue-construtec);
   margin-bottom: var(--space-between-text);
 }
-.cpipMain__description--information{
+.main__description-information{
   font-size: 1.4rem;
   line-height: 1.8rem;
   font-weight: 500;
@@ -67,680 +66,293 @@ main{
   color: var(--black);
   margin-bottom: 30px;
 }
-/* ------------------------BENEF --CPIP------------------------ */
-.Benef{
+/* ------------------------BENEF--CPIP------------------------ */
+.benef{
   position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 30px 10px;
-    background-color: var(--background-color);
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding: 30px 10px;
+  background-color: var(--background-color);
 }
-.Benef__title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin:0 auto;
-    margin-top:15px;
-    text-align: center;
-    color: var(--blue-construtec);
-    font-size: 1.6rem;
+.benef__title{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin:0 auto;
+  margin-top:15px;
+  text-align: center;
+  color: var(--blue-construtec);
+  font-size: 1.6rem;
 }
-.Benef__card{
-    width: 90%;
-    min-width: 288px;
-    max-width: 400px;
-    height: 150px;
-    margin: 15px auto;
-    padding: 15px;
-    background-color: var(--just-white);
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    border: 2px solid var(--blue-construtec);
+.benef__card{
+  width: 90%;
+  min-width: 288px;
+  max-width: 400px;
+  height: 150px;
+  margin: 15px auto;
+  padding: 15px;
+  background-color: var(--just-white);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
 }
-.Benef__card article{
-    display:grid;
-    grid-template-columns: 10% 90%;
-    grid-template-areas: "icon-benef-cpip title-benef-cpip"
+.benef__card article{
+  display:grid;
+  grid-template-columns: 10% 90%;
+  grid-template-areas: "icon-benef-cpip title-benef-cpip"
                         "description-benef-cpip description-benef-cpip";
 }
-
-.Benef__card .time{
-    grid-area: icon-benef-cpip;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url("/images/icons8-clock-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+.benef__card span{
+  grid-area: icon-benef-cpip;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
 }
-.Benef__card .safe{
-    grid-area: icon-benef-cpip;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url("/images/icons8-data-quality-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+.benef__card .time{
+  background-image: url("/images/icons8-clock-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.Benef__card .organization{
-    grid-area: icon-benef-cpip;
-    display: inline-block;
-    width: 25px;
-    height: 25px;
-    background-image: url("/images/icons8-folder-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-right: 10px;
+.benef__card .safe{
+  background-image: url("/images/icons8-data-quality-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-  .Benef__card--title{
-    grid-area: title-benef-cpip;
-    display:flex;
-    align-items: center;
-    font-size: 1.6rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:var(--black);
-  }
-  .Benef__card--information{
-    grid-area: description-benef-cpip;
-    margin-top: 15px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color:var(--black)
-  }
-  /* ------------------------INFORMATION CPIP------------------------ */
-  .cpipInformation{
-    width: 100%;
-    min-width: 320px;
-    padding-bottom: 20px;
-    text-align: center;
-  }
-  .cpipInformation__tittle{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 20px;
-  }
-  .cpipInformation__tittle h2{
-    padding-top: 30px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--blue-construtec);
-  }
-  .cpipInformation__tittle p{
-    padding-top: 20px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-  }
-  .cpipInformation__container-video{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "fm-video-cpip"
+.benef__card .organization{
+  background-image: url("/images/icons8-folder-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benef__card-title{
+  grid-area: title-benef-cpip;
+  display:flex;
+  align-items: center;
+  font-size: 1.6rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color:var(--black);
+}
+.benef__card-information{
+  grid-area: description-benef-cpip;
+  margin-top: 15px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color:var(--black)
+}
+/* ------------------------INFORMATION CPIP------------------------ */
+.information{
+  width: 100%;
+  min-width: 320px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+.information__tittle{
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.information__tittle h2{
+  padding-top: 30px;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--blue-construtec);
+}
+.information__tittle p{
+  padding-top: 20px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+.information__container-video{
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "fm-video-cpip"
                         "plansCpip-container-slider";
-  }
-  .cpipInformation__video{
-    grid-area: fm-video-cpip;
-    display: block;
-    margin: auto;
-    align-items: center;
-  }
-  .cpipInformation__client{
-    grid-area:plansCpip-container-slider;
-    padding-top: 30px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-  }
-  .cpipInformation__client ul{
-    padding-top:20px;
-    padding-left: 40px;
-    text-align: start;
-  }
+}
+.information__video{
+  grid-area: fm-video-cpip;
+  display: block;
+  margin: auto;
+  align-items: center;
+}
+.information__client{
+  grid-area:plansCpip-container-slider;
+  padding-top: 30px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--black);
+}
+.information__client ul{
+  padding-top:20px;
+  padding-left: 40px;
+  text-align: start;
+}
 /* ------------------------BUY CPIP------------------------ */
-  .cpipBuy{
-    text-align: center;
-    min-width: 320px;
-    background-color: var(--background-color);
-  }
-  .cpipBuy h2{
-    padding-top: 30px;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--blue-construtec);
-  }
-  .cpipBuy__cards{
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x:contain;
-    scroll-snap-type: x proximity;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .cpipBuy__card-container{
-    position: relative;
-    width: 190px;
-    max-width: 220px;
-    height: 230px;
-    margin:50px 5px 0;
-    padding: 0 15px;
-    border: 2px solid var(--blue-construtec);
-    background-color: var(--background-color);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
+.buy{
+  text-align: center;
+  min-width: 320px;
+  background-color: var(--background-color);
+}
+.buy h2{
+  padding-top: 30px;
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
+  color: var(--blue-construtec);
+}
+.buy__cards{
+  display: block;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+.buy__card-container{
+  position: relative;
+  width: 190px;
+  max-width: 220px;
+  height: 230px;
+  margin:40px auto;
+  padding: 0 15px;
+  border: 2px solid var(--blue-construtec);
+  background-color: var(--background-color);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
+}
+.buy__card-header{
+  position: absolute;
+  width: 120px;
+  height: 31px;
+  padding: 6px;
+  left:calc(50% - 60px);
+  top:-15px;
+  font-size: 1.4rem;
+  background-color: var(--blue-construtec);
+  border-radius: 8px;
+  color:var(--just-white);
+}
+.buy__card-title{
+  padding-top: 30px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color:var(--black);
+}
+.buy__card-price{
+  padding: 5px 0px;
+  font-size: 5.2rem;
+  font-weight: bold;
+  line-height: 5.3rem;
+  color: var(--black);
+}
+.buy__card-price span{
+  font-size: 1.2rem;
+  font-weight: 300;
+  vertical-align: text-top;
+}
+.buy__card-description{
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  color: var(--grey);
+}
+.buy__button{
+  width: 150px;
+  height: 48px;
+  margin-top: 20px;
+  background-color: var(--just-white);
+  border: 2px solid var(--blue-construtec);
+  border-radius: 4px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  line-height: 1.8rem;
+  color:var(--black);
+}
+.buy__button span{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url('/images/arrow-right-buy.svg');
+  vertical-align: text-bottom;
+}
+.buy__more-info{
+  padding-top: 20px;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  color: var(--black);
+  width: 90%;
+  min-width: 288px;
+  height: auto;
+  margin: 0 auto;
+}
+/* ------------------------SESPO------------------------ */
+.main__banner--sespo{
+  background-image: url('/images/banner-sespo-phone.png');
+}
+.main__description--sespo h1{
+  color: var(--red-construtec);
+}
+.main__description--sespo h2{
+  color: var(--red-construtec);
+}
+.main__description-question--sespo{
+  color: var(--red-construtec);
+}
+/* -------------------BENEF -SESPO------------------------ */
+.benef__title-sespo{
+  color: var(--red-construtec);
+}
+.benef__card-sespo{
+  border: 2px solid var(--red-construtec);
+}
+.benef__card .digital{
+  background-image: url("/images/icon-iphone-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benef__card .safeCloud{
+  background-image: url("/images/icon-cloud-refresh-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.benef__card .settings{
+  background-image: url("/images/icon-pass-configurable-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
-  }
-  .cpipBuy__card-header{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    left:calc(50% - 60px);
-    top:-15px;
-    font-size: 1.4rem;
-    background-color: var(--blue-construtec);
-    border-radius: 8px;
-    color:var(--just-white);
-  }
-  .cpipBuy__card-title{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:var(--black);
-  }
-  .cpipBuy__card-price{
-    padding: 5px 0px;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 5.3rem;
-    color: var(--black);
-  }
-  .cpipBuy__card-price span{
-    font-size: 1.2rem;
-    font-weight: 300;
-    vertical-align: text-top;
-  }
-  .cpipBuy__card-description{
-    font-size: 1.2rem;
-    line-height: 1.4rem;
-    color: var(--grey);
-  }
-  .cpipBuy__button{
-    width: 150px;
-    height: 48px;
-    margin-top: 20px;
-    background-color: var(--just-white);
-    border: 2px solid var(--blue-construtec);
-    border-radius: 4px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:var(--black);
-  }
-  .cpipBuy__button span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('/images/arrow-right-buy.svg');
-    vertical-align: text-bottom;
-  }
-  .cpipBuy__more-info{
-    padding-top: 20px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-  }
-  /* ------------------------SESPO------------------------ */
-  .sespoMain{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "banner-sespo"
-                          "description-sespo";
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding-top: 30px;
-    text-align: center;
-    padding-bottom: 15px;
-  }
-  
-  .sespoMain__banner{
-    grid-area: banner-sespo;
-    width: 220px;
-    height: 292px;
-    margin: 0 auto;
-    margin-bottom: 15px;
-    background-image: url('/images/banner-sespo-phone.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .sespoMain__description{
-    grid-area: description-sespo;
-  }
-  
-  .sespoMain__description h1{
-    width: 90%;
-    font-size: 2.0rem;
-    min-width: 288px;
-    margin: 0 auto;
-    color: var(--red-construtec);
-    font-weight: bold;
-    margin-bottom: var(--space-between-text);
-  }
-  .sespoMain__description h2{
-    width: 90%;
-    font-size: 1.6rem;
-    min-width: 288px;
-    margin: 0 auto;
-    color: var(--red-construtec);
-    margin-bottom: var(--space-between-text);
-    }
-  .sespoMain__description--question{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: bold;
-    width: 90%;
-    min-width: 288px;
-    margin: 0 auto;
-    color: var(--red-construtec);
-    margin-bottom: var(--space-between-text);
-    }
-  .sespoMain__description--information{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    font-weight: 500;
-    width: 90%;
-    min-width: 288px;
-    margin: 0 auto;
-    color: var(--black);
-    margin-bottom: 30px;
-    }
-    /* -------------------BENEF --SESPO------------------------ */
-  .sespoBenef{
-    position: relative;
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding: 20px 10px;
-    background-color: var(--background-color);
-  }
-  .sespoBenef__title{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin:0 auto;
-    margin-top:15px;
-    text-align: center;
-    color: var(--red-construtec);
-    font-size: 1.6rem;
-  }
+/* ------------------------INFORMATION SESPO------------------------ */
+.information__tittle--sespo h2{
+  color: var(--red-construtec);
+}
 
-  .sespoBenef__card{
-      width: 90%;
-      min-width: 288px;
-      max-width: 400px;
-      height: 150px;
-      margin: 15px auto;
-      padding: 15px;
-      background-color: var(--just-white);
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-      border: 2px solid var(--red-construtec);
-  }
-
-  .sespoBenef__card article{
-      display:grid;
-      grid-template-columns: 10% 90%;
-      grid-template-areas: "icon-benef-sespo title-benef-sespo"
-                          "description-benef-sespo description-benef-sespo";
-  }
-    .sespoBenef__card .digital{
-      grid-area: icon-benef-sespo;
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      background-image: url("/images/icon-iphone-50.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-right: 10px;
-    }
-    .sespoBenef__card .safe{
-      grid-area: icon-benef-sespo;
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      background-image: url("/images/icon-cloud-refresh-50.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-right: 10px;
-    }
-    .sespoBenef__card .settings{
-      grid-area: icon-benef-sespo;
-      display: inline-block;
-      width: 25px;
-      height: 25px;
-      background-image: url("/images/icon-pass-configurable-50.png");
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      margin-right: 10px;
-    }
-    .sespoBenef__card--title{
-      grid-area: title-benef-sespo;
-      display:flex;
-      align-items: center;
-      font-size: 1.6rem;
-      font-weight: bold;
-      line-height: 1.8rem;
-      color:var(--black);
-    }
-    .sespoBenef__card--information{
-      grid-area: description-benef-sespo;
-      margin-top: 15px;
-      font-size: 1.4rem;
-      font-weight: 500;
-      line-height: 1.8rem;
-      color:var(--black)
-    }
-    /* ------------------------INFORMATION SESPO------------------------ */
-  .sespoInformation{
-    width: 100%;
-    min-width: 320px;
-    padding-bottom: 30px;
-    text-align: center;
-  }
-  .sespoInformation__tittle{
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    margin-bottom: 30px;
-  }
-  .sespoInformation__tittle h2{
-    padding-top: 30px;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--red-construtec);
-  }
-  .sespoInformation__tittle p{
-    padding-top: 20px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-  }
-  .sespoInformation__container-video{
-    display:grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "fm-video-sespo"
-                        "mainSespo-information--client";
-  }
-  .sespoInformation__video{
-    grid-area: fm-video-sespo;
-    display: block;
-    margin: auto;
-    align-items: center;
-  }
-  .sespoInformation__client{
-    grid-area:mainSespo-information--client;
-    padding-top: 30px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-  }
-  .sespoInformation__client ul{
-    padding-top:20px;
-    padding-left: 40px;
-    text-align: start;
-  }
 /* ------------------------BUY SESPO------------------------ */
-  .sespoBuy{
-    text-align: center;
-    min-width: 320px;
-    background-color: var(--background-color);
-  }
-  .sespoBuy h2{
-    padding-top: 30px;
-    text-align: center;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--red-construtec);
-  }
-  .sespoBuy__cards{
-    display: flex;
-    height: 316px;
-    overflow-x: scroll;
-    overscroll-behavior-x:contain;
-    scroll-snap-type: x proximity;
-    margin-right: 20px;
-    margin-left: 20px;
-  }
-  .sespoBuy__card-container{
-    position: relative;
-    scroll-snap-align: center;
-    width: 190px;
-    max-width: 220px;
-    height: 230px;
-    margin:50px 15px 0;
-    padding: 0 15px;
-    border: 2px solid var(--red-construtec);
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
-
-  }
-
-  .sespoBuy__card-header{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    left:calc(50% - 60px);
-    top:-15px;
-    font-size: 1.4rem;
-    background-color: var(--red-construtec);
-    border-radius: 8px;
-    color:var(--just-white);
-  }
-  .suscriptSespo{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    left:calc(50% - 60px);
-    top:-15px;
-    font-size: 1.4rem;
-    background-color: var(--red-construtec);
-    border-radius: 8px;
-    color:var(--just-white);
-  }
-  .buySespo{
-    position: absolute;
-    width: 120px;
-    height: 31px;
-    padding: 6px;
-    left:calc(50% - 55px);
-    top:-15px;
-    font-size: 1.4rem;
-    background-color: var(--red-construtec);
-    border-radius: 8px;
-    color:var(--just-white);
-  }
-  .sespoBuy__card-title{
-    padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:var(--black)
-  }
-  .sespoBuy__card-price{
-    padding: 5px 0px;
-    font-size: 5.2rem;
-    font-weight: bold;
-    line-height: 5.3rem;
-    color: var(--black);
-  }
-  .sespoBuy__card-price span{
-    font-size: 1.2rem;
-    font-weight: 300;
-    vertical-align: text-top;
-  }
-  .sespoBuy__card-description{
-    height: 50px;
-    font-size: 1.2rem;
-    color: var(--grey);
-  }
-  .sespoBuy__button{
-    width: 160px;
-    height: 48px;
-    margin-top: 30px;
-    background-color: var(--just-white);
-    border: 2px solid var(--red-construtec);
-    border-radius: 4px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    line-height: 1.8rem;
-    color:var(--black);
-  }
-  .sespoBuy__button span{
-    display: inline-block;
-    width: 20px;
-    height: 20px;
-    background-image: url('/images/arrow-right-sespo.svg');
-    vertical-align: text-bottom;
-  }
-  .sespoBuy__more-info{
-    padding-top: 20px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--black);
-    width: 90%;
-    min-width: 288px;
-    height: auto;
-    margin: 0 auto;
-    padding-bottom: 20px;
-  }
-.small-left-arrow{
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 45%;
-  left:-30px;
-  background-image: url("/images/icons8-back-50.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.buy--sespo h2{
+  color: var(--red-construtec);
 }
-.small-right-arrow{
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  top: 45%;
-  left:190px;
-  background-image: url("/images/icons8-forward-50.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.buy__card-container-sespo{
+  border: 2px solid var(--red-construtec);
 }
-
-  /* -------------------FOOTER------------------------ */
-  footer{
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    background-color: var(--background-black);
-    text-align: center;
+.buy__card-header-sespo{
+  background-color: var(--red-construtec);
+  color:var(--just-white);
   }
-  footer h2{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 15px;
-    font-size: 2.0rem;
-    font-weight: bold;
-    line-height: 2.4rem;
-    color: var(--off-white);
-  }
-  footer p{
-    width: 90%;
-    margin: 0 auto;
-    padding-top: 10px;
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--off-white);
-  }
-  .footer-redSocial{
-    width: 90%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    min-width: 230px;
-    max-width: 300px;
-    height: auto;
-    margin:0 auto;
-  }
-  .footer-redSocial table{
-    width: 100%;
-    height: 100%;
-  }
-  .footer-redSocial-whatsApp span{
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin: 0 auto;
-    background-image: url("/images/icon-whatsapp-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .footer-redSocial-facebook span{
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin: 0 auto;
-    background-image: url("/images/icon-facebook-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-  .footer-redSocial-youtube span{
-    display: block;
-    width: 25px;
-    height: 25px;
-    margin: 0 auto;
-    background-image: url("/images/icon-youtube-50.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    
-  }
-  .footer-redSocial a{
-    font-size: 1.0rem;
-    text-align: center;
-    text-decoration: none;
-    color:var(--off-white);
-  }
-  .autorRight{
-    font-size: 1.4rem;
-    line-height: 1.8rem;
-    color: var(--off-white);
-    padding-bottom: 20px;
-  }
+.buy__button--sespo{
+  background-color: var(--just-white);
+  border: 2px solid var(--red-construtec);
+  color:var(--black);
+}
+.buy__button--sespo span{
+  background-image: url('/images/arrow-right-sespo.svg');
+}

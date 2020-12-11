@@ -8,8 +8,7 @@
     margin-bottom: 20px;
     content: url("/images/Logo-construtec-movil.png");
   }
-
-  /*------------------HEADER----------------*/
+/*------------------HEADER----------------*/
   header{
     height: 545px;
   }
@@ -50,7 +49,6 @@
     font-weight: 500;
     line-height: 2.0rem;
   }
-
   .header__slider-imagen{
     margin-top: 50px;
     width: 480px;
@@ -69,193 +67,101 @@
     margin: auto;
   }
   /*------------------MAIN CPIP----------------*/
-  .cpipMain{
+  .main{
     grid-template-columns: 60% 40%;
     grid-template-areas: "description-cpip banner-cpip";
     padding-left:150px;
     padding-right: 100px;
     height: 380px;
-}
-  .cpipMain__banner{
+  }
+  .main__banner{
     width: 408px;
     height: 300px;
     background-image: url('/images/Banner-cpip-web.png');
     margin-right: 0px;
   }
-
 /*------------------BENEF CPIP----------------*/
-  .Benef__container-cards{
+  .benef__container-cards{
     display: flex;
     padding-left:calc(450px - 3 * 120px);
     padding-right: calc(450px - 3 * 120px);
   }
-  .Benef__card{
+  .benef__card{
     width: 240px;
     min-width: 240px;
     height: 310px;
   }
-  .Benef__card article{
+  .benef__card article{
     margin-top: 30px;
     grid-template-columns: 100%;
     grid-template-areas: "icon-benef-cpip"
-                          "title-benef-cpip"
-                          "description-benef-cpip ";
+                            "title-benef-cpip"
+                            "description-benef-cpip ";
   }
-  .Benef__card--title{
+  .benef__card-title{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .Benef__card .time{
+  .benef__card span{
     width: 60px;
     height: 60px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .benef__card .time{
     background-image: url("/images/icons8-clock-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .Benef__card .safe{
-    width: 60px;
-    height: 60px;
+  .benef__card .safe{
     background-image: url("/images/icons8-data-quality-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .Benef__card .organization{
-    width: 60px;
-    height: 60px;
+  .benef__card .organization{
     background-image: url("/images/icons8-folder-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .Benef__card--information{
+  .benef__card-information{
     display: block;
     text-align: center;
   }
  /* ------------------------INFORMATION CPIP------------------------ */
-  .cpipInformation__container-video{
+  .information__container-video{
     grid-template-columns: 70% 30%;
     grid-template-areas: "fm-video-cpip plansCpip-container-slider";
   }
-  .cpipInformation__client p{
+  .information__client p{
     text-align: start;
   }
-  .cpipInformation__video{
+  .information__video{
     width: 700px;
     height: 400px;
   }
-  .sespoInformation__client{
+  .information__client{
     align-items: center;
   }
 /* ------------------------BUY CPIP------------------------ */
-.cpipBuy{
-  align-items: center;
-}
-.cpipBuy__cards{
-  justify-content: center;
-}
-.sespoBuy__card-container{
-  margin:50px 50px 0;
-}
-
-  /*------------------MAIN SESPO----------------*/
-  .sespoMain{
-    grid-template-columns: 50% 50%;
-    grid-template-areas: " banner-sespo description-sespo";
-    padding-left:50px;
-    padding-right: 50px;
-}
-  .sespoMain__banner{
+  .buy{
+    align-items: center;
+  }
+  .buy__cards{
+    justify-content: center;
+  }
+  .buy__card-container{
+    margin:50px 50px 0;
+  }
+/*------------------MAIN SESPO----------------*/
+  .main__banner--sespo{
     width: 270px;
     height: 358px;
     background-image: url('/images/banner-sespo-web.png');
-  }
-/*------------------BENEF SESPO----------------*/
-  .sespoBenef__container-cards{
-    display: flex;
-    padding-left:calc(450px - 3 * 120px);
-    padding-right: calc(450px - 3 * 120px);
-  }
-  .sespoBenef__card{
-    width: 240px;
-    min-width: 240px;
-    height: 310px;
-  }
-  .sespoBenef__card article{
-    margin-top: 30px;
-    grid-template-columns: 100%;
-    grid-template-areas: "icon-benef-sespo"
-                          "title-benef-sespo"
-                          "description-benef-sespo";
-  }
-  
-  .sespoBenef__card--title{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .sespoBenef__card .digital{
-    width: 60px;
-    height: 60px;
+    }
+  /*------------------BENEF SESPO----------------*/
+  .benef__card .digital{
     background-image: url("/images/icon-iphone-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .sespoBenef__card .safe{
-    width: 60px;
-    height: 60px;
+  .benef__card .safeCloud{
     background-image: url("/images/icon-cloud-refresh-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .sespoBenef__card .settings{
-    width: 60px;
-    height: 60px;
+  .benef__card .settings{
     background-image: url("/images/icons-pass-configurable-100.png");
-    display: block;
-    margin: auto;
-    margin-bottom: 20px;
   }
-  .sespoBenef__card--information{
-    display: block;
-    text-align: center;
-  }
-/* ------------------------INFORMATION SESPO------------------------ */
-  .sespoInformation__container-video{
-    grid-template-columns: 70% 30%;
-    grid-template-areas: "fm-video-sespo mainSespo-information--client";
-  }
-  .sespoInformation__client p{
-    text-align: start;
-  }
-  .sespoInformation__video{
-    width: 700px;
-    height: 400px;
-  }
-.sespoInformation__client{
-    align-items: center;
-  }
-
-
-/* ------------------------BUY SESPO------------------------ */
-
-.sespoBuy{
-  align-items: center;
 }
-.sespoBuy__cards{
-  justify-content: center;
-}
-.small-left-arrow{
-  display: none;
-}
-.small-right-arrow{
-  display: none;
-}
-.sespoBuy__card-container{
-  margin:50px 50px 0;
-}
-  }
