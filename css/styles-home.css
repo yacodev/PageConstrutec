@@ -68,15 +68,15 @@ main{
   margin-bottom: 30px;
 }
 /* ------------------------BENEF --CPIP------------------------ */
-.cpipBenef{
+.Benef{
   position: relative;
     width: 100%;
     min-width: 320px;
     height: auto;
-    padding: 30px 10px;/*--*/
+    padding: 30px 10px;
     background-color: var(--background-color);
 }
-.cpipBenef__title{
+.Benef__title{
     width: 90%;
     min-width: 288px;
     height: auto;
@@ -86,7 +86,7 @@ main{
     color: var(--blue-construtec);
     font-size: 1.6rem;
 }
-.cpipBenef__card{
+.Benef__card{
     width: 90%;
     min-width: 288px;
     max-width: 400px;
@@ -98,14 +98,14 @@ main{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
     border: 2px solid var(--blue-construtec);
 }
-.cpipBenef__card article{
+.Benef__card article{
     display:grid;
     grid-template-columns: 10% 90%;
     grid-template-areas: "icon-benef-cpip title-benef-cpip"
                         "description-benef-cpip description-benef-cpip";
 }
 
-.cpipBenef__card .time{
+.Benef__card .time{
     grid-area: icon-benef-cpip;
     display: inline-block;
     width: 25px;
@@ -116,7 +116,7 @@ main{
     background-repeat: no-repeat;
     margin-right: 10px;
 }
-.cpipBenef__card .safe{
+.Benef__card .safe{
     grid-area: icon-benef-cpip;
     display: inline-block;
     width: 25px;
@@ -127,7 +127,7 @@ main{
     background-repeat: no-repeat;
     margin-right: 10px;
 }
-.cpipBenef__card .organization{
+.Benef__card .organization{
     grid-area: icon-benef-cpip;
     display: inline-block;
     width: 25px;
@@ -138,7 +138,7 @@ main{
     background-repeat: no-repeat;
     margin-right: 10px;
 }
-  .cpipBenef__card--title{
+  .Benef__card--title{
     grid-area: title-benef-cpip;
     display:flex;
     align-items: center;
@@ -147,7 +147,7 @@ main{
     line-height: 1.8rem;
     color:var(--black);
   }
-  .cpipBenef__card--information{
+  .Benef__card--information{
     grid-area: description-benef-cpip;
     margin-top: 15px;
     font-size: 1.4rem;
@@ -155,7 +155,7 @@ main{
     line-height: 1.8rem;
     color:var(--black)
   }
-  /* ------------------------BUY CPIP------------------------ */
+  /* ------------------------INFORMATION CPIP------------------------ */
   .cpipInformation{
     width: 100%;
     min-width: 320px;
@@ -170,6 +170,7 @@ main{
     margin-bottom: 20px;
   }
   .cpipInformation__tittle h2{
+    padding-top: 30px;
     font-size: 2.4rem;
     font-weight: bold;
     line-height: 2.6rem;
@@ -193,13 +194,42 @@ main{
     margin: auto;
     align-items: center;
   }
-  .cpipPlans__container{
-    grid-area: plansCpip-container-slider;
+  .cpipInformation__client{
+    grid-area:plansCpip-container-slider;
+    padding-top: 30px;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: var(--black);
+  }
+  .cpipInformation__client ul{
+    padding-top:20px;
+    padding-left: 40px;
+    text-align: start;
+  }
+/* ------------------------BUY CPIP------------------------ */
+  .cpipBuy{
+    text-align: center;
+    min-width: 320px;
+    background-color: var(--background-color);
+  }
+  .cpipBuy h2{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--blue-construtec);
+  }
+  .cpipBuy__cards{
     display: flex;
     height: 316px;
-    justify-content: center;
+    overflow-x: scroll;
+    overscroll-behavior-x:contain;
+    scroll-snap-type: x proximity;
+    margin-right: 20px;
+    margin-left: 20px;
   }
-  .cpipPlans__card-container{
+  .cpipBuy__card-container{
     position: relative;
     width: 190px;
     max-width: 220px;
@@ -212,7 +242,7 @@ main{
     box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
 
   }
-  .cpipPlans__card-header{
+  .cpipBuy__card-header{
     position: absolute;
     width: 120px;
     height: 31px;
@@ -224,31 +254,31 @@ main{
     border-radius: 8px;
     color:var(--just-white);
   }
-  .cpipPlans__card-title{
+  .cpipBuy__card-title{
     padding-top: 30px;
     font-size: 1.4rem;
     font-weight: bold;
     line-height: 1.8rem;
     color:var(--black);
   }
-  .cpipPlans__card-price{
+  .cpipBuy__card-price{
     padding: 5px 0px;
     font-size: 5.2rem;
     font-weight: bold;
     line-height: 5.3rem;
     color: var(--black);
   }
-  .cpipPlans__card-price span{
+  .cpipBuy__card-price span{
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: text-top;
   }
-  .pcpipPlans__card-description{
+  .cpipBuy__card-description{
     font-size: 1.2rem;
     line-height: 1.4rem;
     color: var(--grey);
   }
-  .cpipPlans__button-buy{
+  .cpipBuy__button{
     width: 150px;
     height: 48px;
     margin-top: 20px;
@@ -260,14 +290,14 @@ main{
     line-height: 1.8rem;
     color:var(--black);
   }
-  .cpipPlans__button-buy span{
+  .cpipBuy__button span{
     display: inline-block;
     width: 20px;
     height: 20px;
     background-image: url('/images/arrow-right-buy.svg');
     vertical-align: text-bottom;
   }
-  .cpipPlans__moreInfo{
+  .cpipBuy__more-info{
     padding-top: 20px;
     font-size: 1.4rem;
     line-height: 1.8rem;
@@ -288,7 +318,6 @@ main{
     height: auto;
     padding-top: 30px;
     text-align: center;
-    background-color: var(--background-color);
     padding-bottom: 15px;
   }
   
@@ -351,7 +380,7 @@ main{
     min-width: 320px;
     height: auto;
     padding: 20px 10px;
-    background-color: var(--just-white);
+    background-color: var(--background-color);
   }
   .sespoBenef__title{
     width: 90%;
@@ -439,7 +468,6 @@ main{
     min-width: 320px;
     padding-bottom: 30px;
     text-align: center;
-    background-color: var(--background-color);
   }
   .sespoInformation__tittle{
     width: 90%;
@@ -489,6 +517,7 @@ main{
   .sespoBuy{
     text-align: center;
     min-width: 320px;
+    background-color: var(--background-color);
   }
   .sespoBuy h2{
     padding-top: 30px;
@@ -715,5 +744,3 @@ main{
     color: var(--off-white);
     padding-bottom: 20px;
   }
-/* -------------------VIDEO------------------------ */
-

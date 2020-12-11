@@ -84,29 +84,29 @@
   }
 
 /*------------------BENEF CPIP----------------*/
-  .cpipBenef__container-cards{
+  .Benef__container-cards{
     display: flex;
     padding-left:calc(450px - 3 * 120px);
     padding-right: calc(450px - 3 * 120px);
   }
-  .cpipBenef__card{
+  .Benef__card{
     width: 240px;
     min-width: 240px;
     height: 310px;
   }
-  .cpipBenef__card article{
+  .Benef__card article{
     margin-top: 30px;
     grid-template-columns: 100%;
     grid-template-areas: "icon-benef-cpip"
                           "title-benef-cpip"
                           "description-benef-cpip ";
   }
-  .cpipBenef__card--title{
+  .Benef__card--title{
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
-  .cpipBenef__card .time{
+  .Benef__card .time{
     width: 60px;
     height: 60px;
     background-image: url("/images/icons8-clock-100.png");
@@ -114,7 +114,7 @@
     margin: auto;
     margin-bottom: 20px;
   }
-  .cpipBenef__card .safe{
+  .Benef__card .safe{
     width: 60px;
     height: 60px;
     background-image: url("/images/icons8-data-quality-100.png");
@@ -122,7 +122,7 @@
     margin: auto;
     margin-bottom: 20px;
   }
-  .cpipBenef__card .organization{
+  .Benef__card .organization{
     width: 60px;
     height: 60px;
     background-image: url("/images/icons8-folder-100.png");
@@ -130,51 +130,35 @@
     margin: auto;
     margin-bottom: 20px;
   }
-  .cpipBenef__card--information{
+  .Benef__card--information{
     display: block;
     text-align: center;
   }
- /* ------------------------BUY CPIP------------------------ */
-  .cpipInformation{
-    padding-top:30px;
-  }
+ /* ------------------------INFORMATION CPIP------------------------ */
   .cpipInformation__container-video{
     grid-template-columns: 70% 30%;
     grid-template-areas: "fm-video-cpip plansCpip-container-slider";
-    padding-left:70px ;
-    padding-right:100px;
+  }
+  .cpipInformation__client p{
+    text-align: start;
   }
   .cpipInformation__video{
     width: 700px;
     height: 400px;
   }
-  .cpipPlans__container{
+  .sespoInformation__client{
     align-items: center;
   }
-
-  .cpipPlans__card-container{
-    align-items: center;
-    width:240px;
-    height: 310px;
-  }
-  .cpipPlans__card-title{
-    font-size: 1.8rem;
-    line-height: 2.4rem;
-  }
-  .cpipPlans__card-price{
-    padding: 10px;
-    font-size: 6.2rem;
-    font-weight: bold;
-    line-height: 6.3rem;
-  }
-  .cpipPlans__card-description{
-    margin-top:20px;
-    font-size: 1.6rem;
-    line-height: 1.8rem;
-  }
-  .cpipPlans__button-buy{
-    margin-top: 30px;
-  }
+/* ------------------------BUY CPIP------------------------ */
+.cpipBuy{
+  align-items: center;
+}
+.cpipBuy__cards{
+  justify-content: center;
+}
+.sespoBuy__card-container{
+  margin:50px 50px 0;
+}
 
   /*------------------MAIN SESPO----------------*/
   .sespoMain{
