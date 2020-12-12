@@ -28,7 +28,6 @@
   --font-size__text:1.4rem;
   --line-height__text:1.8rem;
   --border-radius:10px;
-
 }
 
 *{
@@ -180,7 +179,6 @@ grid-area: description-cpip;
   line-height: var(--line-height__text);
   color:var(--black);
 }
-
 .module-metrados{
   background-image: url("/images/Icon-modulo-metrado-50.png");
   background-size: cover;
@@ -253,7 +251,7 @@ grid-area: description-cpip;
   display:grid;
   grid-template-columns: 100%;
   grid-template-areas: "feature-video-cpip"
-                        "plansCpip-container";
+                        "client-cpip";
 }
 .cpipFeatures__video{
   grid-area: feature-video-cpip;
@@ -262,7 +260,7 @@ grid-area: description-cpip;
   align-items: center;
 }
 .cpipFeatures__buy{
-  grid-area: plansCpip-container;
+  grid-area: client-cpip;
   display: flex;
   height: 316px;
   justify-content: center;
@@ -363,7 +361,6 @@ grid-area: description-cpip;
   margin-bottom: var(--space-between-text);
   text-align: center;
 }
-
 .cpipOpinions__container-cards{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
@@ -461,7 +458,8 @@ grid-area: description-cpip;
   display: block;
   width: var(--width-elements);
   min-width: var(--min-width-elements);
-  margin: 15px auto;
+  height: 30px;
+  margin: var(--space-after-img) auto;
   margin-bottom: var(--space-between-text);
   font-size: var(--font-size__h2);
   text-align: center;

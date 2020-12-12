@@ -5,8 +5,8 @@
     --width-icon-web:50px;
     --height-icon-web:50px;
     --width-elements-web:80%;
-    --width-video-tablet:450px;
-    --height-video-tablet:258px;
+    --width-video-tablet:350px;
+    --height-video-tablet:192px;
     --width-videoTutorials-tablet:300px;
     --height-videoTutorials-tablet:172px;
   }
@@ -24,78 +24,77 @@
     background-image:url('/images/Banner-macbookair-Cpip-phone.png') ;
   }
 /*-------------------CPIP MODULES-------------------*/
-.cpipModules__container-cards{
-  max-width: var(--width-elements-web);
-  display: flex;
-  flex-wrap: wrap;
-}
-.cpipModules__card{
-  width: var(--width-cards-web);
-  height: var(--height-cards-web);
-  min-width: var(--width-cards-web);
-}
-.cpipModules__card article{
-  grid-template-columns: 100%;
-  grid-template-areas: "icon-module-cpip"
-                        "title-module-cpip"
-                        "description-module-cpip";
-}
-.icon-modules{
-  width: var(--width-icon-web);
-  height: var(--height-icon-web);
-  display: block;
-  margin: auto;
-}
-.cpipModules__card-title{
-  padding-top:var(--space-after-img) ;
-  display: block;
-  text-align: center;
-}
-.cpipModules__card-information{
-  display: block;
-  text-align: center;
-}
+  .cpipModules__container-cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .cpipModules__card{
+    width: var(--width-cards-web);
+    height: var(--height-cards-web);
+    min-width: var(--width-cards-web);
+  }
+  .cpipModules__card article{
+    grid-template-columns: 100%;
+    grid-template-areas: "icon-module-cpip"
+                          "title-module-cpip"
+                          "description-module-cpip";
+  }
+  .icon-modules{
+    width: var(--width-icon-web);
+    height: var(--height-icon-web);
+    display: block;
+    margin: auto;
+  }
+  .cpipModules__card-title{
+    padding-top:var(--space-after-img) ;
+    display: block;
+    text-align: center;
+  }
+  .cpipModules__card-information{
+    display: block;
+    text-align: center;
+  }
 /*-------------------CPIP FEATURES-------------------*/
-.cpipFeatures-video-buy{
-  grid-template-columns: 60% 40%;
-  grid-template-areas: "feature-video-cpip plansCpip-container";
-  width: var(--width-elements-web);
-  margin-left:auto;
-  margin-right:auto;
-}
-.cpipFeatures__video{
-  width: var(--width-video-tablet);
-  height: var(--height-video-tablet);
-}
-.cpipFeatures__buy{
-  display: block;
-  margin: auto;
-}
+  .cpipFeatures-video-buy{
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "feature-video-cpip plansCpip-container";
+    width: var(--width-elements-web);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .cpipFeatures__video{
+    width: var(--width-video-tablet);
+    height: var(--height-video-tablet);
+  }
+  .cpipFeatures__buy{
+    display: block;
+    margin: auto;
+  }
 /*-------------------CPIP OPINIONS-------------------*/
-.cpipOpinions__container-cards{
-  max-width: var(--width-elements-web);
-  display: flex;
-  flex-wrap: wrap;
-}
+  .cpipOpinions__container-cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+  }
 /*-------------------CPIP TUTORIALS-------------------*/
-.cpipTutorials__container{
-  max-width: var(--width-elements-web);
-  display: flex;
-  flex-wrap: wrap;
-  margin-left:auto;
-  margin-right:auto;
-}
-.cpipTutorials__content{
-  margin-left:auto;
-  margin-right:auto;
-}
-.cpipTutorials__video{
-  width: var(--width-videoTutorials-tablet);
-  height: var(--height-videoTutorials-tablet);
-}
-.cpipTutorials__video video{
-  width: var(--width-videoTutorials-tablet);
-  height: var(--height-videoTutorials-tablet);
-}
-
+  .cpipTutorials__container{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .cpipTutorials__content{
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .cpipTutorials__video{
+    width: var(--width-videoTutorials-tablet);
+    height: var(--height-videoTutorials-tablet);
+  }
+  .cpipTutorials__video video{
+    width: var(--width-videoTutorials-tablet);
+    height: var(--height-videoTutorials-tablet);
+  }
 }

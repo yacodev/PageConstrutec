@@ -1,0 +1,186 @@
+@media screen and (min-width:1140px){
+  :root{
+    --width-cards-web:230px;
+    --height-cards-web:300px;
+    --width-icon-web:50px;
+    --height-icon-web:50px;
+    --width-elements-web:80%;
+    --width-video-web:600px;
+    --height-video-web:343px;
+    --width-videoTutorials-web:450px;
+    --height-videoTutorials-web:260px;
+  }
+  .header__logo{
+    width: 400px;
+    height: 59px;
+    margin-left: 20px;
+    margin-top:10px;
+    margin-bottom: 20px;
+    content: url("/images/Logo-construtec-movil.png");
+  }
+/*------------------HEADER----------------*/
+  header{
+    height: 545px;
+  }
+  
+  .header__slider{
+  grid-template: 100px 70px 40px 40px 70px/50% 50% ;
+  grid-template-areas: "title imagen"
+                      "subtitle imagen"
+                      "textQuestion imagen"
+                      "texto imagen"
+                      "button imagen";
+  height: 385px;
+  margin-top: 77px;
+  }
+  .header__slider h1{
+    padding-top:7px;
+    width: 250px;
+    font-size: 2.8rem;
+    line-height: 3.0rem;
+    background:var(--just-white);
+  }
+  .header__slider h2{
+    font-size: 2.2rem;
+    line-height: 2.8rem;
+  }
+  .header__slider-textQuestion{
+    grid-area: textQuestion;
+    Display:block;
+    padding: 0px 20px 0px 20px;
+    font-size: 1.7rem;
+    font-weight: bold;
+    font-weight: 500;
+    line-height: 2.0rem;
+    color: var(--just-white);
+  }
+  .header__slider-text{
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.0rem;
+  }
+  .header__slider-imagen{
+    margin-top: 50px;
+    width: 480px;
+    height: 320px;
+    content: url("/images/Imagen-laptop-Cpip-p1.png");
+  }
+  .header__slider-imagenTwo{
+    margin-top: 50px;
+    width: 480px;
+    height: 300px;
+    content: url("/images/SmartPhone-Sespo-web.png");
+  }
+  .header__slider .header__slider-button{
+    position: static;
+    display: block;
+    margin: auto;
+  }
+  /*------------------MAIN CPIP----------------*/
+  .main{
+    grid-template-columns: 60% 40%;
+    grid-template-areas: "description-cpip banner-cpip";
+    width: var(--width-elements-web);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .main__banner{
+    display: block;
+    margin: auto;
+    width: 408px;
+    height: 300px;
+    background-image: url('/images/Banner-cpip-web.png');
+  }
+/*------------------BENEF CPIP----------------*/
+  .benef__container-cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .benef__card{
+    width: var(--width-cards-web);
+    height: var(--height-cards-web);
+    min-width: var(--width-cards-web);
+  }
+  .benef__card article{
+    grid-template-columns: 100%;
+    grid-template-areas: "icon-benef-cpip"
+                            "title-benef-cpip"
+                            "description-benef-cpip ";
+  }
+  .benef__card-title{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .benef__card span{
+    width: var(--width-icon-web);
+    height: var(--height-icon-web);
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+  .benef__card .time{
+    margin-top: 20px;
+    background-image: url("/images/icons8-clock-100.png");
+  }
+  .benef__card .safe{
+    margin-top: 20px;
+    background-image: url("/images/icons8-data-quality-100.png");
+  }
+  .benef__card .organization{
+    margin-top: 20px;
+    background-image: url("/images/icons8-folder-100.png");
+  }
+  .benef__card-information{
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+  }
+ /* ------------------------INFORMATION CPIP------------------------ */
+  .information__tittle h2{
+    width: var(--width-elements-web);
+  } 
+  .information__tittle p{
+    width: var(--width-elements-web);
+  }
+  .information__container-video{
+    grid-template-columns: 70% 30%;
+    grid-template-areas: "video-cpip client-cpip";
+    width: var(--width-elements-web);
+    margin-left:auto;
+    margin-right:auto;
+  }
+  .information__client ul{
+    text-align: start;
+  }
+  .information__video{
+    width: var(--width-video-web);
+    height: var(--height-video-web);
+  }
+  .information__client{
+    align-items: center;
+  }
+/* ------------------------BUY CPIP------------------------ */
+  .buy__cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+  }
+/*------------------MAIN SESPO----------------*/
+  .main__banner--sespo{
+    width: 270px;
+    height: 358px;
+    background-image: url('/images/banner-sespo-web.png');
+    }
+  /*------------------BENEF SESPO----------------*/
+  .benef__card .digital{
+    background-image: url("/images/icon-iphone-100.png");
+  }
+  .benef__card .safeCloud{
+    background-image: url("/images/icon-cloud-refresh-100.png");
+  }
+  .benef__card .settings{
+    background-image: url("/images/icons-pass-configurable-100.png");
+  }
+}
