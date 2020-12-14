@@ -60,7 +60,7 @@
 /*-------------------CPIP FEATURES-------------------*/
   .cpipFeatures-video-buy{
     grid-template-columns: 60% 40%;
-    grid-template-areas: "feature-video-cpip plansCpip-container";
+    grid-template-areas: "feature-video-cpip client-cpip";
     width: var(--width-elements-web);
     margin-left:auto;
     margin-right:auto;
