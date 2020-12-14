@@ -259,26 +259,49 @@ grid-area: description-cpip;
   margin: auto;
   align-items: center;
 }
-.cpipFeatures__buy{
-  grid-area: client-cpip;
-  display: flex;
-  height: 316px;
-  justify-content: center;
-  padding-top: var(--space-sections);
+.cpipFeatures__client{
+  grid-area:client-cpip;
+  padding-top: var(--space-after-img);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
 }
-.cpipFeatures__card-container{
+.cpipFeatures__client ul{
+  text-align: center;
+}
+/* ------------------------BUY CPIP------------------------ */
+.buy{
+  text-align: center;
+  min-width: 320px;
+  padding-top:var(--space-sections) ;
+  padding-bottom: 60px;
+  background-color: var(--background-color);
+}
+.buy h2{
+  font-size:var(--font-size__h1);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.buy__cards{
+  display: block;
+  height: auto;
+  margin:0 auto;
+}
+.buy__card-container{
   position: relative;
   width: var(--width-card-buy);
   max-width: var(--max-width-card-buy);
   height: var(--height-car-buy);
-  margin:var(--space-after-title) auto;
+  margin:50px auto 0px auto;
   padding: 0 15px;
   border: 2px solid var(--blue-construtec);
-  background-color: var(--background-color);
+  background-color: var(--just-white);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16) ;
 }
-.cpipFeatures__card-header {
+.buy__card-header{
   position: absolute;
   width: var(--width-card-header);
   height: var(--height-card-header);
@@ -290,32 +313,32 @@ grid-area: description-cpip;
   border-radius: var(--border-radius);
   color:var(--just-white);
 }
-
-.cpipFeatures__card-title{
+.buy__card-title{
   padding-top: var(--space-sections);
   font-size: var(--font-size__h2);
   font-weight: bold;
   line-height: var(--line-height__text);
   color:var(--black)
 }
-.cpipFeatures__card-price{
+.buy__card-price{
   padding: var(--space-after-title) 0px;
   font-size: 5.2rem;
   font-weight: bold;
   line-height: 5.3rem;
   color: var(--black);
 }
-.cpipFeatures__card-price span{
+.buy__card-price span{
   font-size: 1.2rem;
   font-weight: 300;
   vertical-align: text-top;
 }
-.cpipFeatures__card-description{
+.buy__card-description{
   font-size: 1.2rem;
   line-height: 1.4rem;
+  height: 65px;
   color: var(--grey);
 }
-.cpipFeatures__button-buy{
+.buy__button{
   width: var(--width-botton-buy);
   height: var(--height-botton-buy);
   margin-top: 10px;
@@ -325,14 +348,24 @@ grid-area: description-cpip;
   font-size: var(--font-size__text);
   font-weight: bold;
   line-height: var(--line-height__text);
-  color:var(--black);
+  color:var(--blue-construtec);
 }
-.cpipFeatures__button-buy span{
+.buy__button span{
   display: inline-block;
   width: 20px;
   height: 20px;
   background-image: url('/images/arrow-right-buy.svg');
   vertical-align: text-bottom;
+}
+.buy__more-info{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-top: 40px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
 }
 /*-------------------CPIP OPINIONS-------------------*/
 .cpipOpinions{
@@ -341,7 +374,7 @@ grid-area: description-cpip;
   height: auto;
   padding-top: var(--space-sections);
   padding-bottom: var(--space-sections);
-  background-color: var(--background-color);
+
 }
 .cpipOpinions__title{
   width: var(--width-elements);
@@ -375,7 +408,7 @@ grid-area: description-cpip;
   height: var(--height-cards);
   margin:var(--space-between-cards) auto;
   padding: 15px;
-  background-color: var(--just-white);
+  background-color: var(--background-color);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   border: 2px solid var(--blue-construtec);
@@ -432,6 +465,7 @@ grid-area: description-cpip;
   height: auto;
   padding-top: var(--space-sections);
   padding-bottom: var(--space-sections);
+  background-color: var(--background-color);
 }
 .cpipTutorials__title{
   width: var(--width-elements);

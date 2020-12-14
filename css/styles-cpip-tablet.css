@@ -57,7 +57,7 @@
   }
 /*-------------------CPIP FEATURES-------------------*/
   .cpipFeatures-video-buy{
-    grid-template-columns: 60% 40%;
+    grid-template-columns: 70% 30%;
     grid-template-areas: "feature-video-cpip client-cpip";
     width: var(--width-elements-web);
     margin-left:auto;
@@ -67,9 +67,17 @@
     width: var(--width-video-tablet);
     height: var(--height-video-tablet);
   }
-  .cpipFeatures__buy{
-    display: block;
-    margin: auto;
+  .cpipFeatures__client{
+    align-items: center;
+  }
+  .cpipFeatures__client ul{
+    text-align: start;
+  }
+/* ------------------------BUY CPIP------------------------ */
+  .buy__cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
   }
 /*-------------------CPIP OPINIONS-------------------*/
   .cpipOpinions__container-cards{
