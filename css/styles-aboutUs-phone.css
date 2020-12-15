@@ -1,0 +1,232 @@
+:root{
+  --space-sections:30px;
+  --space-after-img:20px;
+  --space-after-title:10px;
+  --space-between-text:15px;
+  --space-between-cards:15px;
+  --width-elements:90%;
+  --width-cards:80%;
+  --width-card-buy:190px;
+  --width-botton-buy:150px;
+  --width-card-header:120px;
+  --width-card-button:150px;
+  --width-icon:25px;
+  --width-user:50px;
+  --height-botton-buy:48px;
+  --height-card-header:30px;
+  --height-card-button:48px;
+  --height-car-buy:230px;
+  --height-icon:25px;
+  --height-user:50px;
+  --height-cards:170px;
+  --max-width-card-buy:220px;
+  --max-width-cards:380px;
+  --max-width-container:400px;
+  --min-width-elements: 288px;
+  --font-size__h1 : 2.0rem;
+  --font-size__h2 : 1.6rem;
+  --font-size__text:1.4rem;
+  --line-height__text:1.8rem;
+  --border-radius:10px;
+/*-------special----------*/
+--height-cards-founder:80px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+}
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--just-white);
+}
+/*----------------ABOUT-US----------------------------*/
+.aboutUs{
+  display:grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "title"
+                        "text-aboutUs"
+                        "imagen"
+                        "moreText";
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  text-align: center;
+}
+.section__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:0 auto;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.aboutUs__title{
+  grid-area: title;
+}
+.section__text{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+.aboutUs__text{
+  grid-area: text-aboutUs;
+}
+.aboutUs__imagen{
+  grid-area:imagen;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: var(--space-after-img);
+  background-image: url('/images/minilogo-construtec-phone.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.aboutUs__moreText{
+  grid-area: moreText;
+}
+
+/*---------------------FOUNDERS--------------------*/
+.whoWeAre__founders{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  text-align: center;
+}
+.whoWeAre__founder-card{
+  display:grid;
+  grid-template: 30px 30px/20% 80%;
+  grid-template-areas: "founder-imagen founder-name"
+                        "founder-imagen founder-grade";
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: var(--height-cards-founder);
+  margin:var(--space-between-cards) auto;
+  padding: 15px;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.founder__imagen{
+  grid-area:founder-imagen;
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-image: url("/images/imagen-founder.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.founder__imagen--carlos{
+  background-image: url("/images/imagen-founder-carlos.png");
+}
+.founder__imagen--jose{
+  background-image: url("/images/imagen-founder-jose.png");
+}
+.founder__imagen--bengie{
+  background-image: url("/images/imagen-founder-bengie.png");
+}
+.founder__name{
+  grid-area:founder-name;
+  padding-top:5px;
+  padding-left:10px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  font-weight: bold;
+  text-align: start;
+}
+.founder__grade{
+  grid-area:founder-grade;
+  padding-left:10px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  text-align: start;
+}
+/*--------------------FORM--------------*/
+.aboutYou{
+  margin: 0 auto;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  text-align: center;
+  
+}
+.form-contact{
+  display: block;
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: 500px;
+  margin:var(--space-between-cards) auto;
+}
+.form__container{
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec)
+}
+.form__question{
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: var(--blue-construtec);
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:20px;
+  text-align: start;
+}
+.form-answer{
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: var(--border-radius);
+  border:none;
+}
+.form-button{
+  width: 50%;
+  height: 40px;
+  margin: 20px auto;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--blue-construtec);
+}
+.form-answer--message{
+  height: 100px;
+}
