@@ -278,7 +278,7 @@ grid-area: description-cpip;
   background-color: var(--background-color);
 }
 .buy h2{
-  font-size:var(--font-size__h1);
+  font-size:var(--font-size__h2);
   font-weight: bold;
   line-height: var(--line-height__text);
   text-align: center;

@@ -109,7 +109,7 @@
   border: 2px solid var(--red-construtec);
   color:var(--red-construtec);
 }
-.buy__button span{
+.buy__button--sespo span{
   background-image: url('/images/arrow-right-sespo.svg');
 }
 .buy__more-info{
