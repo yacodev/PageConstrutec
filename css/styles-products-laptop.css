@@ -1,0 +1,9 @@
+@media screen and (min-width:1140px){
+  .products{
+    margin-top:100px;
+  }
+  .productos-container{
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "product-cpip product-sespo";
+  }
+}

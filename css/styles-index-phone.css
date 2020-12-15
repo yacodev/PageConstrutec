@@ -312,6 +312,7 @@ main{
   font-weight: bold;
   line-height: var(--line-height__text);
   color:var(--blue-construtec);
+  cursor:pointer;
 }
 .buy__button span{
   display: inline-block;

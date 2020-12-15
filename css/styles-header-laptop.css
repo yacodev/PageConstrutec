@@ -32,7 +32,7 @@
 }
 .header__menu:hover{
   cursor:pointer;
-  background: var(--background-black);
+  background: var(--blue-construtec);
 }
 .header__menu-options ul{
   display: flex;
