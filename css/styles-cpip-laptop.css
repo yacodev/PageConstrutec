@@ -10,7 +10,7 @@
     --width-videoTutorials-web:450px;
     --height-videoTutorials-web:260px;
   }
-  .cpipDescription{
+  .description{
     grid-template-columns: 40% 60%;
     grid-template-areas: "imagen-cpip description-cpip";
     padding-top: 100px;
@@ -18,7 +18,7 @@
     margin-left:auto;
     margin-right:auto;
   }
-  .cpipDescription__imagen{
+  .description__imagen{
     display: block;
     margin: auto;
     width: 350px;
@@ -26,17 +26,17 @@
     background-image:url('/images/Banner-macbookair-Cpip-web.png') ;
   }
 /*-------------------CPIP MODULES-------------------*/
-  .cpipModules__container-cards{
+  .modules__container-cards{
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
   }
-  .cpipModules__card{
+  .modules__card{
     width: var(--width-cards-web);
     height: var(--height-cards-web);
     min-width: var(--width-cards-web);
   }
-  .cpipModules__card article{
+  .modules__card article{
     grid-template-columns: 100%;
     grid-template-areas: "icon-module-cpip"
                           "title-module-cpip"
@@ -48,35 +48,35 @@
     display: block;
     margin: auto;
   }
-  .cpipModules__card-title{
+  .modules__card-title{
     padding-top:var(--space-after-img) ;
     display: block;
     text-align: center;
   }
-  .cpipModules__card-information{
+  .modules__card-information{
     display: block;
     text-align: center;
   }
 /*-------------------CPIP FEATURES-------------------*/
-  .cpipFeatures-video-buy{
+  .features-video-buy{
     grid-template-columns: 70% 30%;
     grid-template-areas: "feature-video-cpip client-cpip";
     width: var(--width-elements-web);
     margin-left:auto;
     margin-right:auto;
   }
-  .cpipFeatures__video{
+  .features__video{
     width: var(--width-video-web);
     height: var(--height-video-web);
   }
-  .cpipFeatures__buy{
+  .features__buy{
     display: block;
     margin: auto;
   }
-  .cpipFeatures__client{
+  .features__client{
     align-items: center;
   }
-  .cpipFeatures__client ul{
+  .features__client ul{
     text-align: start;
   }
 /* ------------------------BUY CPIP------------------------ */
@@ -86,28 +86,28 @@
     flex-wrap: wrap;
   }
 /*-------------------CPIP OPINIONS-------------------*/
-  .cpipOpinions__container-cards{
+  .opinions__container-cards{
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
   }
 /*-------------------CPIP TUTORIALS-------------------*/
-  .cpipTutorials__container{
+  .tutorials__container{
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
     margin-left:auto;
     margin-right:auto;
   }
-  .cpipTutorials__content{
+  .tutorials__content{
     margin-left:auto;
     margin-right:auto;
   }
-  .cpipTutorials__video{
+  .tutorials__video{
     width: var(--width-videoTutorials-web);
     height: var(--height-videoTutorials-web);
   }
-  .cpipTutorials__video video{
+  .tutorials__video video{
     width: var(--width-videoTutorials-web);
     height: var(--height-videoTutorials-web);
   }
