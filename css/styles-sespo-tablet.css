@@ -1,0 +1,29 @@
+@media screen and (min-width:768px) and (max-width:1139px){
+  :root{
+    --width-cards-web:230px;
+    --height-cards-web:300px;
+    --width-icon-web:50px;
+    --height-icon-web:50px;
+    --width-elements-web:80%;
+    --width-video-tablet:350px;
+    --height-video-tablet:192px;
+    --width-videoTutorials-tablet:300px;
+    --height-videoTutorials-tablet:172px;
+  }
+  .description__imagen--sespo{
+    width: 216px;
+    height: 210px;
+    background-image:url('/images/banner-sespo-description_phone.png') ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/*------------------SESPO MODULES-------------------*/
+  
+/*-------------------SESPO FEATURES-------------------*/
+
+/* ------------------SESPO BUY ------------------------ */
+
+/*-------------------SESPO OPINIONS-------------------*/
+
+}

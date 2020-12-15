@@ -1,0 +1,140 @@
+:root{
+  --space-sections:30px;
+  --space-after-img:20px;
+  --space-after-title:10px;
+  --space-between-text:15px;
+  --space-between-cards:15px;
+  --width-elements:90%;
+  --width-cards:80%;
+  --width-card-buy:190px;
+  --width-botton-buy:150px;
+  --width-card-header:120px;
+  --width-card-button:150px;
+  --width-icon:25px;
+  --width-user:50px;
+  --height-botton-buy:48px;
+  --height-card-header:30px;
+  --height-card-button:48px;
+  --height-car-buy:230px;
+  --height-icon:25px;
+  --height-user:50px;
+  --height-cards:170px;
+  --max-width-card-buy:220px;
+  --max-width-cards:380px;
+  --max-width-container:400px;
+  --min-width-elements: 288px;
+  --font-size__h1 : 2.0rem;
+  --font-size__h2 : 1.6rem;
+  --font-size__text:1.4rem;
+  --line-height__text:1.8rem;
+  --border-radius:10px;
+}
+
+/*-------------------SESPO DESCRIPTION-------------------*/
+
+.description__imagen--sespo{
+  width: 216px;
+  height: 210px;
+  background-image:url('/images/banner-sespo-description_phone.png') ;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.description__text--sespo h1{
+  color: var(--red-construtec);
+}
+.description__text--sespo h2{
+  color: var(--red-construtec);
+}
+/*-------------------SESPO MODULES-------------------*/
+.modules--sespo h2{
+  color: var(--red-construtec);
+}
+.modules__card--sespo{
+  border: 2px solid var(--red-construtec);
+}
+.sespoModule-personal{
+  background-image: url("/images/icon-worker-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sespoModule-reporte-diario{
+  background-image: url("/images/Icon-reporte-diario_100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sespoModule-reporte-visitas{
+  background-image: url("/images/icon-report-visite-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sespoModule-generar-reporte{
+  background-image: url("/images/Icon-reportes-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sespoModule-sincronizacion{
+  background-image: url("/images/icon-sincronizacion-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.sespoModule-configuracion{
+  background-image: url("/images/Icon-setting-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/*-------------------SESPO FEATURES-------------------*/
+.features__title--sespo{
+  color: var(--red-construtec);
+}
+/* ------------------SESPO BUY------------------------ */
+.buy--sespo h2{
+  color: var(--red-construtec);
+}
+.buy__card-container--sespo{
+  border: 2px solid var(--red-construtec);
+}
+.buy__card-header--sespo{
+  background-color: var(--red-construtec);
+
+}
+.buy__button--sespo{
+  border: 2px solid var(--red-construtec);
+  color:var(--red-construtec);
+}
+.buy__button span{
+  background-image: url('/images/arrow-right-sespo.svg');
+}
+.buy__more-info{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-top: 40px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+}
+/*-------------------SESPO OPINIONS-------------------*/
+
+.opinions__title--sespo{
+  color: var(--red-construtec);
+}
+.opinion__card--sespo{
+  border: 2px solid var(--red-construtec);
+  background-color: var(--just-white);
+}
+.icon-user--sespo{
+  background-image: url("/images/icon-client-cpip-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
