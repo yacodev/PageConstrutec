@@ -28,8 +28,6 @@
   --font-size__text:1.4rem;
   --line-height__text:1.8rem;
   --border-radius:10px;
-/*-------special----------*/
---height-cards-founder:80px;
 }
 *{
   box-sizing: border-box;
@@ -55,14 +53,8 @@ main{
   height: auto;
   background-color: var(--just-white);
 }
-/*----------------ABOUT-US----------------------------*/
-.aboutUs{
-  display:grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "title"
-                        "text-aboutUs"
-                        "imagen"
-                        "moreText";
+/*----------------CONTACT----------------------------*/
+.contact{
   width: 100%;
   min-width: 320px;
   height: auto;
@@ -70,7 +62,7 @@ main{
   padding-bottom: var(--space-sections);
   text-align: center;
 }
-.section__title{
+.contact__title{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   height: auto;
@@ -80,10 +72,7 @@ main{
   text-align: center;
   color: var(--blue-construtec);
 }
-.aboutUs__title{
-  grid-area: title;
-}
-.section__text{
+.contact__text{
   width: var(--width-elements);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
@@ -92,94 +81,56 @@ main{
   margin-bottom: var(--space-between-text);
   text-align: center;
 }
-.aboutUs__text{
-  grid-area: text-aboutUs;
-}
-.aboutUs__imagen{
-  grid-area:imagen;
-  width: 200px;
-  height: 200px;
-  margin: 0 auto;
-  margin-bottom: var(--space-after-img);
-  background-image: url('/images/minilogo-construtec-phone.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.aboutUs__moreText{
-  grid-area: moreText;
-}
-
-/*---------------------FOUNDERS--------------------*/
-.whoWeAre__founders{
+.contact__whatsApp{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   max-width: var(--max-width-container);
   height: auto;
   margin: 0 auto;
-  padding-top: var(--space-sections);
-  padding-bottom: var(--space-sections);
   text-align: center;
 }
-.whoWeAre__founder-card{
+.contact__whatsApp-card{
   display:grid;
-  grid-template: 30px 30px/20% 80%;
-  grid-template-areas: "founder-imagen founder-name"
-                        "founder-imagen founder-grade";
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "whatsApp textWhatsApp";
   width: var(--width-cards);
   min-width: var(--min-width-elements);
   max-width: var(--max-width-cards);
-  height: var(--height-cards-founder);
+  height: 60px;
   margin:var(--space-between-cards) auto;
-  padding: 15px;
   background-color: var(--background-color);
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   border: 2px solid var(--blue-construtec);
+  cursor:pointer;
 }
-.founder__imagen{
-  grid-area:founder-imagen;
+.contact__whatsApp-imagen{
+  grid-area:whatsApp;
   display: flex;
   align-items: center;
-  width: 60px;
-  height: 60px;
-  background-image: url("/images/imagen-founder.png");
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/icon-contact-whatsapp-160.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-.founder__imagen--carlos{
-  background-image: url("/images/imagen-founder-carlos.png");
-}
-.founder__imagen--jose{
-  background-image: url("/images/imagen-founder-jose.png");
-}
-.founder__imagen--bengie{
-  background-image: url("/images/imagen-founder-bengie.png");
-}
-.founder__name{
-  grid-area:founder-name;
-  padding-top:5px;
-  padding-left:10px;
-  font-size: var(--font-size__text);
+
+.contact__whatsApp-text{
+  grid-area:textWhatsApp;
+  margin: auto auto auto 0px;
+  font-size: var(--font-size__h2);
   line-height: var(--line-height__text);
   color: var(--black);
   font-weight: bold;
-  text-align: start;
+  text-decoration: none;
 }
-.founder__grade{
-  grid-area:founder-grade;
-  padding-left:10px;
-  font-size: var(--font-size__text);
-  line-height: var(--line-height__text);
-  color: var(--black);
-  text-align: start;
-}
+
 /*--------------------FORM--------------*/
-.aboutYou{
+.form{
   margin: 0 auto;
   height: auto;
-  padding-top: var(--space-sections);
   padding-bottom: var(--space-sections);
   text-align: center;
   
@@ -226,7 +177,25 @@ main{
   border: none;
   border-radius: var(--border-radius);
   background-color: var(--blue-construtec);
+  cursor:pointer;
 }
 .form-answer--message{
   height: 100px;
+}
+
+@media screen and (min-width:768px) and (max-width:1139px){
+  .contact{
+    padding-top: 100px;
+  }
+
+}
+@media screen and (min-width:1140px) {
+
+  .contact{
+    padding-top: 100px;
+  }
+  .contact__text{
+    text-align: start;
+  }
+
 }

@@ -3,9 +3,84 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Acerca de nostros</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles-header-phone.css">
+  <link rel="stylesheet" href="./css/styles-header-laptop.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/styles-contact.css">
+
 </head>
 <body>
-  
+  <header>
+    <div class="header">
+      <img class="header__logo" src="./images/Logo-construtec-movil-p1.png" alt="Logo Construtec">
+      <div class="header__menu">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+          <img src="/images/icons8-menu-squared-50.png" alt="menu">
+        </label>
+        <nav class="header__menu-options">
+          <ul>
+            <li> <a href="/">Inicio</a></li>
+            <li> <a href="/products.html">Productos</a></li>
+            <li> <a href="/aboutUs.html">Quienes somos</a></li>
+            <li> <a href="/contact.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="contact">
+      <h1 class="contact__title ">Contactanos</h1>
+      <p class="contact__text ">
+        Llámanos, escríbenos, sin ningún compromiso y consulta todas las dudas que puedas tener acerca de nosotros o nuestros softwares. Elige la vía de contacto que prefieras, nosotros estaremos esperándote al otro lado.<br>
+        Cuéntanos lo que necesitas y te responderemos en un plazo máximo de un día, puedes escribirnos directamente a nuestro WhatsApp empresarial.
+      </p>
+      <div class="contact__whatsApp">
+        <a href="http://bit.ly/WhatsAppConstrutec">
+          <article class="contact__whatsApp-card">
+            <span class="contact__whatsApp-imagen"></span>
+            <p class="contact__whatsApp-text">Contactanos via WhatsApp</p>
+          </article>
+        </a>
+      </div>
+      <p class="contact__text">
+        O si prefieres puedes enviarnos un correo a contacto@construtecperu.com o puedes llamarnos directamente al 932001032 o finalmente puedes comunicarte mediante el siguiente formulario de contacto:
+      </p>
+    </section>   
+    <section class="form">
+      <div class="form-contact">
+        <h1 class="contact__title">Formulario de Contacto</h1>
+        <div class="form__container">
+          <label for="" class="form__question">Nombre y apellidos:</label>
+          <input class="form-answer"  type="text">
+          <label for="" class="form__question">Email:</label>
+          <input class="form-answer"  type="text">
+          <label for="" class="form__question">Telefono:</label>
+          <input class="form-answer"  type="text">
+          <label for="" class="form__question">Mensaje:</label>
+          <input class="form-answer form-answer--message"  type="text">
+          <button class="form-button">Enviar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>¿Hablamos en redes?</h2>
+    <p>Quieres contactarnos, te esperamos en redes sociales:</p>
+    <div class="footer-redSocial">
+      <table>
+        <tr>
+          <td class="footer-redSocial-whatsApp"><a href="http://bit.ly/WhatsAppConstrutec" target="_blank"><span></span>WhatsApp</a></td>
+          <td class="footer-redSocial-facebook"><a href="https://www.facebook.com/ConstrutecPeru3" target="_blank"><span></span>Facebook</a></td>
+          <td class="footer-redSocial-youtube"><a href="https://www.youtube.com/channel/UCuquY3djKK46Enk6MNKIulw" target="_blank"><span></span>Youtube</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="autorRight">
+      <p>® Construtec Perú 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
