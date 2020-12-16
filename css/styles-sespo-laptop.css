@@ -18,6 +18,13 @@
     height: 360px;
     background-image:url('/images/banner-sespo-description_web.png') ;
   }
+  .modules__container-cards{
+    justify-content: center;
+  }
+  .modules__card--sespo{
+    border: 2px solid var(--red-construtec);
+    margin: 20px 30px;
+  }
 /*-------------------CPIP MODULES-------------------*/
 
 /*-------------------CPIP FEATURES-------------------*/

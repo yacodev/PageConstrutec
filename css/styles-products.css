@@ -1,33 +1,5 @@
 :root{
-  --space-sections:30px;
-  --space-after-img:20px;
-  --space-after-title:10px;
-  --space-between-text:15px;
-  --space-between-cards:15px;
-  --width-elements:90%;
-  --width-cards:80%;
-  --width-card-buy:190px;
-  --width-botton-buy:150px;
-  --width-card-header:120px;
-  --width-card-button:150px;
-  --width-icon:25px;
-  --width-user:50px;
-  --height-botton-buy:48px;
-  --height-card-header:30px;
-  --height-card-button:48px;
-  --height-car-buy:230px;
-  --height-icon:25px;
-  --height-user:50px;
-  --height-cards:170px;
-  --max-width-card-buy:220px;
-  --max-width-cards:380px;
-  --max-width-container:400px;
-  --min-width-elements: 288px;
-  --font-size__h1 : 2.0rem;
-  --font-size__h2 : 1.6rem;
-  --font-size__text:1.4rem;
-  --line-height__text:1.8rem;
-  --border-radius:10px;
+
   /*-------------*/
   --width-elements-products:80%;
   --height-products-card:490px;
@@ -66,6 +38,14 @@ header{
   font-size: var(--font-size__h2);
   text-align: center;
   color: var(--blue-construtec);
+}
+.product__text{
+  width: var(--width-elements-products);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
 }
 .productos-container{
   display:grid;

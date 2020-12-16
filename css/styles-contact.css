@@ -1,34 +1,4 @@
-:root{
-  --space-sections:30px;
-  --space-after-img:20px;
-  --space-after-title:10px;
-  --space-between-text:15px;
-  --space-between-cards:15px;
-  --width-elements:90%;
-  --width-cards:80%;
-  --width-card-buy:190px;
-  --width-botton-buy:150px;
-  --width-card-header:120px;
-  --width-card-button:150px;
-  --width-icon:25px;
-  --width-user:50px;
-  --height-botton-buy:48px;
-  --height-card-header:30px;
-  --height-card-button:48px;
-  --height-car-buy:230px;
-  --height-icon:25px;
-  --height-user:50px;
-  --height-cards:170px;
-  --max-width-card-buy:220px;
-  --max-width-cards:380px;
-  --max-width-container:400px;
-  --min-width-elements: 288px;
-  --font-size__h1 : 2.0rem;
-  --font-size__h2 : 1.6rem;
-  --font-size__text:1.4rem;
-  --line-height__text:1.8rem;
-  --border-radius:10px;
-}
+
 *{
   box-sizing: border-box;
   margin: 0;
@@ -102,7 +72,6 @@ main{
   border-radius: var(--border-radius);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
   border: 2px solid var(--blue-construtec);
-  cursor:pointer;
 }
 .contact__whatsApp-imagen{
   grid-area:whatsApp;
@@ -126,7 +95,6 @@ main{
   font-weight: bold;
   text-decoration: none;
 }
-
 /*--------------------FORM--------------*/
 .form{
   margin: 0 auto;
