@@ -75,8 +75,10 @@ header{
 }
 /*---------------------MENU-------------------*/
 .header__logo{
+  display: flex;
   grid-area: main-logo;
-  margin-left:20px;
+  margin-left:15px;
+  
 }
 .header__menu{
   grid-area:main-menu;
@@ -168,7 +170,7 @@ footer p{
   width: 25px;
   height: 25px;
   margin: 0 auto;
-  background-image: url("/images/icon-whatsapp-50.png");
+  background-image: url("/images/icons8-whatsapp-48.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -178,7 +180,7 @@ footer p{
   width: 25px;
   height: 25px;
   margin: 0 auto;
-  background-image: url("/images/icon-facebook-50.png");
+  background-image: url("/images/icons8-facebook-48.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -188,7 +190,7 @@ footer p{
   width: 25px;
   height: 25px;
   margin: 0 auto;
-  background-image: url("/images/icon-youtube-50.png");
+  background-image: url("/images/icons8-youtube-squared-48.svg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
