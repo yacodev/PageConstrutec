@@ -1,4 +1,4 @@
-/*---------------------HEADER-------------------*/
+/*---------------------SLIDER-------------------*/
 .header__slider{
   display: grid;
   grid-template-columns: 100%;
@@ -96,7 +96,7 @@
   height: 130px;
   margin: auto;
 }
-/*-------------------SLIDER-------------------*/
+/*-------------------EFECTO-------------------*/
 .slider{
   overflow: hidden;
 }

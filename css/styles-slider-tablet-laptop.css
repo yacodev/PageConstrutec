@@ -1,0 +1,56 @@
+@media screen and (min-width:768px){
+  .header__slider{
+    grid-template: 100px 70px 40px 40px 70px/50% 50% ;
+    grid-template-areas: "title imagen"
+                        "subtitle imagen"
+                        "textQuestion imagen"
+                        "texto imagen"
+                        "button imagen";
+    height: 465px;
+    margin-top: 77px;
+    }
+    .header__slider h1{
+      margin-top: 40px;
+      padding-top:7px;
+      width: 250px;
+      font-size: 2.8rem;
+      line-height: 3.0rem;
+      background:var(--just-white);
+    }
+    .header__slider h2{
+      font-size: 2.2rem;
+      line-height: 2.8rem;
+    }
+    .header__slider-textQuestion{
+      grid-area: textQuestion;
+      Display:block;
+      padding: 0px 20px 0px 20px;
+      font-size: 1.7rem;
+      font-weight: bold;
+      font-weight: 500;
+      line-height: 2.0rem;
+      color: var(--just-white);
+    }
+    .header__slider-text{
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 2.0rem;
+    }
+    .header__slider-imagen{
+      margin-top: 30px;
+      width: 480px;
+      height: 320px;
+      content: url("/images/Imagen-laptop-Cpip-p1.png");
+    }
+    .header__slider-imagenTwo{
+      margin-top: 30px;
+      width: 480px;
+      height: 300px;
+      content: url("/images/SmartPhone-Sespo-web.png");
+    }
+    .header__slider .header__slider-button{
+      position: static;
+      display: block;
+      margin: auto;
+    }
+}

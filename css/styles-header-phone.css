@@ -52,6 +52,7 @@ html{
   font-size: 62.5%;
   font-family: 'DM Sans', sans-serif;
 }
+/*---------------------HEADER-------------------*/
 header{
   position: relative;
   display: flex;
@@ -73,11 +74,11 @@ header{
   padding-right: 20px;
   align-items: center;
 }
-/*---------------------MENU-------------------*/
 .header__logo{
   display: flex;
   grid-area: main-logo;
   margin-left:15px;
+  
   
 }
 .header__menu{
@@ -112,7 +113,6 @@ header{
   padding: 0px;
   list-style: none;
 }
-
 .header__menu-options li a {
   display: block;
   padding: 15px 15px;
