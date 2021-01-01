@@ -371,6 +371,7 @@ grid-area: description-cpip;
   max-width: var(--max-width-container);
   height: auto;
   margin: 0 auto;
+  padding: 30px;
 }
 .opinion__card{
   width: var(--width-cards);

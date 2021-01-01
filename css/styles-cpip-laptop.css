@@ -5,9 +5,9 @@
     --width-icon-web:50px;
     --height-icon-web:50px;
     --width-elements-web:80%;
-    --width-video-web:600px;
-    --height-video-web:343px;
-    --width-videoTutorials-web:450px;
+    --width-video-web:560px;
+    --height-video-web:315px;
+    --width-videoTutorials-web:456px;
     --height-videoTutorials-web:260px;
   }
   .description{
@@ -30,6 +30,7 @@
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
+    padding: 20px;
   }
   .modules__card{
     width: var(--width-cards-web);
@@ -107,7 +108,7 @@
     width: var(--width-videoTutorials-web);
     height: var(--height-videoTutorials-web);
   }
-  .tutorials__video video{
+  .tutorials__video iframe{
     width: var(--width-videoTutorials-web);
     height: var(--height-videoTutorials-web);
   }

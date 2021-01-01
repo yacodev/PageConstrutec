@@ -7,8 +7,8 @@
     --width-elements-web:80%;
     --width-video-tablet:350px;
     --height-video-tablet:192px;
-    --width-videoTutorials-tablet:300px;
-    --height-videoTutorials-tablet:172px;
+    --width-videoTutorials-tablet:350px;
+    --height-videoTutorials-tablet:192px;
   }
   .description{
     grid-template-columns: 40% 60%;
@@ -101,7 +101,7 @@
     width: var(--width-videoTutorials-tablet);
     height: var(--height-videoTutorials-tablet);
   }
-  .tutorials__video video{
+  .tutorials__video iframe{
     width: var(--width-videoTutorials-tablet);
     height: var(--height-videoTutorials-tablet);
   }
