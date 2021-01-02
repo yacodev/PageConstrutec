@@ -180,14 +180,14 @@ main{
   margin-left:20px;
   text-align: start;
 }
-.form-answer{
+.form__answer{
   width: 90%;
   height: 40px;
   margin-left: 20px;
   border-radius: var(--border-radius);
   border:none;
 }
-.form-button{
+.form__button{
   width: 50%;
   height: 40px;
   margin: 20px auto;
@@ -199,7 +199,7 @@ main{
   background-color: var(--blue-construtec);
   cursor: pointer;
 }
-.form-answer--message{
+.form__answer--message{
   height: 100px;
 }
 
