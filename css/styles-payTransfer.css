@@ -1,0 +1,76 @@
+.pay__transfer-bank{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "nacion" 
+                        "interbank"
+                        "bbva"
+                        "bcp";
+  width: 90%;
+  height: auto;
+  margin: 20px auto 0px auto;
+}
+
+.bank{
+  width: 90%;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  padding-bottom: 20px;
+  text-align: center;
+}
+.bank-nacion{
+  grid-area: nacion,
+}
+.bank-interbank{
+  grid-area:interbank,
+}
+.bank-bbva{
+  grid-area:bbva,
+}
+.bank-bcp{
+  grid-area:bcp,
+}
+.pay__transfer-contact{
+  width: 100%;
+  padding-bottom: 20px;
+}
+.pay__transfer-contact p {
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.contact__whatsApp-card{
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "whatsApp textWhatsApp";
+  width: var(--width-cards);
+  max-width: var(--max-width-cards);
+  height: 60px;
+  margin:var(--space-between-cards) auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.contact__whatsApp-imagen{
+  grid-area:whatsApp;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/icon-contact-whatsapp-160.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__whatsApp-text{
+  grid-area:textWhatsApp;
+  margin: auto auto auto 0px;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+} 

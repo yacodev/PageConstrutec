@@ -1,22 +1,4 @@
-*{
-  box-sizing: bclient-box;
-  margin: 0;
-  padding: 0;
-}
-html{
-  font-size: 62.5%;
-  font-family: 'DM Sans', sans-serif;
-}
-header{
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 100%;
-  min-width: 320px;
-  height: 50px;
-  text-align: center;
-}
+
 main{
   width: 100%;
   height: auto;
@@ -27,7 +9,7 @@ main{
   width: 100%;
   min-width: 320px;
   height: auto;
-   padding-top: var(--space-sections);
+  padding-top: var(--space-sections);
 }
 .client__title{
   width: var(--width-elements);
@@ -40,181 +22,271 @@ main{
   color: var(--blue-construtec);
 }
 .client__text{
-    width: var(--width-elements);
-    font-size: var(--font-size__text);
-    line-height: var(--line-height__text);
-    color: var(--black);
-    margin: 0 auto;
-    margin-bottom: var(--space-between-text);
-    text-align: center;
-  }
-  .form{
-    margin: 0 auto;
-    height: auto;
-    padding-bottom: var(--space-sections);
-  }
-  .form__client{
-    display: block;
-    width: var(--width-cards);
-    min-width: var(--min-width-elements);
-    max-width: var(--max-width-cards);
-    height: auto;
-    margin:var(--space-between-cards) auto;
-  }
-  .form h2{
-    width: var(--width-elements);
-    min-width: var(--min-width-elements);
-    height: auto;
-    padding-left: 0px;
-    margin-bottom: var(--space-after-title);
-    font-size: var(--font-size__h2);
-  }
-  .form__container{
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-areas: "information-required" 
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+.form{
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: var(--space-sections);
+}
+.form__client{
+  display: block;
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: auto;
+  margin:var(--space-between-cards) auto;
+}
+.form h2{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-left: 0px;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h2);
+}
+.form__container{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "information-required" 
                           "information-optional";
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    border: 2px solid var(--blue-construtec);
-  }
-  .form__information-required{
-    display: flex;
-    flex-direction: column;
-    grid-area: information-required;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.form__information-required{
+  display: flex;
+  flex-direction: column;
+  grid-area: information-required;
+}
+.form__question{
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  margin-top:20px;
+  margin-bottom: 5px;
+  margin-left:20px;
+  text-align: start;
+}
+.form__question span{
+  color:var(--red-construtec);
+}
+.form__answer{
+  width: 90%;
+  height: 30px;
+  margin-left: 20px;
+  border: 1px solid #666;
+}
+.form__answer-special{
+  width: 90%;
+  height: 30px;
+  margin-left: 20px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.form__informatio-optional{
+  grid-area: information-optional;
+}
+.form__informatio-optional p{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-left: 20px;
+  margin-top: var(--space-between-text);
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h2);
+}
+.form-answer--message{
+  height: 100px;
+  margin-bottom: var(--space-after-title);
+}
+/*----------------ORDER----------------------------*/
+.order{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-bottom: var(--space-sections);
+}
+.order__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-left: 0px;
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h2);
+}
+.order__description{
+  width: 70%;
+  min-width: 230px;
+  max-width: var(--max-width-cards);
+  height: auto;
+  margin:0 auto;
+  border-collapse: collapse;
+  border:var(--grey) 1px solid;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.order__description tr{
+  border:var(--grey) 0.5px solid;
+  height: 50px;
+}
+.order__description td{
+  padding-left:20px;
+}
+.order__description span{
+  color: var(--red-construtec);
+}
+/*----------------PAY----------------------------*/
+.pay{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-bottom: var(--space-sections);
+}
+.pay__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-left: 0px;
+  margin:0 auto;
+  text-align: center;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h2);
+}
+.pay__container{
+  display: flex;
+  flex-direction: column;
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  background-color: #ebe9eb;
+  margin:var(--space-between-cards) auto;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+/*----------------SELECT OPTION PAY---------------------------*/
+/*-------------------------------------------*/
 
-  }
-  .form__question{
-    font-size: var(--font-size__h2);
-    line-height: var(--line-height__text);
-    margin-top:20px;
-    margin-bottom: 5px;
-    margin-left:20px;
-    text-align: start;
-  }
-  .form__question span{
-    color:var(--red-construtec);
-  }
-  .form__answer{
-    width: 90%;
-    height: 30px;
-    margin-left: 20px;
-    border: 1px solid #666;
-  }
-  .form__answer-special{
-    width: 90%;
-    height: 30px;
-    margin-left: 20px;
-    font-size: var(--font-size__text);
-    line-height: var(--line-height__text);
-  }
-  .form__informatio-optional{
-    grid-area: information-optional;
-  }
-  .form__informatio-optional p{
-    width: var(--width-elements);
-    min-width: var(--min-width-elements);
-    height: auto;
-    padding-left: 20px;
-    margin-top: var(--space-between-text);
-    margin-bottom: var(--space-after-title);
-    font-size: var(--font-size__h2);
-  }
-  .form-answer--message{
-    height: 100px;
-    margin-bottom: var(--space-after-title);
-  }
-  /*----------------ORDER----------------------------*/
-  .order{
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding-bottom: var(--space-sections);
-  }
-  .order__title{
-    width: var(--width-elements);
-    min-width: var(--min-width-elements);
-    height: auto;
-    padding-left: 0px;
-    margin:0 auto;
-    text-align: center;
-    margin-bottom: var(--space-after-title);
-    font-size: var(--font-size__h2);
-  }
-  .order__description{
-    width: 70%;
-    min-width: 230px;
-    max-width: var(--max-width-cards);
-    height: auto;
-    margin:0 auto;
-    border-collapse: collapse;
-    border:var(--grey) 1px solid;
-    font-size: var(--font-size__text);
-    line-height: var(--line-height__text);
-  }
-  .order__description tr{
-    border:var(--grey) 0.5px solid;
-    height: 50px;
-  }
-  .order__description td{
-    padding-left:20px;
-  }
-  .order__description span{
-    color: var(--red-construtec);
-  }
-  /*----------------PAY----------------------------*/
-  .pay{
-    width: 100%;
-    min-width: 320px;
-    height: auto;
-    padding-bottom: var(--space-sections);
-  }
-  .pay__title{
-    width: var(--width-elements);
-    min-width: var(--min-width-elements);
-    height: auto;
-    padding-left: 0px;
-    margin:0 auto;
-    text-align: center;
-    margin-bottom: var(--space-after-title);
-    font-size: var(--font-size__h2);
-  }
-  .pay__container{
-    display: flex;
-    flex-direction: column;
-    width: var(--width-cards);
-    min-width: var(--min-width-elements);
-    max-width: var(--max-width-cards);
-    border-radius: var(--border-radius);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-    background-color: #ebe9eb;
-    margin:var(--space-between-cards) auto;
-    padding-left:20px;
-    font-size: var(--font-size__text);
-    line-height: var(--line-height__text);
-  }
-
-  .checkbox-round {
-    width: 1.3em;
-    height: 1.3em;
-    background-color: white;
-    border-radius: 50%;
-    vertical-align: middle;
-    border: 1px solid #ddd;
-    -webkit-appearance: none;
-    outline: none;
-    cursor: pointer;
+.pay__option{
+  margin: 10px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  font-weight: bold;
 }
 
-.checkbox-round:checked {
-  background-color:var(--blue-construtec);
-  width: 1.3em;
-  height: 1.3em;
+.pay__option-description{
+  width: 90%;
+  height: auto;
+  border: #dfdcde 2px solid;
+  border-radius: var(--border-radius);
+  margin-left:20px;
+  padding-bottom:10px;
 }
-.pay__option-information{
-  background-color:#dfdcde;
+.pay__option-description > p{
+  margin:5px auto;
+  padding:10px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+
+.pay__option-banks{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "nacion" 
+                        "interbank"
+                        "bbva" 
+                        "bcp";
+  width: 90%;
+  height: auto;
+  margin: 5px auto 0px auto;
+}
+
+.bank-nacion{
+  grid-area: nacion;
+  width:140px;
+  height: 35px;
+  margin: 5px auto;
+}
+.bank-interbank{
+  grid-area:interbank;
+  width:140px;
+  height: 35px;
+  margin:5px auto;
+}
+.bank-bbva{
+  grid-area:bbva;
+  width:140px;
+  height: 35px;
+  margin:5px auto;
+}
+.bank-bcp{
+  grid-area:bcp;
+  width:90px;
+  height: 35px;
+  margin:5px auto;
+}
+
+.option__credit-card{
+  display: flex;
+  width:124px;
+  height: 35px;
+  margin:5px auto;
+}
+.option__yape{
+  display: flex;
+  width:41px;
+  height: 50px;
+  margin:5px auto;
+}
+
+/*----------------TERM AND CONDITIONS---------------------------*/
+.term__condtions{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  margin:var(--space-between-cards) auto;
+}
+.term__condtions-text{
+  display:inline;
+}
+/*----------------PAY BUTTON---------------------------*/
+
+.pay_deposit{
   display: none;
 }
-#btn-buy:checked ~ .pay__option-information{
+.pay_transfer{
+  display: none;
+}
+.pay_yape{
+  display: none;
+}
+
+.button_pay{
+  width: 50%;
+  height: 40px;
+  margin: 20px auto;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--blue-construtec);
+  cursor:pointer;
+}
+
+#btn-deposit:checked .pay_deposit{
   display: block;
 }

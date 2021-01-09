@@ -118,24 +118,112 @@
       </table>
     </section>
     <section class="pay">
-      <h2 class="pay__title">Metodos de pago</h2>
+      <h2 class="pay__title">Seleccione un Metodo de pago</h2>
       <div class="pay__container">
-        <div>
-          <input class="pay__option checkbox-round " type="checkbox" id="btn-buy">Transferencia bancaria directa
-          <div class="pay__option-information">
-            <p>Puedes realizar el pago en una de nuestras siguientes cuentas bancarias y nos envias la foto del comprobante </p>
+        <div class="pay__option-deposit">
+          <div class="pay__option">
+            <input " type="radio" name="checkbox" id="check-deposit" value="1" onchange="javascript:showContent('deposit')">
+            <span>Deposito bancario</span> 
+          </div>
+          <div class="pay__option-description">
+            <p>Puedes pagar con deposito o transferencia bancaria, tenemos cuentas en los siguientes bancos:</p>
+            <div class="pay__option-banks">
+              <img class="bank-nacion" src="./images/banco_nacion.png" alt="banco de la nacion">
+              <img class="bank-interbank" src="./images/banco_interbank.png" alt="Interbank">
+              <img class="bank-bbva" src="./images/banco_bbva.png" alt="BBVA">
+              <img class="bank-bcp" src="./images/banco_bcp.png" alt="BCP">
+            </div>
           </div>
         </div>
-        <div>
-          <input class="pay__option checkbox-round " type="checkbox" id="btn-buy">Tarjeta de credito/debito
-          <div class="pay__option-information">
-            <p>Puedes realizar el pago mediante tu tarjeta de credito y/o debito a través de la plataforma de pagos Culqi</p>
+        <div class="pay__option-credi-card">
+          <div class="pay__option">
+            <input type="radio" name="checkbox" id="check-transfer" value="1" onchange="javascript:showContent('card')">
+            <span>Tarjeta de credito/debito</span> 
           </div>
+          <div class="pay__option-description">
+            <p>Puedes realizar el pago mediante tu tarjeta de credito y/o debito a través de la plataforma de pagos Culqi</p>
+            <img class="option__credit-card" src="./images/credit_card.png" alt="tarjeta de credito">
+          </div>
+        </div>
+        <div class="pay__option-yape">
+          <div class="pay__option">
+            <input  type="radio" name="checkbox" id="check-yape" value="1" onchange="javascript:showContent('yape')"> 
+            <span>Mediante Yape</span> 
+          </div>
+          <div class="pay__option-description">
+            <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionamremos</p>
+            <img class="option__yape" src="./images/yape.png" alt="yape" >
+          </div>
+        </div>
+      </div>
+      <div class="term__condtions">
+        <p> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
+        <div class="term__condtions-text">
+          <input class="checkbox-round " type="checkbox" id="check-term-condition" required>
+          <span>He leído y estoy de acuerdo con los términos y condiciones de la web *</span>
+        </div>
+      </div>
+      <div>
+        <div class="pay_deposit" id="pay_deposit">
+          <button class="button_pay"> Realzar pedido</button>
+        </div>
+        <div class="pay_transfer" id="pay_transfer">
+          <button type="button" id="buyButton" data-product="Software CPIP" data-price=10000 class="button_pay">Pagar</button>
+        </div>
+        <div class="pay_yape" id="pay_yape">
+          <button class="button_pay"> Pagar con  yape</button>
         </div>
       </div>
     </section>
   </main>
-  <button type="button" id="buyButton" data-product="Software CPIP" data-price=10000>Pagar</button>
+  <script type="text/javascript">
+    function showContent(option) {
+        this.checkOption = option;
+        elementDeposit = document.getElementById("pay_deposit");
+        checkDeposit = document.getElementById("check-deposit");
+        elementTransfer = document.getElementById("pay_transfer");
+        checkTransfer = document.getElementById("check-transfer");
+        elementYape = document.getElementById("pay_yape");
+        checkYape = document.getElementById("check-yape");
+        switch (this.checkOption){
+          case 'deposit':
+            console.log('opcion 1');
+            if (checkDeposit.checked) {
+              elementDeposit.style.display='block';
+              elementTransfer.style.display='none';
+              elementYape.style.display='none';
+              }
+            else {
+              elementDeposit.style.display='none';
+            }
+            break;
+          case 'card':
+            console.log('opcion 2');
+            if (checkTransfer.checked) {
+              elementTransfer.style.display='block';
+              elementDeposit.style.display='none';
+              elementYape.style.display='none';
+              }
+            else {
+              elementTransfer.style.display='none';
+            }
+            break;
+          case 'yape':
+            console.log('opcion 3');
+            if (checkYape.checked) {
+              elementDeposit.style.display='none';
+              elementYape.style.display='block';
+              elementTransfer.style.display='none';
+              }
+            else {
+              elementYape.style.display='none';
+            }
+            break;
+        } 
+        
+        
+    }
+  </script>
   <script>
     Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
     var product = "";
@@ -172,6 +260,21 @@
     }
   };
   </script>
-  
+  <footer>
+    <h2>¿Hablamos en redes?</h2>
+    <p>Quieres contactarnos, te esperamos en redes sociales:</p>
+    <div class="footer-redSocial">
+      <table>
+        <tr>
+          <td class="footer-redSocial-whatsApp"><a href="http://bit.ly/WhatsAppConstrutec" target="_blank"><span></span>WhatsApp</a></td>
+          <td class="footer-redSocial-facebook"><a href="https://www.facebook.com/ConstrutecPeru3" target="_blank"><span></span>Facebook</a></td>
+          <td class="footer-redSocial-youtube"><a href="https://www.youtube.com/channel/UCuquY3djKK46Enk6MNKIulw" target="_blank"><span></span>Youtube</a></td>
+        </tr>
+      </table>
+    </div>
+    <div class="autorRight">
+      <p>® Construtec Perú 2020</p>
+    </div>
+  </footer>
 </body>
 </html>
