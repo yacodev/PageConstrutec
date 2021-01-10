@@ -29,7 +29,7 @@
     max-width: var(--width-elements-web);
   }
   .order__description{
-    width: 95%;
+    width: 96%;
     max-width: 100%;
     padding-left:var(--space-left-seller);
   }

@@ -166,7 +166,7 @@ main{
   line-height: var(--line-height__text);
 }
 .order__description tr{
-  border:var(--grey) 0.5px solid;
+  border:var(--grey) 1px solid;
   height: 50px;
 }
 .order__description td{

@@ -1,0 +1,58 @@
+@media screen and (min-width:768px){
+  :root{
+    --width-cards-web:230px;
+    --height-cards-web:300px;
+    --width-icon-web:50px;
+    --height-icon-web:50px;
+    --width-elements-web:80%;
+    --width-video-tablet:350px;
+    --height-video-tablet:192px;
+    --width-videoTutorials-tablet:300px;
+    --height-videoTutorials-tablet:172px;
+  }
+
+  .detailsBuy{
+    padding-top:100px;
+  }
+  .detailsBuy__title {
+    width: var(--width-elements-web);
+  }
+  .details__container{
+    width: var(--width-elements-web);
+  }
+  .details__description{
+    max-width: 100%;
+  }
+  .instructions{
+    width: var(--width-elements-web);
+  }
+  .pay__deposit-banks{
+    margin:10px 0px;
+    width: 100%;
+  }
+  .pay__deposit-banks{
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "nacion interbank" 
+                        "bbva bcp"; 
+  }
+  .bank__container{
+    margin:0px;
+    width:100%;
+    max-width: 100%;
+  }
+  .contact{
+    width: var(--width-elements-web);
+  }
+  .contact__whatsApp{
+    width: var(--width-elements-web);
+  }
+  .order__container{
+    width: var(--width-elements-web);
+    max-width: var(--width-elements-web);
+  }
+  .order__description{
+    width: 96%;
+    max-width: 100%;
+    padding-left:var(--space-left-seller);
+  }
+}

@@ -3,38 +3,138 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Finalizar compra - Construtec</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/construtec.ico">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles-header-phone.css">
+  <link rel="stylesheet" href="./css/styles-header-tablet-laptop.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/styles-payTransfer-phone.css">
+  <link rel="stylesheet" href="./css/styles-payTransfer-tablet-laptop.css" media="(min-width: 768px)">
 </head>
 <body>
-  
-  <div class="pay__transfer-bank">
-    <div class="bank bank-nacion">
-      <img src="" alt="Banco del Nacion">
-      <p> Banco de la Nación</p>
-      <p>04-066-262419</p>
+  <header>
+    <div class="header">
+      <a href="index.html" class="header__logo">
+        <img  src="./images/Logo-construtec-movil-p1.png" alt="Logo Construtec">
+      </a>
+      <div class="header__menu">
+        <input type="checkbox" id="btn-menu">
+        <label for="btn-menu">
+          <img src="/images/icons8-menu-squared-50.png" alt="menu">
+        </label>
+        <nav class="header__menu-options">
+          <ul>
+            <li> <a href="/">Inicio</a></li>
+            <li> <a href="/products.html">Productos</a></li>
+            <li> <a href="/aboutUs.html">Quienes somos</a></li>
+            <li> <a href="/contact.html">Contactanos</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="bank bank-interbank ">
-      <img src="" alt="Interbank">
-      <p> Banco Interbank</p>
-      <p>426-3089379936</p>
+  </header>
+  <main>
+    <section class="detailsBuy">
+      <div class="detailsBuy__title">
+        <h1>Finalizar compra</h1>
+      </div>
+      <div class="details__container">
+        <p>Gracias, tu pedido ha sido recibido</p>
+        <table class="details__description">
+          <tr>
+            <th>Fecha</th>
+            <th>Total</th>
+            <th>Metod de pago</th>
+          </tr>
+          <tr>
+            <td> 10 de enero del 2021</td>
+            <td> S/. 1000</td>
+            <td> Deposito a cuenta bancaria</td>
+          </tr>
+        </table>
+      </div>
+      <div class="instructions">
+        <h2> Sigue las siguientes instrucciones:</h2>
+        <ol class="instructions__list">
+          <li>Realiza el deposito a una de las siguientes cuentas:</li>
+          <div class="pay__deposit-banks">
+            <div class="bankNacion bank__container">
+              <img class="bankNacion__icon bank" src="./images/banco_nacion.png" alt="banco de la nacion">
+              <p> Numero de cuenta:</p>
+              <p>04-066-262419</p>
+            </div>
+            <div class="bankInterbank bank__container">
+              <img class="bankInterbank__icon bank" src="./images/banco_interbank.png" alt="Interbank">
+              <p> Numero de cuenta:</p>
+              <p>426-3089379936</p>
+            </div>
+            <div class="bankBbva bank__container">
+              <img class="bankBbva__icon bank" src="./images/banco_bbva.png" alt="BBVA">
+              <p>Numero de cuenta:</p>
+              <p>0011-0200-0201080123</p>
+            </div>
+            <div class="bankBcp bank__container">
+              <img class="bankBcp__icon bank" src="./images/banco_bcp.png" alt="BCP">
+              <p>Numero de cuenta:</p>
+              <p>04-066-262419</p>
+            </div>
+          </div>
+          <li> Luego de realizar el deposito nos envias el voucher a nuestro WhatsApp (+5184658811), para que nuestro servicio al cliente pueda tramitar tu pedido:</li>
+          <div class="contact">
+            <article class="contact__whatsApp-card">
+              <span class="contact__whatsApp-imagen"></span>
+              <p class="contact__whatsApp-text">Contactanos via WhatsApp</p>
+            </article>
+          </div>
+          <li>En  24 horas te enviaremos el software y los videotutorales,  al correo que nos proporcionaste</li>
+        </ol>
+      </div>
+    </section>
+    <section class="order">
+      <div class="order__container">
+        <h2 class="order__title">Tu pedido es:</h2>
+        <table class="order__description">
+          <tr>
+            <th>Producto</th>
+            <th>Monto</th>
+          </tr>
+          <tr>
+            <td>Software CPIP (Control de proyectos de inversión)</td>
+            <td>S/. 100.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Detalles: <br>
+                Usted esta adquiriendo la licencia de por vida.
+              </span> 
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>S/.100.00</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h2>¿Hablamos en redes?</h2>
+    <p>Quieres contactarnos, te esperamos en redes sociales:</p>
+    <div class="footer-redSocial">
+      <table>
+        <tr>
+          <td class="footer-redSocial-whatsApp"><a href="http://bit.ly/WhatsAppConstrutec" target="_blank"><span></span>WhatsApp</a></td>
+          <td class="footer-redSocial-facebook"><a href="https://www.facebook.com/ConstrutecPeru3" target="_blank"><span></span>Facebook</a></td>
+          <td class="footer-redSocial-youtube"><a href="https://www.youtube.com/channel/UCuquY3djKK46Enk6MNKIulw" target="_blank"><span></span>Youtube</a></td>
+        </tr>
+      </table>
     </div>
-    <div class="bank bank-bbva">
-      <img src="" alt="BBVA">
-      <p>BBVA</p>
-      <p>0011-0200-0201080123</p>
+    <div class="autorRight">
+      <p>® Construtec Perú 2020</p>
     </div>
-    <div class="bank bank-bcp">
-      <img src="" alt="Banco del credito Peru">
-      <p>BCP</p>
-      <p>04-066-262419</p>
-    </div>
-  </div>
-  <div class="pay__transfer-contact">
-    <p>Luego de realizar el deposito nos envias el voucher a nuestro WhatsApp, para que nuestro servicio al cliente pueda tramitar tu pedido:</p>
-    <article class="contact__whatsApp-card">
-      <span class="contact__whatsApp-imagen"></span>
-      <p class="contact__whatsApp-text">Contactanos via WhatsApp</p>
-    </article>
-  </div>
+  </footer>
+
 </body>
 </html>

@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finalizar compra</title>
+  <title>Finalizar compra-construtec</title>
+  <link rel="shortcut icon" type="image/x-icon" href="./images/construtec.ico">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles-header-phone.css">
   <link rel="stylesheet" href="./css/styles-header-tablet-laptop.css" media="(min-width: 768px)">
@@ -117,8 +118,8 @@
             <td>Total</td>
             <td>S/.100.00</td>
           </tr>
+        </table>
       </div>
-      </table>
     </section>
     <section class="pay">
         <h2 class="pay__title">Seleccione tu método de pago:</h2>
@@ -284,7 +285,7 @@
       </table>
     </div>
     <div class="autorRight">
-      <p>® Construtec Perú 2020</p>
+      <p>® Construtec Perú 2021</p>
     </div>
   </footer>
 </body>

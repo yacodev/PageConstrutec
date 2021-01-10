@@ -1,0 +1,241 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+}
+/*-------------------CPIP DETAILS BUY-------------------*/
+main{
+  width: 100%;
+  height: auto;
+  background-color: var(--just-white);
+}
+.detailsBuy{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+}
+.detailsBuy__title {
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:0 auto;
+}
+.detailsBuy__title h1{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec)
+}
+.details__container{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:0 auto;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.details__description{
+  max-width: var(--max-width-cards);
+  height: auto;
+  margin:10px auto;
+  border-collapse: collapse;
+  border:var(--grey) 1px dashed;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.details__description tr{
+  border:var(--grey) 1px dashed;
+  height: 50px;
+}
+.details__description th td{
+  border:var(--grey) 1px dashed;
+}
+.details__description td{
+  padding-left:20px;
+}
+/*-------------------CPIP INSTRUCTIONS BUY-------------------*/
+.instructions{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  margin: 0 auto;
+}
+.instructions__list{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:10px auto;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.pay__deposit-banks{
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-areas: "nacion" 
+                        "interbank"
+                        "bbva" 
+                        "bcp";
+  width: 90%;
+  height: auto;
+  margin: 5px auto 10px auto;
+}
+.bank__container{
+  width: 90%;
+  max-width: var(--max-width-cards);
+  margin: 0 auto;
+  border:var(--grey) 1px dashed;
+}
+.bank ~p{
+  text-align: center;
+}
+.bankNacion{
+  grid-area: nacion;
+}
+.bankNacion__icon{
+  display: flex;
+  width:140px;
+  height: 35px;
+  margin: 5px auto;
+  
+}
+.bankInterbank{
+  grid-area:interbank;
+}
+.bankInterbank p{
+  margin: 0 auto;
+}
+.bankInterbank__icon{
+  display: flex;
+  width:140px;
+  height: 35px;
+  margin:5px auto;
+}
+.bankBbva{
+  grid-area:bbva;
+}
+.bankBbva__icon{
+  display: flex;
+  width:140px;
+  height: 35px;
+  margin:5px auto;
+}
+.bankBcp{
+  grid-area:bcp;
+}
+.bankBcp__icon{
+  display: flex;
+  width:70px;
+  height: 35px;
+  margin:5px auto;
+}
+.contact{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  margin: 0 auto;
+}
+.contact__whatsApp{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact__whatsApp-card{
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "whatsApp textWhatsApp";
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: 60px;
+  margin:0 auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.contact__whatsApp-imagen{
+  grid-area:whatsApp;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/icon-contact-whatsapp-160.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.contact__whatsApp-text{
+  grid-area:textWhatsApp;
+  margin: auto auto auto 0px;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+}
+/*------------------------ORDER----------------------------*/
+.order{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-bottom: var(--space-sections);
+}
+.order__container{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+
+  margin: 0 auto;
+}
+.order__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  padding-left: var(--space-left-seller);
+  padding-bottom:10px;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+}
+.order__description{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: auto;
+  margin:0 auto;
+  padding-left:var(--space-left-seller);
+  border-collapse: collapse;
+  border:var(--grey) 1px solid;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.order__description tr{
+  border:var(--grey) 1px solid;
+  height: 50px;
+}
+.order__description td{
+  padding-left:20px;
+}
+.order__description span{
+  color: var(--red-construtec);
+}
