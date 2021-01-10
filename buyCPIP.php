@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="./css/styles-header-phone.css">
   <link rel="stylesheet" href="./css/styles-header-tablet-laptop.css" media="(min-width: 768px)">
   <link rel="stylesheet" href="./css/styles-buy.css">
+  <link rel="stylesheet" href="./css/styles-buy-tablet-laptop.css" media="(min-width: 769px)">
   <script type="text/javascript" src="./jquery/jQuery.js"></script>
   <script src="https://checkout.culqi.com/js/v3"></script>
 </head>
@@ -37,9 +38,9 @@
     <section class="client">
       <h1 class="client__title"> Realizar pedido</h1>
       <p class="client__text"> Para realizar un pedido necesitamos que llenes el siguiente formulario y selecciones el método de pago correspondiente.</p>
-      <form action="" class="form">
+      <form  class="form" id="form_sale" action="" >
         <div class="form__client">
-          <h2>Detalles de facturación:</h2>
+          <h2 class="form__title">Detalles de facturación:</h2>
           <div class="form__container">
             <div class="form__information-required">
               <label class="form__question" for="">Nombres y Apellidos: <span>(*)</span></label>
@@ -47,7 +48,7 @@
               <label class="form__question" for="">País: <span>(*)</span></label>
               <label class="form__answer-special" for="">Perú</label>
               <label class="form__question" for="">Región:<span>(*)</span></label>
-              <select class="form__answer" name="Departamento" onchange="cambia()" class="form-control" required="">
+              <select class="form__answer" name="Departamento" class="form-control" required="">
                 <option value="">Seleccione</option>
                 <option value="Amazonas">Amazonas</option>
                 <option value="Ancash">Ancash</option>
@@ -82,96 +83,104 @@
               <label class="form__question" for="">Dirección de correo electrónico:<span>*</span></label>
               <input class="form__answer" name="mail"type="mail" required>
             </div>
-            <div class="form__informatio-optional">
+            <div class="form__information-optional">
               <p>Información adicional</p>
               <label class="form__question" for="">Nota del pedido(opcional):</label>
-              <textarea class="form__answer form-answer--message"  type="text" name="message" id="message" placeholder="Nota sobre tu pedido, nota especial"></textarea>
+              <textarea class="form__answer form-answer--message"  type="text" name="message" id="message" placeholder="Algo en particular que quieras comentarnos sobre tu pedido."></textarea>
             </div>
           </div>
         </div>
       </form>
     </section>
     <section class="order">
-      <h2 class="order__title">Tu pedido</h2>
-      <table class="order__description">
-        <tr>
-          <th>Producto</th>
-          <th>Monto</th>
-        </tr>
-        <tr>
-          <td>Software CPIP (Control de proyectos de inversión)</td>
-          <td>S/. 100.00</td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Detalles: <br>
-              Usted esta adquiriendo la licencia de por vida.
-            </span> 
-          </td>
-          <td></td>
-        </tr>
-        <tr>
-          <td>Total</td>
-          <td>S/.100.00</td>
-        </tr>
+      <div class="order__container">
+        <h2 class="order__title">Tu pedido:</h2>
+        <table class="order__description">
+          <tr>
+            <th>Producto</th>
+            <th>Monto</th>
+          </tr>
+          <tr>
+            <td>Software CPIP (Control de proyectos de inversión)</td>
+            <td>S/. 100.00</td>
+          </tr>
+          <tr>
+            <td>
+              <span>
+                Detalles: <br>
+                Usted esta adquiriendo la licencia de por vida.
+              </span> 
+            </td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td>S/.100.00</td>
+          </tr>
+      </div>
       </table>
     </section>
     <section class="pay">
-      <h2 class="pay__title">Seleccione un Metodo de pago</h2>
-      <div class="pay__container">
-        <div class="pay__option-deposit">
-          <div class="pay__option">
-            <input " type="radio" name="checkbox" id="check-deposit" value="1" onchange="javascript:showContent('deposit')">
-            <span>Deposito bancario</span> 
-          </div>
-          <div class="pay__option-description">
-            <p>Puedes pagar con deposito o transferencia bancaria, tenemos cuentas en los siguientes bancos:</p>
-            <div class="pay__option-banks">
-              <img class="bank-nacion" src="./images/banco_nacion.png" alt="banco de la nacion">
-              <img class="bank-interbank" src="./images/banco_interbank.png" alt="Interbank">
-              <img class="bank-bbva" src="./images/banco_bbva.png" alt="BBVA">
-              <img class="bank-bcp" src="./images/banco_bcp.png" alt="BCP">
+        <h2 class="pay__title">Seleccione tu método de pago:</h2>
+      <div class="pay__options">
+        <div class="pay__container">
+          <div class="pay__option-deposit">
+            <div class="pay__option-check">
+              <input " type="radio" name="checkbox" id="check-deposit" value="1" onchange="javascript:showContent('deposit')">
+              <span>Deposito bancario</span> 
+            </div>
+            <div class="pay__option-description">
+              <p>Puedes pagar con deposito o transferencia bancaria, tenemos cuentas en los siguientes bancos:</p>
+              <div class="pay__option-banks">
+                <img class="bank-nacion" src="./images/banco_nacion.png" alt="banco de la nacion">
+                <img class="bank-interbank" src="./images/banco_interbank.png" alt="Interbank">
+                <img class="bank-bbva" src="./images/banco_bbva.png" alt="BBVA">
+                <img class="bank-bcp" src="./images/banco_bcp.png" alt="BCP">
+              </div>
             </div>
           </div>
-        </div>
-        <div class="pay__option-credi-card">
-          <div class="pay__option">
-            <input type="radio" name="checkbox" id="check-transfer" value="1" onchange="javascript:showContent('card')">
-            <span>Tarjeta de credito/debito</span> 
+          <div class="pay__option-credi-card">
+            <div class="pay__option-check">
+              <input type="radio" name="checkbox" id="check-transfer" value="1" onchange="javascript:showContent('card')">
+              <span>Tarjeta de credito/debito</span> 
+            </div>
+            <div class="pay__option-description">
+              <p>Puedes realizar el pago mediante tu tarjeta de credito y/o debito a través de la plataforma de pagos Culqi</p>
+              <img class="option__credit-card" src="./images/credit_card.png" alt="tarjeta de credito">
+            </div>
           </div>
-          <div class="pay__option-description">
-            <p>Puedes realizar el pago mediante tu tarjeta de credito y/o debito a través de la plataforma de pagos Culqi</p>
-            <img class="option__credit-card" src="./images/credit_card.png" alt="tarjeta de credito">
-          </div>
-        </div>
-        <div class="pay__option-yape">
-          <div class="pay__option">
-            <input  type="radio" name="checkbox" id="check-yape" value="1" onchange="javascript:showContent('yape')"> 
-            <span>Mediante Yape</span> 
-          </div>
-          <div class="pay__option-description">
-            <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionamremos</p>
-            <img class="option__yape" src="./images/yape.png" alt="yape" >
+          <div class="pay__option-yape">
+            <div class="pay__option-check">
+              <input  type="radio" name="checkbox" id="check-yape" value="1" onchange="javascript:showContent('yape')"> 
+              <span>Mediante Yape</span> 
+            </div>
+            <div class="pay__option-description">
+              <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionamremos</p>
+              <img class="option__yape" src="./images/yape.png" alt="yape" >
+            </div>
           </div>
         </div>
       </div>
       <div class="term__condtions">
-        <p> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra política de privacidad.</p>
-        <div class="term__condtions-text">
-          <input class="checkbox-round " type="checkbox" id="check-term-condition" required>
-          <span>He leído y estoy de acuerdo con los términos y condiciones de la web *</span>
+        <p> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web y otros propósitos descritos en nuestra <a href="">política de privacidad.</a></p>
+        <div class="term__conditions-text">
+          <input class="checkbox-round" form="form_sale" type="checkbox" id="check-term-condition" required>
+          <span>He leído y estoy de acuerdo con los <a href="">términos y condiciones</a> de la web</span>
         </div>
       </div>
-      <div>
-        <div class="pay_deposit" id="pay_deposit">
-          <button class="button_pay"> Realzar pedido</button>
+      <div class="pay__container__button">
+        <div class="pay_button-message" id="message__default">
+          <button class="button__disable">Continuar</button>
+          <p>*Debe seleccionar un metodo de pago</p>
         </div>
-        <div class="pay_transfer" id="pay_transfer">
-          <button type="button" id="buyButton" data-product="Software CPIP" data-price=10000 class="button_pay">Pagar</button>
+        <div class="pay__deposit" id="pay_deposit">
+          <button type="submit" form="form_sale" class="button__pay">Realzar pedido</button>
         </div>
-        <div class="pay_yape" id="pay_yape">
-          <button class="button_pay"> Pagar con  yape</button>
+        <div class="pay__transfer" id="pay_transfer">
+          <button type="button" id="buyButton" data-product="Software CPIP" data-price=10000 class="button__pay">Pagar</button>
+        </div>
+        <div class="pay__yape" id="pay_yape">
+          <button class="button__pay">Pagar con yape</button>
         </div>
       </div>
     </section>
@@ -179,6 +188,8 @@
   <script type="text/javascript">
     function showContent(option) {
         this.checkOption = option;
+        elementDefault = document.getElementById("message__default");
+        elementDefault.style.display='none';
         elementDeposit = document.getElementById("pay_deposit");
         checkDeposit = document.getElementById("check-deposit");
         elementTransfer = document.getElementById("pay_transfer");

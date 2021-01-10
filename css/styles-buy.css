@@ -1,10 +1,32 @@
+:root{
+--space-left-seller:20px;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+  font-family: 'DM Sans', sans-serif;
+}
+header{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  min-width: 320px;
+  height: 50px;
+  text-align: center;
+}
 
 main{
   width: 100%;
   height: auto;
   background-color: var(--just-white);
 }
-/*----------------CLIENT----------------------------*/
+/*-----------------------CLIENT----------------------------*/
 .client{
   width: 100%;
   min-width: 320px;
@@ -23,12 +45,13 @@ main{
 }
 .client__text{
   width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  padding-left: var(--space-left-seller);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
   color: var(--black);
-  margin: 0 auto;
-  margin-bottom: var(--space-between-text);
-  text-align: center;
 }
 .form{
   margin: 0 auto;
@@ -37,28 +60,26 @@ main{
 }
 .form__client{
   display: block;
-  width: var(--width-cards);
+  width: var(--width-elements);
   min-width: var(--min-width-elements);
   max-width: var(--max-width-cards);
   height: auto;
-  margin:var(--space-between-cards) auto;
+  margin:0px auto;
 }
-.form h2{
+.form__title{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  padding-left: var(--space-left-seller);
   height: auto;
-  padding-left: 0px;
-  margin-bottom: var(--space-after-title);
   font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
 }
 .form__container{
   display: grid;
   grid-template-columns: 100%;
   grid-template-areas: "information-required" 
                           "information-optional";
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-  border: 2px solid var(--blue-construtec);
 }
 .form__information-required{
   display: flex;
@@ -66,11 +87,11 @@ main{
   grid-area: information-required;
 }
 .form__question{
-  font-size: var(--font-size__h2);
+  font-size: var(--font-size__text);
   line-height: var(--line-height__text);
-  margin-top:20px;
+  margin-top:10px;
   margin-bottom: 5px;
-  margin-left:20px;
+  margin-left:var(--space-left-seller);
   text-align: start;
 }
 .form__question span{
@@ -79,55 +100,66 @@ main{
 .form__answer{
   width: 90%;
   height: 30px;
-  margin-left: 20px;
+  margin-left:var(--space-left-seller);
   border: 1px solid #666;
 }
 .form__answer-special{
   width: 90%;
   height: 30px;
-  margin-left: 20px;
+  margin-left: var(--space-left-seller);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
 }
-.form__informatio-optional{
+.form__information-optional{
   grid-area: information-optional;
 }
-.form__informatio-optional p{
+.form__information-optional p{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   height: auto;
-  padding-left: 20px;
+  padding-left: var(--space-left-seller);
   margin-top: var(--space-between-text);
   margin-bottom: var(--space-after-title);
-  font-size: var(--font-size__h2);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
 }
 .form-answer--message{
   height: 100px;
-  margin-bottom: var(--space-after-title);
 }
-/*----------------ORDER----------------------------*/
+*::-webkit-input-placeholder {
+  font-family: 'DM Sans', sans-serif;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+/*------------------------ORDER----------------------------*/
 .order{
   width: 100%;
   min-width: 320px;
   height: auto;
   padding-bottom: var(--space-sections);
 }
+.order__container{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  margin: 0 auto;
+}
 .order__title{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   height: auto;
-  padding-left: 0px;
-  margin:0 auto;
-  text-align: center;
-  margin-bottom: var(--space-after-title);
+  padding-left: var(--space-left-seller);
+  padding-bottom:10px;
   font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
 }
 .order__description{
-  width: 70%;
-  min-width: 230px;
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
   max-width: var(--max-width-cards);
   height: auto;
   margin:0 auto;
+  padding-left:var(--space-left-seller);
   border-collapse: collapse;
   border:var(--grey) 1px solid;
   font-size: var(--font-size__text);
@@ -143,7 +175,7 @@ main{
 .order__description span{
   color: var(--red-construtec);
 }
-/*----------------PAY----------------------------*/
+/*-----------------------PAY----------------------------*/
 .pay{
   width: 100%;
   min-width: 320px;
@@ -153,33 +185,32 @@ main{
 .pay__title{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
   height: auto;
-  padding-left: 0px;
-  margin:0 auto;
-  text-align: center;
+  padding-left: var(--space-left-seller);
+  text-align: start;
+  margin: 0 auto;
   margin-bottom: var(--space-after-title);
   font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
 }
-.pay__container{
+.pay__options{
   display: flex;
   flex-direction: column;
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   max-width: var(--max-width-cards);
-  border-radius: var(--border-radius);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
-  background-color: #ebe9eb;
   margin:var(--space-between-cards) auto;
-  padding-left:10px;
-  padding-right: 10px;
-  padding-bottom: 10px;
+  padding-left: var(--space-left-seller);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
 }
+.pay__container{
+  border-radius: var(--border-radius);
+  background-color: var(--background-color);
+}
 /*----------------SELECT OPTION PAY---------------------------*/
-/*-------------------------------------------*/
-
-.pay__option{
+.pay__option-check{
   margin: 10px;
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
@@ -187,20 +218,14 @@ main{
 }
 
 .pay__option-description{
-  width: 90%;
   height: auto;
-  border: #dfdcde 2px solid;
-  border-radius: var(--border-radius);
-  margin-left:20px;
   padding-bottom:10px;
 }
 .pay__option-description > p{
-  margin:5px auto;
-  padding:10px;
+  padding: 0 10px;
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
 }
-
 .pay__option-banks{
   display: grid;
   grid-template-columns: 100%;
@@ -233,7 +258,7 @@ main{
 }
 .bank-bcp{
   grid-area:bcp;
-  width:90px;
+  width:70px;
   height: 35px;
   margin:5px auto;
 }
@@ -255,30 +280,37 @@ main{
 .term__condtions{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
+  margin:var(--space-between-cards) auto;
+  padding-left:var(--space-left-seller);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
-  margin:var(--space-between-cards) auto;
 }
-.term__condtions-text{
-  display:inline;
+.term__condtions p {
+  margin-bottom: 15px;
 }
+
 /*----------------PAY BUTTON---------------------------*/
 
-.pay_deposit{
+.pay__container__button{
+  display: flex;
+  justify-content: center;
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+}
+.pay__deposit{
   display: none;
 }
-.pay_transfer{
+.pay__transfer{
   display: none;
 }
-.pay_yape{
+.pay__yape{
   display: none;
 }
-
-.button_pay{
-  width: 50%;
+.button__pay{
+  width: 200px;
   height: 40px;
-  margin: 20px auto;
-  font-size: var(--font-size__h2);
+  font-size: var(--font-size__text);
   line-height: var(--line-height__text);
   color: white;
   border: none;
@@ -286,7 +318,24 @@ main{
   background-color: var(--blue-construtec);
   cursor:pointer;
 }
-
-#btn-deposit:checked .pay_deposit{
-  display: block;
+.pay_button-message{
+  display:block;
+  justify-content: center;
+}
+.pay_button-message p{
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color:var(--red-construtec);
+}
+.button__disable{
+  width: 200px;
+  height: 40px;
+  margin: 15px;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--grey);
+  cursor:none;
 }

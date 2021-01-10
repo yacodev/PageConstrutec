@@ -1,0 +1,54 @@
+@media screen and (min-width:768px){
+  :root{
+    --width-cards-web:230px;
+    --height-cards-web:300px;
+    --width-icon-web:50px;
+    --height-icon-web:50px;
+    --width-elements-web:80%;
+    --width-video-tablet:350px;
+    --height-video-tablet:192px;
+    --width-videoTutorials-tablet:300px;
+    --height-videoTutorials-tablet:172px;
+  }
+  .client{
+    padding-top:100px;
+  }
+  .client__text{
+    width: var(--width-elements-web);
+  }
+  .form__client{
+    width: var(--width-elements-web);
+    max-width: var(--width-elements-web);
+  }
+  .form__container{
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "information-required information-optional"; 
+  }
+  .order__container{
+    width: var(--width-elements-web);
+    max-width: var(--width-elements-web);
+  }
+  .order__description{
+    width: 95%;
+    max-width: 100%;
+    padding-left:var(--space-left-seller);
+  }
+  .pay__title{
+    width: var(--width-elements-web);
+    max-width: var(--width-elements-webs);
+  }
+  .pay__options{
+    width: var(--width-elements-web);
+    max-width: var(--width-elements-webs);
+  }
+  .pay__option-banks{
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-areas: "nacion interbank bbva bcp"; 
+  }
+  .bank-bcp{
+    margin-left:0px;
+  }
+  .term__condtions{
+    width: var(--width-elements-web);
+  }
+}
