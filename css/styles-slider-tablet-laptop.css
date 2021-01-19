@@ -1,6 +1,6 @@
 @media screen and (min-width:768px){
   .header__slider{
-    grid-template: 100px 70px 40px 40px 70px/50% 50% ;
+    grid-template: 100px 70px 60px 60px 70px/50% 50% ;
     grid-template-areas: "title imagen"
                         "subtitle imagen"
                         "textQuestion imagen"
@@ -25,7 +25,7 @@
       grid-area: textQuestion;
       Display:block;
       padding: 0px 20px 0px 20px;
-      font-size: 1.7rem;
+      font-size: 1.9rem;
       font-weight: bold;
       font-weight: 500;
       line-height: 2.0rem;
@@ -44,9 +44,9 @@
     }
     .header__slider-imagenTwo{
       margin-top: 30px;
-      width: 480px;
-      height: 300px;
-      content: url("/images/SmartPhone-Sespo-web.png");
+      width: 400px;
+      height: 324px;
+      content: url("/images/imac-cpip-slider-laptop.png");
     }
     .header__slider .header__slider-button{
       position: static;

@@ -4,7 +4,7 @@
     --height-cards-web:300px;
     --width-icon-web:50px;
     --height-icon-web:50px;
-    --width-elements-web:80%;
+    --width-elements-web:70%;
     --width-video-tablet:350px;
     --height-video-tablet:192px;
     --width-videoTutorials-tablet:300px;
@@ -78,14 +78,9 @@
   .information__tittle p{
     width: var(--width-elements-web);
   }
-  .information__container-video{
-    grid-template-columns: 70% 30%;
-    grid-template-areas: "video-cpip client-cpip";
-    width: var(--width-elements-web);
-    margin-left:auto;
-    margin-right:auto;
-  }
+  
   .information__client ul{
+    width: var(--width-elements-web);
     text-align: start;
   }
   .information__video{
@@ -95,26 +90,49 @@
   .information__client{
     align-items: center;
   }
+/*-------------------CPIP MODULES-------------------*/
+  .modules__container-cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+  }
+  .modules__card{
+    width: var(--width-cards-web);
+    height: var(--height-cards-web);
+    min-width: var(--width-cards-web);
+  }
+  .modules__card article{
+    grid-template-columns: 100%;
+    grid-template-areas: "icon-module-cpip"
+                          "title-module-cpip"
+                          "description-module-cpip";
+  }
+  .icon-modules{
+    width: var(--width-icon-web);
+    height: var(--height-icon-web);
+    display: block;
+    margin: auto;
+  }
+  .modules__card-title{
+    padding-top:var(--space-after-img) ;
+    display: block;
+    text-align: center;
+  }
+  .modules__card-information{
+    display: block;
+    text-align: center;
+  }
 /* ------------------------BUY CPIP------------------------ */
   .buy__cards{
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
   }
-/*------------------MAIN SESPO----------------*/
-  .main__banner--sespo{
-    width: 270px;
-    height: 358px;
-    background-image: url('/images/banner-sespo-web.png');
-    }
-  /*------------------BENEF SESPO----------------*/
-  .benef__card .digital{
-    background-image: url("/images/icon-iphone-100.png");
-  }
-  .benef__card .safeCloud{
-    background-image: url("/images/icon-cloud-refresh-100.png");
-  }
-  .benef__card .settings{
-    background-image: url("/images/icons-pass-configurable-100.png");
-  }
+/*-------------------CPIP OPINIONS-------------------*/
+.opinions__container-cards{
+  max-width: var(--width-elements-web);
+  display: flex;
+  flex-wrap: wrap;
+}
 }

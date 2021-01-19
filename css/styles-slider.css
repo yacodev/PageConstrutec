@@ -93,8 +93,8 @@
 .header__slider-imagenTwo{
   grid-area: imagen;
   display:block;
-  width: 195px;
-  height: 130px;
+  width: 170px;
+  height: 138px;
   margin: auto;
 }
 /*-------------------EFECTO-------------------*/

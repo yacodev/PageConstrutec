@@ -18,7 +18,7 @@
   --height-car-buy:230px;
   --height-icon:25px;
   --height-user:50px;
-  --height-cards:170px;
+  --height-cards:190px;
   --max-width-card-buy:220px;
   --max-width-cards:380px;
   --max-width-container:400px;
@@ -113,7 +113,9 @@ main{
   min-width: var(--min-width-elements);
   height: auto;
   margin:0 auto;
-  font-size: var(--font-size__h2);
+}
+.benef__title h2{
+  font-size: var(--font-size__h1);
   text-align: center;
   color: var(--blue-construtec);
 }
@@ -155,7 +157,6 @@ main{
   background-position: center;
   background-repeat: no-repeat;
 }
-
 .benef__card-title{
   grid-area: title-benef-cpip;
   display:flex;
@@ -229,16 +230,139 @@ main{
   color: var(--black);
 }
 .information__client ul{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
   padding-top:var(--space-after-title);
+  padding-left: 35px;
+  text-align: start;
+}
+/*-------------------CPIP MODULES-------------------*/
+.modules{
+  position: relative;
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  background-color: var(--background-color);
+}
+.modules h2{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.modules__container-cards{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
   margin: 0 auto;
 }
+.modules__card{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: var(--height-cards);
+  margin:var(--space-between-cards) auto;
+  padding: 15px;
+  background-color: var(--just-white);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.modules__card article{
+  display:grid;
+  grid-template-columns: 10% 90%;
+  grid-template-areas: "icon-module-cpip title-module-cpip"
+                        "description-module-cpip description-module-cpip";
+}
+.icon-modules{
+  grid-area:icon-module-cpip;
+  display: flex;
+  align-items: center;
+  width: var(--width-icon);
+  height: var(--height-icon);
+}
+.module-ficha{
+  background-image: url("/images/Icon-modulo-ficha-tecnica-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.modules__card-title{
+  grid-area:title-module-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.modules__card-information{
+  grid-area:description-module-cpip;
+  margin-top: var(--space-after-title);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color:var(--black);
+}
+.module-metrados{
+  background-image: url("/images/Icon-modulo-metrado-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-almacen{
+  background-image: url("/images/Icon-modulo-almacen-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-maquinaria{
+  background-image: url("/images/Icon-modulo-maquinaria-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-archivo{
+  background-image: url("/images/Icon-modulo-archivo-fotografico-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-personal{
+  background-image: url("/images/Icon-modulo-personal-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-gastos{
+  background-image: url("/images/Icon-modulo-financiero-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.module-reportes{
+  background-image: url("/images/Icon-modulo-reporte-50.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 /* ------------------------BUY CPIP------------------------ */
 .buy{
   text-align: center;
   min-width: 320px;
   padding-top:var(--space-sections) ;
   padding-bottom: var(--space-sections);
-  background-color: var(--background-color);
 }
 .buy h2{
   font-size:var(--font-size__h1);
@@ -257,7 +381,7 @@ main{
   width: var(--width-card-buy);
   max-width: var(--max-width-card-buy);
   height: var(--height-car-buy);
-  margin:50px auto 0px auto;
+  margin:50px auto 20px auto;
   padding: 0 15px;
   border: 2px solid var(--blue-construtec);
   background-color: var(--just-white);
@@ -321,78 +445,95 @@ main{
   background-image: url('/images/arrow-right-buy.svg');
   vertical-align: text-bottom;
 }
-.buy__more-info{
-  width: var(--width-cards);
-  min-width: var(--min-width-elements);
+/*-------------CPIP OPINIONS-------*/
+.opinions{
+  width: 100%;
+  min-width: 320px;
   height: auto;
-  padding-top: 40px;
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
+  background-color: var(--background-color);
+}
+.opinions__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+.opinions__description{
+  width: var(--width-elements);
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
   color: var(--black);
   margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
 }
-/* ------------------------SESPO------------------------ */
-.main__banner--sespo{
-  width: 220px;
-  height: 305px;
-  background-image: url('/images/banner-sespo-phone.png');
+.opinions__container-cards{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+  padding: 30px;
 }
-.main__description--sespo h1{
-  color: var(--red-construtec);
-}
-.main__description--sespo h2{
-  color: var(--red-construtec);
-}
-.main__description-question--sespo{
-  color: var(--red-construtec);
-}
-/* -------------------BENEF -SESPO------------------------ */
-.benef__title-sespo{
-  color: var(--red-construtec);
-}
-.benef__card-sespo{
-  border: 2px solid var(--red-construtec);
-}
-.benef__card .digital{
-  background-image: url("/images/icon-iphone-50.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.benef__card .safeCloud{
-  background-image: url("/images/icon-cloud-refresh-50.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.benef__card .settings{
-  background-image: url("/images/icon-pass-configurable-50.png");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-/* ------------------------INFORMATION SESPO------------------------ */
-.information__tittle--sespo h2{
-  color: var(--red-construtec);
-}
-
-/* ------------------------BUY SESPO------------------------ */
-.buy--sespo h2{
-  color: var(--red-construtec);
-}
-.buy__card-container-sespo{
-  border: 2px solid var(--red-construtec);
-}
-.buy__card-header-sespo{
-  background-color: var(--red-construtec);
-  color:var(--just-white);
-  }
-.buy__button--sespo{
+.opinion__card{
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height: var(--height-cards);
+  margin:var(--space-between-cards) auto;
+  padding: 15px;
   background-color: var(--just-white);
-  border: 2px solid var(--red-construtec);
-  color:var(--red-construtec);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
 }
-.buy__button--sespo span{
-  background-image: url('/images/arrow-right-sespo.svg');
+.opinion__card article{
+  display:grid;
+  grid-template-columns: 20% 80%;
+  grid-template-areas: "icon-user title-opinion-cpip"
+                        "icon-user subtitle-opinion-cpip"
+                        "description-opinion-cpip description-opinion-cpip";
+}
+.icon-user{
+  grid-area:icon-user;
+  display: flex;
+  align-items: center;
+  width: var(--width-user);
+  height: var(--height-user);
+  background-image: url("/images/icon-client-cpip-100.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.opinion__card-title{
+  grid-area:title-opinion-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.opinion__card-subtitle{
+  grid-area:subtitle-opinion-cpip;
+  display: flex;
+  align-items: center;
+  font-size:var(--font-size__h2);
+  font-weight: bold;
+  line-height: var(--line-height__text);
+  color:var(--black);
+  margin-left:15px;
+}
+.opinion__card-information{
+  grid-area:description-opinion-cpip;
+  margin-top: var(--space-after-title);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color:var(--black);
 }
