@@ -95,7 +95,7 @@ main{
   font-weight: bold;
   text-decoration: none;
 }
-/*--------------------FORM--------------*/
+/*--------------------FORM------------------*/
 .form{
   margin: 0 auto;
   height: auto;
@@ -150,7 +150,50 @@ main{
 .form-answer--message{
   height: 100px;
 }
+.form span {
+  color:var(--red-construtec);
+}
+/*------------------------MODAL --------------*/
+.modal__container{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
 
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modal h2{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+  margin-bottom: 15px;
+}
+.modal p{
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+/*------------------------RESPONSIVE --------------*/
 @media screen and (min-width:768px) and (max-width:1139px){
   .contact{
     padding-top: 100px;

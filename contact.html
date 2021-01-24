@@ -50,22 +50,33 @@
         O si prefieres puedes enviarnos un correo a contacto@construtecperu.com o puedes llamarnos directamente al 932001032 o finalmente puedes comunicarte mediante el siguiente formulario de contacto:
       </p>
     </section>   
-    <form class="form" action="send.php" method="POST">
+    <form id="formulario"class="form" action="send.php" method="POST">
       <div class="form-contact">
         <h1 class="contact__title">Formulario de Contacto</h1>
         <div class="form__container">
-          <label for="" class="form__question">Nombre y apellidos:</label>
+          <label for="" class="form__question">Nombre y apellidos <span>(*)</span>:</label>
           <input class="form__answer"  type="text" name="name" id="name" required>
-          <label for="" class="form__question">Email:</label>
+          <label for="" class="form__question">Email<span>(*)</span>:</label>
           <input class="form__answer"  type="email" name="mail" id="mail" required>
-          <label for="" class="form__question">Telefono:</label>
+          <label for="" class="form__question">Telefono<span>(*)</span>:</label>
           <input class="form__answer"  type="text" name="phone" id="phone" required>
-          <label for="" class="form__question">Mensaje:</label>
+          <label for="" class="form__question">Mensaje<span>(*)</span>:</label>
           <textarea class="form__answer form-answer--message"  type="text" name="message" id="message"></textarea>
-          <button type = "submit"class="form__button" name="send">Enviar</button>
+          <button id="send" type = "submit"class="form__button" name="send">Enviar</button>
         </div>
       </div>
     </form>
+    <div id="modal__container" class="modal__container">
+      <div class="modal">
+        <h2> Mensaje enviado</h2>
+        <p>¡Gracias por contactar con nosotros!<br> 
+          Nos pondremos en contacto contigo inmediatamente.<br><br>
+          <b>CONSTRUTEC PERU S.R.L.</b>
+        </p>
+        <button id="modal__close"class="form__button"> Cerrar</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </main>
   <footer>
     <h2>¿Hablamos en redes?</h2>
