@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Finalizar compra - Construtec</title>
+  <title>Pedido realizado - Construtec</title>
   <link rel="shortcut icon" type="image/x-icon" href="./images/construtec.ico">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles-header-phone.css">
@@ -35,20 +35,23 @@
   <main>
     <section class="detailsBuy">
       <div class="detailsBuy__title">
-        <h1>Finalizar compra</h1>
+        <h1>Gracias, tu pedido ha sido recibido</h1>
       </div>
       <div class="details__container">
-        <p>Gracias, tu pedido ha sido recibido</p>
         <table class="details__description">
           <tr>
             <th>Fecha</th>
             <th>Total</th>
             <th>Metod de pago</th>
+            <th>Producto</th>
+            <th>Descripción</th>
           </tr>
           <tr>
-            <td> 10 de enero del 2021</td>
-            <td> S/. 1000</td>
+            <td id="datePage"> 10 de enero del 2021</td>
+            <td id="pricePage"> S/. 100</td>
             <td> Deposito a cuenta bancaria</td>
+            <td> CPIP</td>
+            <td> Licencia de por vida</td>
           </tr>
         </table>
       </div>
@@ -75,7 +78,7 @@
             <div class="bankBcp bank__container">
               <img class="bankBcp__icon bank" src="./images/banco_bcp.png" alt="BCP">
               <p>Numero de cuenta:</p>
-              <p>04-066-262419</p>
+              <p>285-01752433-0-00</p>
             </div>
           </div>
           <li> Luego de realizar el deposito nos envias el voucher a nuestro WhatsApp (+5184658811), para que nuestro servicio al cliente pueda tramitar tu pedido:</li>
@@ -85,36 +88,8 @@
               <p class="contact__whatsApp-text">Contactanos via WhatsApp</p>
             </article>
           </div>
-          <li>En  24 horas te enviaremos el software y los videotutorales,  al correo que nos proporcionaste</li>
+          <li>En  24 horas te enviaremos el software y los videotutorales,  al correo que nos proporcionaste.</li>
         </ol>
-      </div>
-    </section>
-    <section class="order">
-      <div class="order__container">
-        <h2 class="order__title">Tu pedido es:</h2>
-        <table class="order__description">
-          <tr>
-            <th>Producto</th>
-            <th>Monto</th>
-          </tr>
-          <tr>
-            <td>Software CPIP (Control de proyectos de inversión)</td>
-            <td>S/. 100.00</td>
-          </tr>
-          <tr>
-            <td>
-              <span>
-                Detalles: <br>
-                Usted esta adquiriendo la licencia de por vida.
-              </span> 
-            </td>
-            <td></td>
-          </tr>
-          <tr>
-            <td>Total</td>
-            <td>S/.100.00</td>
-          </tr>
-        </table>
       </div>
     </section>
   </main>
@@ -134,6 +109,6 @@
       <p>® Construtec Perú 2020</p>
     </div>
   </footer>
-
+  <script src="./js/order.js"></script>
 </body>
 </html>

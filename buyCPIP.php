@@ -102,20 +102,19 @@
           </tr>
           <tr>
             <td>Software CPIP (Control de proyectos de inversión)</td>
-            <td>S/. 100.00</td>
+            <td id="priceProduct">S/. 100.00</td>
           </tr>
           <tr>
             <td>
-              <span>
-                Detalles: <br>
-                Usted esta adquiriendo la licencia de por vida.
+              <span id="detailProduct">
+                Detalles:Usted esta adquiriendo la licencia de por vida.
               </span> 
             </td>
             <td></td>
           </tr>
           <tr>
             <td>Total</td>
-            <td>S/.100.00</td>
+            <td id="totalPriceProduct">S/.100.00</td>
           </tr>
         </table>
       </div>
@@ -287,5 +286,6 @@
       <p>® Construtec Perú 2021</p>
     </div>
   </footer>
+  <script src="./js/selectProduct.js"></script>
 </body>
 </html>

@@ -76,6 +76,11 @@ main{
   padding-bottom: var(--space-sections);
   margin: 0 auto;
 }
+.instructions h2{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+}
 .instructions__list{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
@@ -194,48 +199,4 @@ main{
   color: var(--black);
   font-weight: bold;
   text-decoration: none;
-}
-/*------------------------ORDER----------------------------*/
-.order{
-  width: 100%;
-  min-width: 320px;
-  height: auto;
-  padding-bottom: var(--space-sections);
-}
-.order__container{
-  width: var(--width-elements);
-  min-width: var(--min-width-elements);
-
-  margin: 0 auto;
-}
-.order__title{
-  width: var(--width-elements);
-  min-width: var(--min-width-elements);
-  height: auto;
-  padding-left: var(--space-left-seller);
-  padding-bottom:10px;
-  font-size: var(--font-size__h2);
-  line-height: var(--line-height__text);
-}
-.order__description{
-  width: var(--width-elements);
-  min-width: var(--min-width-elements);
-  max-width: var(--max-width-cards);
-  height: auto;
-  margin:0 auto;
-  padding-left:var(--space-left-seller);
-  border-collapse: collapse;
-  border:var(--grey) 1px solid;
-  font-size: var(--font-size__text);
-  line-height: var(--line-height__text);
-}
-.order__description tr{
-  border:var(--grey) 1px solid;
-  height: 50px;
-}
-.order__description td{
-  padding-left:20px;
-}
-.order__description span{
-  color: var(--red-construtec);
 }

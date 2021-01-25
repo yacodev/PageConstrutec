@@ -3,7 +3,6 @@ const buttonOpen = document.getElementById("formulario");
 const buttonClose = document.getElementById("modal__close");
 //listener click in button
 buttonOpen.addEventListener("submit",(event)=>{
-console.log("holaaa");
   event.preventDefault();
   modal.classList.add("show");
 })
