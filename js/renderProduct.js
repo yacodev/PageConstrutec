@@ -1,8 +1,6 @@
 /*------transfer variable----*/
-//var remplaza = /+/gi;
 var url = window.location.href;
 url = unescape(url);
-//url = url.replace(remplaza, " ");
 url = url.toUpperCase();
 console.log(url);
 function obtener_valor(variable){

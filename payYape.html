@@ -8,8 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/styles-header-phone.css">
   <link rel="stylesheet" href="./css/styles-header-tablet-laptop.css" media="(min-width: 768px)">
-  <link rel="stylesheet" href="./css/styles-payTransfer-phone.css">
-  <link rel="stylesheet" href="./css/styles-payTransfer-tablet-laptop.css" media="(min-width: 768px)">
+  <link rel="stylesheet" href="./css/styles-payYape-phone.css">
+  <link rel="stylesheet" href="./css/styles-payYape-tablet-laptop.css" media="(min-width: 768px)">
 </head>
 <body>
   <header>
@@ -47,11 +47,11 @@
             <th>Descripción</th>
           </tr>
           <tr>
-            <td id="datePage"> 10 de enero del 2021</td>
-            <td id="pricePage"> S/. 100</td>
+            <td id="datePage"></td>
+            <td id="priceProduct"> S/. 100</td>
             <td> Deposito a cuenta bancaria</td>
             <td> CPIP</td>
-            <td> Licencia de por vida</td>
+            <td id="detailProduct"> Licencia de por vida</td>
           </tr>
         </table>
       </div>
@@ -59,27 +59,8 @@
         <h2> Sigue las siguientes instrucciones:</h2>
         <ol class="instructions__list">
           <li>Realiza el deposito a una de las siguientes cuentas:</li>
-          <div class="pay__deposit-banks">
-            <div class="bankNacion bank__container">
-              <img class="bankNacion__icon bank" src="./images/banco_nacion.png" alt="banco de la nacion">
-              <p> Numero de cuenta:</p>
-              <p>04-066-262419</p>
-            </div>
-            <div class="bankInterbank bank__container">
-              <img class="bankInterbank__icon bank" src="./images/banco_interbank.png" alt="Interbank">
-              <p> Numero de cuenta:</p>
-              <p>426-3089379936</p>
-            </div>
-            <div class="bankBbva bank__container">
-              <img class="bankBbva__icon bank" src="./images/banco_bbva.png" alt="BBVA">
-              <p>Numero de cuenta:</p>
-              <p>0011-0200-0201080123</p>
-            </div>
-            <div class="bankBcp bank__container">
-              <img class="bankBcp__icon bank" src="./images/banco_bcp.png" alt="BCP">
-              <p>Numero de cuenta:</p>
-              <p>285-01752433-0-00</p>
-            </div>
+          <div class="pay__yape">
+            <img src="./images/yapeQr.png" alt="yape" class="yape__qr">
           </div>
           <li> Luego de realizar el deposito nos envias el voucher a nuestro WhatsApp (+5184658811), para que nuestro servicio al cliente pueda tramitar tu pedido:</li>
           <div class="contact">
@@ -109,6 +90,7 @@
       <p>® Construtec Perú 2020</p>
     </div>
   </footer>
-  <script src="./js/order.js"></script>
+  <script src="./js/orderDate.js"></script>
+  <script src="./js/renderProductFinal.js"></script>
 </body>
 </html>

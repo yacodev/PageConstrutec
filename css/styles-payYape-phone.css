@@ -92,66 +92,18 @@ main{
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
 }
-.pay__deposit-banks{
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-areas: "nacion" 
-                        "interbank"
-                        "bbva" 
-                        "bcp";
+.pay__yape{
   width: 90%;
   height: auto;
   margin: 5px auto 10px auto;
 }
-.bank__container{
-  width: 90%;
-  max-width: var(--max-width-cards);
-  margin: 0 auto;
-  border:var(--grey) 1px dashed;
-}
-.bank ~p{
-  text-align: center;
-}
-.bankNacion{
-  grid-area: nacion;
-}
-.bankNacion__icon{
+.yape__qr{
   display: flex;
-  width:140px;
-  height: 35px;
+  width:250px;
+  height: 300px;
   margin: 5px auto;
-  
 }
-.bankInterbank{
-  grid-area:interbank;
-}
-.bankInterbank p{
-  margin: 0 auto;
-}
-.bankInterbank__icon{
-  display: flex;
-  width:140px;
-  height: 35px;
-  margin:5px auto;
-}
-.bankBbva{
-  grid-area:bbva;
-}
-.bankBbva__icon{
-  display: flex;
-  width:140px;
-  height: 35px;
-  margin:5px auto;
-}
-.bankBcp{
-  grid-area:bcp;
-}
-.bankBcp__icon{
-  display: flex;
-  width:70px;
-  height: 35px;
-  margin:5px auto;
-}
+
 .contact{
   width: var(--width-elements);
   min-width: var(--min-width-elements);

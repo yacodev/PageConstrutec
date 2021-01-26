@@ -1,0 +1,39 @@
+@media screen and (min-width:768px){
+  :root{
+    --width-cards-web:230px;
+    --height-cards-web:300px;
+    --width-icon-web:50px;
+    --height-icon-web:50px;
+    --width-elements-web:80%;
+    --width-video-tablet:350px;
+    --height-video-tablet:192px;
+    --width-videoTutorials-tablet:300px;
+    --height-videoTutorials-tablet:172px;
+  }
+
+  .detailsBuy{
+    padding-top:100px;
+  }
+  .detailsBuy__title {
+    width: var(--width-elements-web);
+  }
+  .details__container{
+    width: var(--width-elements-web);
+  }
+  .details__description{
+    max-width: 100%;
+  }
+  .instructions{
+    width: var(--width-elements-web);
+  }
+  .yape__qr{
+    width:500px;
+  height: 600px
+  }
+  .contact{
+    width: var(--width-elements-web);
+  }
+  .contact__whatsApp{
+    width: var(--width-elements-web);
+  }
+}

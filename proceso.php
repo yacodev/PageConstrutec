@@ -1,6 +1,5 @@
 <?php
-
-require "Requests/library/Requests.php";
+require "requests/library/Requests.php";
 Requests::register_autoloader();
 require "culqi-php/lib/culqi.php";
 $SECRET_KEY = "sk_test_C2GZLqsN36o5g2Vm";

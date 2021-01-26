@@ -7,6 +7,6 @@ buttonOpen.addEventListener("submit",(event)=>{
   modal.classList.add("show");
 })
 buttonClose.addEventListener("click",()=>{
-  modal.classList.remove("show")
+  modal.classList.remove("show");
   document.getElementById("formulario").submit();
 })

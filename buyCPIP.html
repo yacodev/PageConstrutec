@@ -38,7 +38,7 @@
     <section class="client">
       <h1 class="client__title"> Realizar pedido</h1>
       <p class="client__text"> Para realizar un pedido necesitamos que llenes el siguiente formulario y selecciones el método de pago correspondiente.</p>
-      <form  class="form" id="form_sale" action="" >
+      <form  class="form" id="form_sale" action="" onsubmit="selectBotton(event);">
         <div class="form__client">
           <h2 class="form__title">Detalles de facturación:</h2>
           <div class="form__container">
@@ -79,9 +79,9 @@
               <label class="form__question" for="">Ciudad:<span>(*)</span></label>
               <input class="form__answer" name="city"  type="text" required>
               <label class="form__question" for="">Telefono:<span>(*)</span></label>
-              <input class="form__answer" name="phone"type="number" required>
+              <input class="form__answer" name="phone" type="number" id="phone" required>
               <label class="form__question" for="">Dirección de correo electrónico:<span>*</span></label>
-              <input class="form__answer" name="mail"type="mail" required>
+              <input class="form__answer" name="mail" type="mail" required>
             </div>
             <div class="form__information-optional">
               <p>Información adicional</p>
@@ -120,7 +120,7 @@
       </div>
     </section>
     <section class="pay">
-        <h2 class="pay__title">Seleccione tu método de pago:</h2>
+      <h2 class="pay__title">Seleccione tu método de pago:</h2>
       <div class="pay__options">
         <div class="pay__container">
           <div class="pay__option-deposit">
@@ -154,7 +154,7 @@
               <span>Mediante Yape</span> 
             </div>
             <div class="pay__option-description">
-              <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionamremos</p>
+              <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionaremos</p>
               <img class="option__yape" src="./images/yape.png" alt="yape" >
             </div>
           </div>
@@ -173,103 +173,17 @@
           <p>*Debe seleccionar un metodo de pago</p>
         </div>
         <div class="pay__deposit" id="pay_deposit">
-          <button type="submit" form="form_sale" class="button__pay">Realzar pedido</button>
+          <input type="submit"  form="form_sale" class="button__pay" name="boton1" onclick="siSePudo('1');" value="Pagar con deposito"> 
         </div>
         <div class="pay__transfer" id="pay_transfer">
-          <button type="button" id="buyButton" data-product="Software CPIP" data-price=10000 class="button__pay">Pagar</button>
+          <input type="submit" form="form_sale" class="button__pay" id="buyButton" data-product="Software CPIP" data-price=10000 value="Pagar tarjeta">
         </div>
         <div class="pay__yape" id="pay_yape">
-          <button class="button__pay">Pagar con yape</button>
+          <input type="submit"  form="form_sale" class="button__pay" name="boton2" onclick="siSePudo('3');" value="Pagar con Yape"> 
         </div>
       </div>
     </section>
   </main>
-  <script type="text/javascript">
-    function showContent(option) {
-        this.checkOption = option;
-        elementDefault = document.getElementById("message__default");
-        elementDefault.style.display='none';
-        elementDeposit = document.getElementById("pay_deposit");
-        checkDeposit = document.getElementById("check-deposit");
-        elementTransfer = document.getElementById("pay_transfer");
-        checkTransfer = document.getElementById("check-transfer");
-        elementYape = document.getElementById("pay_yape");
-        checkYape = document.getElementById("check-yape");
-        switch (this.checkOption){
-          case 'deposit':
-            console.log('opcion 1');
-            if (checkDeposit.checked) {
-              elementDeposit.style.display='block';
-              elementTransfer.style.display='none';
-              elementYape.style.display='none';
-              }
-            else {
-              elementDeposit.style.display='none';
-            }
-            break;
-          case 'card':
-            console.log('opcion 2');
-            if (checkTransfer.checked) {
-              elementTransfer.style.display='block';
-              elementDeposit.style.display='none';
-              elementYape.style.display='none';
-              }
-            else {
-              elementTransfer.style.display='none';
-            }
-            break;
-          case 'yape':
-            console.log('opcion 3');
-            if (checkYape.checked) {
-              elementDeposit.style.display='none';
-              elementYape.style.display='block';
-              elementTransfer.style.display='none';
-              }
-            else {
-              elementYape.style.display='none';
-            }
-            break;
-        } 
-        
-        
-    }
-  </script>
-  <script>
-    Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
-    var product = "";
-    var preci = "";
-    $('#buyButton').on('click', function(e) {
-      product = $(this).attr('data-product');
-      price = $(this).attr('data-price');
-      Culqi.settings({
-      title: 'Construtec',
-      currency: 'PEN',
-      description: product,
-      amount: price
-      });
-    // Abre el formulario con la configuración en Culqi.settings
-      Culqi.open();
-      e.preventDefault();
-  });
-  function culqi() {
-    if (Culqi.token) { // ¡Objeto Token creado exitosamente!
-      var token = Culqi.token.id;
-      var email = Culqi.token.email;
-      var data ={product: product, price:price, token:token, email: email};
-      var url ="proceso.php";
-      $.post(url,data,function(res){
-        alert(res);
-      })
-      /* alert('Se ha creado un token:' + token); */
-      //En esta linea de codigo debemos enviar el "Culqi.token.id"
-      //hacia tu servidor con Ajax
-    } else { // ¡Hubo algún problema!
-      // Mostramos JSON de objeto error en consola
-      console.log(Culqi.error);
-      alert(Culqi.error.user_message);
-    }
-  };
-  </script>
   <footer>
     <h2>¿Hablamos en redes?</h2>
     <p>Quieres contactarnos, te esperamos en redes sociales:</p>
@@ -286,6 +200,9 @@
       <p>® Construtec Perú 2021</p>
     </div>
   </footer>
-  <script src="./js/selectProduct.js"></script>
+  <script src="./js/renderButtonPay.js"></script>
+  <script src="./js/culqiPay.js"></script>
+  <script src="./js/renderProduct.js"></script>
+  <script src="./js/redirectPage.js" ></script>
 </body>
 </html>
