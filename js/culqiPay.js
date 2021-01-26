@@ -1,25 +1,16 @@
-Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
-var product = "";
-var price = "";
-$('#buyButton').on('click', function(e) {
-  product = $(this).attr('data-product');
-  price = $(this).attr('data-price');
-  Culqi.settings({
-    title: 'Construtec',
-    currency: 'PEN',
-    description: product,
-    amount: price
-  });
-  /*open the form with settings of culqi*/
-  Culqi.open();
-  e.preventDefault();
-  });
-  /*------Generate token---*/
 function culqi() {
   if (Culqi.token) { 
     // object token success 
     var token = Culqi.token.id;
     var email = Culqi.token.email;
+    var price = ""
+    var product = "cpip";
+    if (valor ==1){
+      price=5000;
+    }else{
+      price = 10000;
+    }
+    debugger
     var data ={product: product, price:price, token:token, email: email};
     var url ="proceso.php";
     $.post(url,data,function(res){

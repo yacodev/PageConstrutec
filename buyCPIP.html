@@ -38,7 +38,7 @@
     <section class="client">
       <h1 class="client__title"> Realizar pedido</h1>
       <p class="client__text"> Para realizar un pedido necesitamos que llenes el siguiente formulario y selecciones el método de pago correspondiente.</p>
-      <form  class="form" id="form_sale" action="" onsubmit="selectBotton(event);">
+      <form  class="form" id="form_sale" onsubmit="selectBotton(event);" action="sendBuy.php" method="POST">
         <div class="form__client">
           <h2 class="form__title">Detalles de facturación:</h2>
           <div class="form__container">
@@ -173,13 +173,13 @@
           <p>*Debe seleccionar un metodo de pago</p>
         </div>
         <div class="pay__deposit" id="pay_deposit">
-          <input type="submit"  form="form_sale" class="button__pay" name="boton1" onclick="siSePudo('1');" value="Pagar con deposito"> 
+          <input type="submit"  form="form_sale" class="button__pay" name="boton1" onclick="varButton('1');" value="Pagar con deposito"> 
         </div>
         <div class="pay__transfer" id="pay_transfer">
-          <input type="submit" form="form_sale" class="button__pay" id="buyButton" data-product="Software CPIP" data-price=10000 value="Pagar tarjeta">
+          <input type="submit" form="form_sale" class="button__pay"  name="boton2" onclick="varButton('2');" value="Pagar tarjeta">
         </div>
         <div class="pay__yape" id="pay_yape">
-          <input type="submit"  form="form_sale" class="button__pay" name="boton2" onclick="siSePudo('3');" value="Pagar con Yape"> 
+          <input type="submit"  form="form_sale" class="button__pay" name="boton2" onclick="varButton('3');" value="Pagar con Yape"> 
         </div>
       </div>
     </section>
