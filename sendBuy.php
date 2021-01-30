@@ -2,7 +2,7 @@
 $name = $_POST['name'];
 $mail = $_POST['mail'];
 $phone = $_POST['phone'];
-
+$directionPage = $_POST['directionPage'];
 
 $header = 'From:'.$mail."\r\n";
 $header .= "X-Mailer:PHP/".phpversion()."\r\n";
@@ -17,9 +17,15 @@ $message .= "Enviado el:".date('d/m/Y',time());
 $para ='cyaco33@gmail.com';
 $asunto = 'venta del cpip';
 mail($para,$asunto, utf8_decode($message),$header);
-echo "<script type='text/javascript'>";
-echo "window.history.back()";
-echo "selectBotton();";
-echo "</script>";
+if ($directionPage ==1){
+  header("Location:contact.html");
+}else{
+  header("Location:aboutUs.html");
+}
+
+
+//echo "<script type='text/javascript'>";
+//echo "window.history.back();";
+//echo "</script>";
 
 ?>
