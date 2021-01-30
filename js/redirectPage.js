@@ -1,7 +1,7 @@
 //deterner el formulario
 function selectBotton(event){
   console.log("hoaa")
-  event.preventDefault();
+  //event.preventDefault();
   console.log('formulario detenido');
   if (optionSelect==1){
     if (valor==1){
