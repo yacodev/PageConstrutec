@@ -1,5 +1,5 @@
 //deterner el formulario
-function selectBotton(event){
+function selectBotton(){
   console.log("hoaa")
   //event.preventDefault();
   console.log('formulario detenido');
