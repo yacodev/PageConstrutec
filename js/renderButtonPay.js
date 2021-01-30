@@ -1,6 +1,7 @@
 //habilitar el boton pagar en  funcion del metodo seleccionado
 function showContent(option) {
   this.checkOption = option;
+  const optionBuySelect = document.getElementById("optionBuySelect");
   const elementDefault = document.getElementById("message__default");
   elementDefault.style.display='none';
   const elementDeposit = document.getElementById("pay_deposit");
@@ -16,7 +17,8 @@ function showContent(option) {
         elementDeposit.style.display='block';
         elementTransfer.style.display='none';
         elementYape.style.display='none';
-        }
+        optionBuySelect.value = "1";
+      }
       else {
         elementDeposit.style.display='none';
       }
@@ -27,6 +29,7 @@ function showContent(option) {
         elementTransfer.style.display='block';
         elementDeposit.style.display='none';
         elementYape.style.display='none';
+        optionBuySelect.value = "2";
         }
       else {
         elementTransfer.style.display='none';
@@ -38,6 +41,7 @@ function showContent(option) {
         elementDeposit.style.display='none';
         elementYape.style.display='block';
         elementTransfer.style.display='none';
+        optionBuySelect.value = "3";
         }
       else {
         elementYape.style.display='none';

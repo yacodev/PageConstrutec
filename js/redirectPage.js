@@ -1,9 +1,7 @@
 //deterner el formulario
 
 function selectBotton(){
-  console.log("hoaa")
   //event.preventDefault();
-  console.log('formulario detenido');
   if (optionSelect==1){
     if (valor==1){
       window.location.href='payDeposit.html?selectProduct=1';

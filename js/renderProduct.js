@@ -22,14 +22,16 @@ var valor = obtener_valor("selectProduct");
 const priceProduct = document.getElementById("priceProduct");
 const detailProduct = document.getElementById("detailProduct");
 const totalPriceProduct = document.getElementById("totalPriceProduct");
-
+const productSelect = document.getElementById("productSelect");
 if(valor == 1){
   priceProduct.textContent = "S/. 50.00";
-  detailProduct.textContent = "Usted esta adquiriendo la licencia anual"
+  detailProduct.textContent = "Usted esta adquiriendo la licencia anual";
   totalPriceProduct.textContent= "S/. 50.00";
+  productSelect.value=valor; 
 }
 if (valor== 2){
   priceProduct.textContent = "S/. 100.00";
-  detailProduct.textContent = "Usted esta adquiriendo la licencia de por vida"
+  detailProduct.textContent = "Usted esta adquiriendo la licencia de por vida";
   totalPriceProduct.textContent = "S/. 100.00";
+  productSelect.value=valor;
 }
