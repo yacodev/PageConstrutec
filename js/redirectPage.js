@@ -1,16 +1,5 @@
 //deterner el formulario
-
-function selectBotton(){
   //event.preventDefault();
-  if (optionSelect==1){
-    if (valor==1){
-      window.location.href='payDeposit.html?selectProduct=1';
-    }
-    if (valor==2){
-      window.location.href='payDeposit.html?selectProduct=2';
-    }
-  }
-  if (optionSelect ==2){
     var price = "";
     var product = "";
     if (valor==1){
@@ -32,20 +21,6 @@ function selectBotton(){
   Culqi.open();
   //e.preventDefault();
   //});
-  }
-
-  if (optionSelect==3){
-    if (valor==1){
-      window.location.replace("payYape.html?selectProduct=1");
-    }
-    if (valor==2){
-      window.location.replace("payYape.html?selectProduct=2");
-    }
-  }
   //document.getElementById("form_sale").submit();
-}
 /*------------------------------------------------*/   
-var optionSelect = "";
-function varButton(text){
-  optionSelect = text;
-}
+

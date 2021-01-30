@@ -27,9 +27,9 @@ if ($optionBuySelect =="1"){
 }
 if ($optionBuySelect =="2"){
   if ($productSelect=="1"){
-    header("Location:contact.html");
+    header("Location:payTransfer.html?selectProduct=1");
   }else{
-    header("Location:aboutUs.html");
+    header("Location:payTransfer.html?selectProduct=1");
   }
 }
 if ($optionBuySelect =="3"){
@@ -39,8 +39,4 @@ if ($optionBuySelect =="3"){
     header("Location:payYape.html?selectProduct=2");
   }
 }
-//echo "<script type='text/javascript'>";
-//echo "window.history.back();";
-//echo "</script>";
-
 ?>

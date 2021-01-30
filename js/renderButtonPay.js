@@ -49,3 +49,7 @@ function showContent(option) {
       break;
   } 
 }
+var optionSelect = "";
+function varButton(text){
+  optionSelect = text;
+}
