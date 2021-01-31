@@ -9,7 +9,7 @@
                         "button";
   width: 100%;
   min-width: 288px;
-  height: 285px;
+  height: 335px;
   margin-top: 10px;
   padding-top:10px;
   text-align: center;
@@ -21,7 +21,7 @@
   background: linear-gradient(226.52deg, rgba(232, 121, 106, 0.97) 4.72%, #3399FF 43.7%, #3399FF 74.63%);
 }
 
-.header__slider h1{
+.header__slider-product{
   grid-area: title;
   display: block;
   width: 150px;
@@ -29,19 +29,19 @@
   margin:auto;
   margin-top: 10px;
   padding: 7px 10px;
-  font-size: 2.4rem;
+  font-size: 2.0rem;
   font-weight: bold;
-  line-height: 2.6rem;
+  line-height: 2.4rem;
   color:var(--blue-construtec);
   border-radius: 10px;
   background: var(--just-white);
 }
 
-.header__slider h2{
+.header__slider-title{
   grid-area:subtitle;
   padding: 0px 20px;
-  font-weight: bold;
-  line-height: 2.2rem;
+  font-size: 1.8rem;
+  line-height: 2.4rem;
   color: var(--just-white);
 }
 .header__slider-textQuestion{
@@ -50,7 +50,7 @@
 .header__slider-text{
   grid-area: texto;
   padding: 0px 20px 30px 20px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 1.8rem;
   color: var(--just-white);
@@ -61,7 +61,7 @@
   position: absolute;
   display: block;
   left:calc(50% - 118px);
-  top: 310px;
+  top: 360px;
   margin-top:10px;
   padding: 15px;
   width: 229px;
@@ -105,7 +105,7 @@
   display: flex;
   padding: 0;
   width: 200%;
-  animation: cambio 5s infinite alternate;
+  animation: cambio 3s infinite alternate;
 }
 .slider ul:hover{
   animation-play-state: pause;

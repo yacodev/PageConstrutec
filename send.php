@@ -18,5 +18,8 @@ $message .= "Enviado el:".date('d/m/Y',time());
 $para ='cyaco33@gmail.com';
 $asunto = 'Formulario de contacto';
 mail($para,$asunto, utf8_decode($message),$header);
-header("Location:contact.html");
+//header("Location:contact.html");
+echo "<script type='text/javascript'>";
+echo "window.history.back()";
+echo "</script>";
 ?>

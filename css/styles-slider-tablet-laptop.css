@@ -9,7 +9,7 @@
     height: 465px;
     margin-top: 77px;
     }
-    .header__slider h1{
+    .header__slider-product{
       margin-top: 40px;
       padding-top:7px;
       width: 250px;
@@ -17,7 +17,7 @@
       line-height: 3.0rem;
       background:var(--just-white);
     }
-    .header__slider h2{
+    .header__slider-title{
       font-size: 2.2rem;
       line-height: 2.8rem;
     }
@@ -52,5 +52,7 @@
       position: static;
       display: block;
       margin: auto;
+      margin-top:30px;
+      font-size: 1.6rem;
     }
 }

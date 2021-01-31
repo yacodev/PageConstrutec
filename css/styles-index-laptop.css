@@ -18,6 +18,7 @@
     width: var(--width-elements-web);
     margin-left:auto;
     margin-right:auto;
+    padding-bottom: 50px;
   }
   .main__banner{
     display: block;
@@ -27,6 +28,13 @@
     background-image: url('/images/Banner-cpip-web.png');
   }
 /*------------------BENEF CPIP----------------*/
+  .benef{
+    height: 500px;
+    padding-top: 40px;
+  }
+  .benef__title{
+    padding-bottom: 30px;
+  }
   .benef__container-cards{
     max-width: var(--width-elements-web);
     display: flex;
@@ -73,8 +81,13 @@
     padding-top: 20px;
   }
  /* ------------------------INFORMATION CPIP------------------------ */
+  .information{
+  height: 600px;
+  padding-top: 40px;
+  }
   .information__tittle h2{
     width: var(--width-elements-web);
+    padding-bottom: 30px;
   } 
   .information__tittle p{
     width: var(--width-elements-web);
@@ -97,6 +110,9 @@
     align-items: center;
   }
 /*-------------------CPIP MODULES-------------------*/
+  .modules{
+    padding-top: 40px
+  }
   .modules__container-cards{
     max-width: var(--width-elements-web);
     display: flex;
@@ -130,17 +146,59 @@
     text-align: center;
   }
 /* ------------------------BUY CPIP------------------------ */
+  .buy{
+    height: 500px;
+    padding-top: 40px;
+  }
   .buy__cards{
     max-width: var(--width-elements-web);
     display: flex;
     flex-wrap: wrap;
   }
 /*-------------------CPIP OPINIONS-------------------*/
-.opinions__container-cards{
-  max-width: var(--width-elements-web);
-  display: flex;
-  flex-wrap: wrap;
+  .contact{
+    padding-top: 40px;
+  }
+  .opinions{
+    padding-top: 40px;
 }
+  .opinions__container-cards{
+    max-width: var(--width-elements-web);
+    display: flex;
+    flex-wrap: wrap;
+  }
+/*-------------------CONTACT-------------------*/
+  .contact__container{
+    max-width: var(--width-elements-web);
+    margin: auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: "contact--information form--contact"
+  }
+  .contact__container-information{
+    grid-area: contact--information;
+    padding-top: 70px;
+    text-align: start;
+  }
+  .contact__whatsApp{
+    margin-top:30px;
+    margin-bottom: 30px;
+  }
+  .contact__whatsApp-card{
+    width: 280px;
+    max-width: 280px;
+    padding-right: 30px;
+  }
+  .form{
+    grid-area: form--contact;
+  }
+  .form-contact{
+    width: 450px;
+    max-width: 450px;
+  }
+  .form-answer--message{
+    height: 50px;
+  }
 }
 @media screen and (min-width:1400px){
   .modules__container-cards{
@@ -156,4 +214,5 @@
   .buy__cards{
     max-width: 1120px;
   }
+
 }

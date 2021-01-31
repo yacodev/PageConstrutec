@@ -1,37 +1,4 @@
-:root{
-  --space-sections:30px;
-  --space-after-img:20px;
-  --space-after-title:10px;
-  --space-between-text:15px;
-  --space-between-cards:15px;
-  --width-elements:90%;
-  --width-cards:80%;
-  --width-card-buy:190px;
-  --width-botton-buy:150px;
-  --width-card-header:120px;
-  --width-card-button:150px;
-  --width-icon:25px;
-  --width-user:50px;
-  --height-botton-buy:48px;
-  --height-card-header:30px;
-  --height-card-button:48px;
-  --height-car-buy:230px;
-  --height-icon:25px;
-  --height-user:50px;
-  --height-cards:190px;
-  --max-width-card-buy:220px;
-  --max-width-cards:380px;
-  --max-width-container:400px;
-  --min-width-elements: 288px;
-  --font-size__h1 : 2.0rem;
-  --font-size__h2 : 1.6rem;
-  --font-size__text:1.4rem;
-  --line-height__text:1.8rem;
-  --border-radius:10px;
-/*-------special----------*/
-  --space-sections-special:50px;
-  --height-cards-benef:150px;
-}
+
 main{
   width: 100%;
   height: auto;
@@ -393,16 +360,16 @@ main{
   width: var(--width-card-header);
   height: var(--height-card-header);
   padding: 6px;
-  left:calc(50% - 60px);
+  left:calc(50% - 70px);
   top:-15px;
-  font-size: var(--font-size__text);
+  font-size: var(--font-size__h2);
   background-color: var(--blue-construtec);
   border-radius: var(--border-radius);
   color:var(--just-white);
 }
 .buy__card-title{
   padding-top: var(--space-sections);
-  font-size: var(--font-size__h2);
+  font-size: var(--font-size__h1);
   font-weight: bold;
   line-height: var(--line-height__text);
   color:var(--black)
@@ -420,15 +387,15 @@ main{
   vertical-align: text-top;
 }
 .buy__card-description{
-  font-size: 1.2rem;
-  line-height: 1.4rem;
+  font-size: 1.4rem;
+  line-height: 1.6rem;
   height: 65px;
   color: var(--grey);
 }
 .buy__button{
   width: var(--width-botton-buy);
   height: var(--height-botton-buy);
-  margin-top: 10px;
+  margin-top: 50px;
   background-color: var(--just-white);
   border: 2px solid var(--blue-construtec);
   border-radius: var(--border-radius);
@@ -445,7 +412,7 @@ main{
   background-image: url('/images/arrow-right-buy.svg');
   vertical-align: text-bottom;
 }
-/*-------------CPIP OPINIONS-------*/
+/*--------------------------CPIP OPINIONS-------------------*/
 .opinions{
   width: 100%;
   min-width: 320px;
@@ -536,4 +503,172 @@ main{
   font-size: var(--font-size__text);
   line-height: var(--line-height__text);
   color:var(--black);
+}
+/*--------------------CONTACT---------------------*/
+.contact{
+  width: 100%;
+  min-width: 320px;
+  height: auto;
+  padding-top: var(--space-sections);
+  text-align: center;
+}
+.contact__title{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:0 auto;
+  margin-bottom: var(--space-after-title);
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+}
+
+.contact__text{
+  width: var(--width-elements);
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  margin: 0 auto;
+  margin-bottom: var(--space-between-text);
+  text-align: center;
+}
+.contact__whatsApp{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-container);
+  height: auto;
+  margin: 0 auto;
+  text-align: center;
+}
+.contact__whatsApp-card{
+  display:grid;
+  grid-template-columns: 30% 70%;
+  grid-template-areas: "whatsApp textWhatsApp";
+  width: 210px;
+  min-width: 210px;
+  max-width: var(--max-width-cards);
+  height: 60px;
+  margin:var(--space-between-cards) auto;
+  background-color: var(--background-color);
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec);
+}
+.contact__whatsApp-imagen{
+  grid-area:whatsApp;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 40px;
+  height: 40px;
+  background-image: url("/images/icon-contact-whatsapp-160.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.contact__whatsApp-text{
+  grid-area:textWhatsApp;
+  margin: auto auto auto auto;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: var(--black);
+  font-weight: bold;
+  text-decoration: none;
+}
+/*--------------------FORM------------------*/
+.form{
+  margin: 0 auto;
+  height: auto;
+  padding-bottom: var(--space-sections);
+  text-align: center;
+  
+}
+.form-contact{
+  display: block;
+  width: var(--width-cards);
+  min-width: var(--min-width-elements);
+  max-width: var(--max-width-cards);
+  height:455px;
+  margin:var(--space-between-cards) auto;
+}
+.form__container{
+  display: flex;
+  flex-direction: column;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+  border: 2px solid var(--blue-construtec)
+}
+.form__question{
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  margin-top:10px;
+  margin-bottom: 10px;
+  margin-left:20px;
+  text-align: start;
+}
+.form__answer{
+  width: 90%;
+  height: 40px;
+  margin-left: 20px;
+  border-radius: var(--border-radius);
+  border:1px solid var(--blue-construtec);
+}
+.form__button{
+  width: 50%;
+  height: 40px;
+  margin: 20px auto;
+  font-size: var(--font-size__h2);
+  line-height: var(--line-height__text);
+  color: white;
+  border: none;
+  border-radius: var(--border-radius);
+  background-color: var(--blue-construtec);
+  cursor:pointer;
+}
+.form-answer--message{
+  height: 100px;
+}
+.form span {
+  color:var(--red-construtec);
+}
+/*------------------------MODAL --------------*/
+.modal__container{
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.3);
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  pointer-events: none;
+  opacity: 0;  
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  transition: opacity 0.3s ease;
+}
+
+.modal {
+  background-color: #fff;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 50px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+.modal h2{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+  margin-bottom: 15px;
+}
+.modal p{
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+  color: var(--black);
+}
+.show {
+  pointer-events: auto;
+  opacity: 1;
 }
