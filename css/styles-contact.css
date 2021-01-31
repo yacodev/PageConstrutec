@@ -133,6 +133,7 @@ main{
   height: 40px;
   margin-left: 20px;
   border-radius: var(--border-radius);
+  padding-left: 20px;
   border:none;
 }
 .form__button{

@@ -613,6 +613,7 @@ main{
   margin-left: 20px;
   border-radius: var(--border-radius);
   border:1px solid var(--blue-construtec);
+  padding-left: 20px;
 }
 .form__button{
   width: 50%;
