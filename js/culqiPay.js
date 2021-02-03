@@ -10,11 +10,10 @@ function culqi() {
     }else{
       price = 10000;
     }
-    debugger
     var data ={product: product, price:price, token:token, email: email};
     var url ="proceso.php";
     $.post(url,data,function(res){
-      alert(res);
+    alert("pago realizado exitosamente");
     })
     /* alert('Se ha creado un token:' + token); */
     //En esta linea de codigo debemos enviar el "Culqi.token.id"
