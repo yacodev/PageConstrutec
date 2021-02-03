@@ -59,7 +59,7 @@ if ($optionBuySelect =="2"){
   if ($productSelect=="1"){
     header("Location:payTransfer.html?selectProduct=1");
   }else{
-    header("Location:payTransfer.html?selectProduct=1");
+    header("Location:payTransfer.html?selectProduct=2");
   }
 }
 if ($optionBuySelect =="3"){
