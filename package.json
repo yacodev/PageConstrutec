@@ -13,7 +13,5 @@
   ],
   "author": "Carlos Yaco",
   "license": "MIT",
-  "dependencies": {
-    "aos": "^2.3.4"
-  }
+  "dependencies": {}
 }
