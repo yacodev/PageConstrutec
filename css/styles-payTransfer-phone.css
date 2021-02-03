@@ -170,7 +170,7 @@ main{
 }
 .contact__whatsApp-card{
   display:grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   grid-template-areas: "whatsApp textWhatsApp";
   width: var(--width-cards);
   min-width: var(--min-width-elements);
@@ -202,4 +202,21 @@ main{
   color: var(--black);
   font-weight: bold;
   text-decoration: none;
+}
+.instructions__thanks{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+  margin-top: 20px;
+}
+.instructions-contact{
+  width: var(--width-elements);
+  min-width: var(--min-width-elements);
+  height: auto;
+  margin:10px auto;
+  font-size: var(--font-size__text);
+  line-height: var(--line-height__text);
+}
+.space--empty{
+  height: 160px;
 }

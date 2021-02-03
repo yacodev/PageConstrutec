@@ -99,7 +99,7 @@ main{
 }
 .yape__qr{
   display: flex;
-  width:250px;
+  width:214px;
   height: 300px;
   margin: 5px auto;
 }
@@ -122,7 +122,7 @@ main{
 }
 .contact__whatsApp-card{
   display:grid;
-  grid-template-columns: 20% 80%;
+  grid-template-columns: 30% 70%;
   grid-template-areas: "whatsApp textWhatsApp";
   width: var(--width-cards);
   min-width: var(--min-width-elements);
@@ -154,4 +154,10 @@ main{
   color: var(--black);
   font-weight: bold;
   text-decoration: none;
+}
+.instructions__thanks{
+  font-size: var(--font-size__h1);
+  text-align: center;
+  color: var(--blue-construtec);
+  margin-top: 20px;
 }

@@ -11,6 +11,15 @@
       product="CPIP - licencia de por vida"
     }
     Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
+    Culqi.options({
+      style: {
+        logo: '../images/minilogo-construtec-web.png',
+        maincolor: '#1474D2',
+        buttontext: '#ffffff',
+        maintext: '#4A4A4A',
+        desctext: '#4A4A4A'
+      }
+  });
     Culqi.settings({
     title: 'Construtec',
     currency: 'PEN',
