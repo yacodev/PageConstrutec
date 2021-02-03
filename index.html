@@ -13,6 +13,8 @@
   <link rel="stylesheet" href="./css/styles-index-phone.css">
   <link rel="stylesheet" href="./css/styles-index-tablet.css" media="(min-width: 769px) and (max-width:1139px)">
   <link rel="stylesheet" href="./css/styles-index-laptop.css" media="(min-width: 1140px)">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
   <header>
@@ -78,21 +80,21 @@
         <h2>Beneficios de utilizar el CPIP:</h2>
       </div>
       <div class="benef__container-cards">
-        <div class="benef__card" id="benef__card" data-aos="fade-up">
+        <div class="benef__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="time"></span>
             <p class="benef__card-title"> Optimizar </p>
             <p class="benef__card-information">Te ayuda a disminuir el tiempo necesario para que elabores tu informe mensual hasta en un 50%.</p>
           </article>
         </div>
-        <div class="benef__card" >
+        <div class="benef__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="safe"></span>
             <p class="benef__card-title"> Seguridad </p>
             <p class="benef__card-information">Te permite disminuir la cantidad de errores de los informes mensuales hasta en un 30%, gracias al sistema de control de errores del CPIP.</p>
           </article>
         </div>
-        <div class="benef__card">
+        <div class="benef__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="organization"></span>
             <p class="benef__card-title"> Organización </p>
@@ -120,56 +122,56 @@
     <section class="modules">
       <h2>¿Qué módulos tiene el CPIP?</h2>
       <div class="modules__container-cards">
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-ficha"></span>
             <p class="modules__card-title">Módulo Ficha técnica </p>
             <p class="modules__card-information">Podrás ingresar el presupuesto de tu obra, si tu obra ya esta en ejecución el software te permite ingresar tu última valorización, en este modulo también se ingresa por única vez la información de carácter general.</p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-metrados"></span>
             <p class="modules__card-title">Módulo Metrados</p>
             <p class="modules__card-information">Podrás ingresar diariamente los metrados ejecutados de cada partida. El CPIP automáticamente generará la valorización programada /mayores metrados/partidas nuevas y deductivos según el  caso correspondientes.</p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-almacen"></span>
             <p class="modules__card-title">Módulo Almacen</p>
             <p class="modules__card-information">Podrás ingresar y dar salida a los materiales que se empleen en la obra,  en cada momento podrás, ver los vincard de cada material. El software generará la valorización de almacén,  los movimientos diarios, y las notas de entrada/salida.</p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-maquinaria"></span>
             <p class="modules__card-title">Módulo Maquinaria</p>
             <p class="modules__card-information">Podrás reportar el uso de la maquinaria (alquilada/propia). El software generará los partes diarios de maquinaria, la valorización total, la valorización por tipo de maquinaria (liviana, pesada) y el movimiento diario de la maquinaria. </p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-archivo"></span>
             <p class="modules__card-title">Módulo Archivo Fotografico</p>
             <p class="modules__card-information">Te permite ingresar las fotografías y su correspondiente descripción. El software generará el panel fotográfico correspondiente.</p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-personal"></span>
             <p class="modules__card-title">Módulo Personal</p>
             <p class="modules__card-information">Te permite ingresar la información del personal que labora en la obra (DNI, categoría, nombres y apellidos entre otros), ingresar la asistencia del mismo. El software generará el tareo correspondiente.</p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-gastos"></span>
             <p class="modules__card-title">Módulo Manifiesto de gastos.</p>
             <p class="modules__card-information">Te permite ingresar todos los gastos realizados en la obra(orden de compra, orden de servicio, planillas y caja chica entre otros), clasificarlos según el tipo de gasto. </p>
           </article>
         </div>
-        <div class="modules__card">
+        <div class="modules__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-modules module-reportes"></span>
             <p class="modules__card-title">Módulo Reportes</p>
@@ -181,7 +183,7 @@
     <section class="buy" id="buy">
       <h2>¿Qué planes existen para adquirirlo?</h2>
       <div class="buy__cards">
-        <article class="buy__card-container">
+        <article class="buy__card-container" data-aos="fade-up" data-aos-once="true">
           <p class="buy__card-header">Básico</p>
           <div class="buy__card-info">
             <h3 class="buy__card-title">Pago anual</h3>
@@ -193,7 +195,7 @@
             <button onclick="location.href='buyCPIP.html?selectProduct=1';" class="buy__button">Comprarlo<span></span></button>
           </div>
         </article>
-        <article class="buy__card-container">
+        <article class="buy__card-container" data-aos="fade-up" data-aos-once="true">
           <p class="buy__card-header">Recomendado</p>
           <div class="buy__card-info">
             <h3 class="buy__card-title">Pago único</h3>
@@ -211,7 +213,7 @@
       <h2 class="opinions__title">Opiniones</h2>
       <p class="opinions__description">¿No estás seguro? aquí encontrarás algunos de los testimonios de personas que ya utilizarón el CPIP:</p>
       <div class="opinions__container-cards">
-        <div class="opinion__card">
+        <div class="opinion__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-user"></span>
             <p class="opinion__card-title">Heber Gutierrez </p>
@@ -219,7 +221,7 @@
             <em class="opinion__card-information">" En la Municipalidad de Wanchaq, nos permitió estandarizar los formatos de los informes mensuales, todos presentaban su informe en un mismo formato".</em>
           </article>
         </div>
-        <div class="opinion__card">
+        <div class="opinion__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-user"></span>
             <p class="opinion__card-title">Jojanes Bejar </p>
@@ -227,7 +229,7 @@
             <em class="opinion__card-information">"Lo utilice durante la ejecución de mi obra, me ayudo a presentar los informes mensuales mas rápido y a pre- liquidar mi proyecto".</em>
           </article>
         </div>
-        <div class="opinion__card">
+        <div class="opinion__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-user"></span>
             <p class="opinion__card-title">Wilmer Huamani </p>
@@ -235,7 +237,7 @@
             <em class="opinion__card-information">"Ya no tengo que estar generando un archivo de excel por cada mes, ni copiando los acumulados de las valorizaciones del mes anterior al mes actual".</em>
           </article>
         </div>
-        <div class="opinion__card">
+        <div class="opinion__card" data-aos="fade-up" data-aos-once="true">
           <article>
             <span class="icon-user"></span>
             <p class="opinion__card-title">Carlos Valeriano </p>
@@ -293,10 +295,9 @@
     </section> 
   </main>
   <script src="./js/modal.js"></script>
-<<<<<<< HEAD
-  <script src="./js/librayAos.js"></script>
-=======
->>>>>>> master
+  <script>
+    AOS.init();
+  </script>
   <footer>
     <h2>¿Hablamos en redes?</h2>
     <p>Quieres contactarnos, te esperamos en nuestras redes sociales:</p>
