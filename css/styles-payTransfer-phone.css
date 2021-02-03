@@ -152,18 +152,13 @@ main{
   height: 35px;
   margin:5px auto;
 }
-.contact{
-  width: var(--width-elements);
-  min-width: var(--min-width-elements);
-  height: auto;
-  padding-top: var(--space-sections);
-  padding-bottom: var(--space-sections);
-  margin: 0 auto;
-}
+
 .contact__whatsApp{
   width: var(--width-elements);
   min-width: var(--min-width-elements);
   max-width: var(--max-width-container);
+  padding-top: var(--space-sections);
+  padding-bottom: var(--space-sections);
   height: auto;
   margin: 0 auto;
   text-align: center;

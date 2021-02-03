@@ -13,7 +13,7 @@
     Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
     Culqi.options({
       style: {
-        logo: '../images/minilogo-construtec-web.png',
+        logo: 'https://secureservercdn.net/104.238.68.130/7pe.15f.myftpupload.com/wp-content/uploads/2020/07/Logo-Construtec-Peru-150x150.png',
         maincolor: '#1474D2',
         buttontext: '#ffffff',
         maintext: '#4A4A4A',

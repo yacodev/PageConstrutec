@@ -27,8 +27,8 @@
     width: var(--width-elements-web);
   }
   .yape__qr{
-    width:500px;
-  height: 600px
+    width:355px;
+    height: 500px;
   }
   .contact{
     width: var(--width-elements-web);
