@@ -12,5 +12,8 @@
     "sespo"
   ],
   "author": "Carlos Yaco",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "aos": "^2.3.4"
+  }
 }
