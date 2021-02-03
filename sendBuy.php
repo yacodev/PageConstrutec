@@ -3,8 +3,8 @@ $name = $_POST['name'];
 $mail = $_POST['mail'];
 $phone = $_POST['phone'];
 $city = $_POST['city'];
-$department =  $_POST['department'];
-$messageOptional = $_POST['"messageOptional"'];
+$department =  $_POST['departament'];
+$messageOptional = $_POST['messageOptional'];
 $optionBuySelect = $_POST['optionBuySelect'];
 $productSelect = $_POST['productSelect'];
 if ($productSelect=="1"){
