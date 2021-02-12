@@ -10,10 +10,10 @@
       price = 10000;
       product="CPIP - licencia de por vida"
     }
-    Culqi.publicKey = 'pk_test_iaBHPILo7y7ZWArp';
+    Culqi.publicKey = 'pk_live_l2vlZzSrEZbWusmZ';
     Culqi.options({
       style: {
-        logo: 'https://secureservercdn.net/104.238.68.130/7pe.15f.myftpupload.com/wp-content/uploads/2020/07/Logo-Construtec-Peru-150x150.png',
+        logo: 'https://construtecperu.com/images/minilogo-construtec-web.png',
         maincolor: '#1474D2',
         buttontext: '#ffffff',
         maintext: '#4A4A4A',

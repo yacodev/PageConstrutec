@@ -2,7 +2,7 @@
 require "requests/library/Requests.php";
 Requests::register_autoloader();
 require "culqi-php/lib/culqi.php";
-$SECRET_KEY = "sk_test_C2GZLqsN36o5g2Vm";
+$SECRET_KEY = "sk_live_OdKWOPlESj0QXoC0";
 $culqi = new Culqi\Culqi(array('api_key' => $SECRET_KEY));
 
 $culqi->Charges->create(
