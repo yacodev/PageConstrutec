@@ -44,10 +44,10 @@ $message .=  "mensaje optional: ".$messageOptional."\r\n";
 $message .=  "Producto comprado: ".$productBuy."\r\n";
 $message .=  "Metodo de pago: ".$methodBuy."\r\n";
 $message .= "Enviado el:".date('d/m/Y',time());
-
-$para ='cyaco33@gmail.com';
-$asunto = 'venta del cpip';
-mail($para,$asunto, utf8_decode($message),$header);
+$messageBusiness = $name;
+$to ='cyaco33@gmail.com';
+$subject = 'CPIP' .$name;
+mail($to,$subject, utf8_decode($message),$header);
 if ($optionBuySelect =="1"){
   if ($productSelect=="1"){
     header("Location:payDeposit.html?selectProduct=1");
