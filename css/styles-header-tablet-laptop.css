@@ -1,7 +1,7 @@
 @media screen and (min-width:768px){
   /*------------------HEADER----------------*/
   header{
-    height: 585px;
+    height: 650px;
   }
   .header{
     grid-template: 40px 45px/100%;

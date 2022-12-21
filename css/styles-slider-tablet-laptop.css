@@ -6,8 +6,9 @@
                         "textQuestion imagen"
                         "texto imagen"
                         "button imagen";
-    height: 465px;
+    height: 600px;
     margin-top: 77px;
+    padding: 50px;
     }
     .header__slider-product{
       margin-top: 40px;
