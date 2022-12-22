@@ -1,27 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Finalizar compra-construtec</title>
   <link rel="shortcut icon" type="image/x-icon" href="./images/construtec.ico">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,500&family=Inter:wght@300;500&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="./css/styles-header-phone.css">
   <link rel="stylesheet" href="./css/styles-header-tablet-laptop.css" media="(min-width: 768px)">
   <link rel="stylesheet" href="./css/styles-buy.css">
   <link rel="stylesheet" href="./css/styles-buy-tablet-laptop.css" media="(min-width: 769px)">
   <link rel="stylesheet" href="./css/style_whatsApp.css">
 </head>
+
 <body>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-  <a href="https://api.whatsapp.com/send?phone=5184658811&text=Hola%21%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20CPIP%20." class="float" target="_blank">
+  <a href="https://api.whatsapp.com/send?phone=5184658811&text=Hola%21%20Quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20CPIP%20."
+    class="float" target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
     <i class="float--button">Contactanos</i>
   </a>
   <header>
     <div class="header">
       <a href="index.html" class="header__logo">
-        <img  src="./images/Logo-construtec-movil-p1.png" alt="Logo Construtec">
+        <img src="./images/Logo-construtec-movil-p1.png" alt="Logo Construtec">
       </a>
       <div class="header__menu">
         <input type="checkbox" id="btn-menu">
@@ -41,8 +46,9 @@
   <main>
     <section class="client">
       <h1 class="client__title"> Realizar pedido</h1>
-      <p class="client__text"> Para realizar un pedido necesitamos que llenes el siguiente formulario y selecciones el método de pago correspondiente.</p>
-      <form  class="form" id="form_sale" action="sendBuy.php" method="POST">
+      <p class="client__text"> Para realizar un pedido necesitamos que llenes el siguiente formulario y selecciones el
+        método de pago correspondiente.</p>
+      <form class="form" id="form_sale" action="sendBuy.php" method="POST">
         <div class="form__client">
           <h2 class="form__title">Detalles de facturación:</h2>
           <div class="form__container">
@@ -83,7 +89,7 @@
                 <option value="Ucayali">Ucayali</option>
               </select>
               <label class="form__question" for="">Ciudad:<span>(*)</span></label>
-              <input class="form__answer" name="city"  type="text" required>
+              <input class="form__answer" name="city" type="text" required>
               <label class="form__question" for="">Telefono:<span>(*)</span></label>
               <input class="form__answer" name="phone" type="number" id="phone" required>
               <label class="form__question" for="">Dirección de correo electrónico:<span>*</span></label>
@@ -92,7 +98,8 @@
             <div class="form__information-optional">
               <p>Información adicional</p>
               <label class="form__question" for="">Nota del pedido(opcional):</label>
-              <textarea class="form__answer form-answer--message"  type="text" name="messageOptional" id="message" placeholder="Algo en particular que quieras comentarnos sobre tu pedido."></textarea>
+              <textarea class="form__answer form-answer--message" type="text" name="messageOptional" id="message"
+                placeholder="Algo en particular que quieras comentarnos sobre tu pedido."></textarea>
             </div>
           </div>
         </div>
@@ -114,7 +121,7 @@
             <td>
               <span id="detailProduct">
                 Detalles:Usted esta adquiriendo la licencia de por vida.
-              </span> 
+              </span>
             </td>
             <td></td>
           </tr>
@@ -131,8 +138,9 @@
         <div class="pay__container">
           <div class="pay__option-deposit">
             <div class="pay__option-check">
-              <input " type="radio" name="checkbox" id="check-deposit" value="1" onchange="javascript:showContent('deposit')">
-              <span>Deposito bancario</span> 
+              <input type="radio" name="checkbox" id="check-deposit" value="1"
+                onchange="javascript:showContent('deposit')">
+              <span>Deposito bancario</span>
             </div>
             <div class="pay__option-description">
               <p>Puedes pagar con deposito o transferencia bancaria, tenemos cuentas en los siguientes bancos:</p>
@@ -144,24 +152,14 @@
               </div>
             </div>
           </div>
-          <div class="pay__option-credi-card">
-            <div class="pay__option-check">
-              <input type="radio" name="checkbox" id="check-transfer" value="1" onchange="javascript:showContent('card')">
-              <span>Tarjeta de credito/debito</span> 
-            </div>
-            <div class="pay__option-description">
-              <p>Puedes realizar el pago mediante tu tarjeta de credito y/o debito a través de la plataforma de pagos Culqi</p>
-              <img class="option__credit-card" src="./images/credit_card.png" alt="tarjeta de credito">
-            </div>
-          </div>
           <div class="pay__option-yape">
             <div class="pay__option-check">
-              <input  type="radio" name="checkbox" id="check-yape" value="1" onchange="javascript:showContent('yape')"> 
-              <span>Mediante Yape</span> 
+              <input type="radio" name="checkbox" id="check-yape" value="1" onchange="javascript:showContent('yape')">
+              <span>Mediante Yape</span>
             </div>
             <div class="pay__option-description">
               <p>Puedes realizar el pago yapeandonos al codgio QR que te proporcionaremos</p>
-              <img class="option__yape" src="./images/yape.png" alt="yape" >
+              <img class="option__yape" src="./images/yape.png" alt="yape">
             </div>
           </div>
         </div>
@@ -169,37 +167,57 @@
       <div class="term__condtions">
         <p> Tus datos personales se utilizarán para procesar tu pedido, mejorar tu experiencia en esta web.</p>
         <div class="term__conditions-text">
-          <input class="checkbox-round" form="form_sale" type="checkbox" id="check-term-condition" onclick="hideTermConditions();" required>
-          <span>He leído y estoy de acuerdo con los <a href="" onclick="viewTerm(event);">términos y condiciones</a> de la web</span>
+          <input class="checkbox-round" form="form_sale" type="checkbox" id="check-term-condition"
+            onclick="hideTermConditions();" required>
+          <span>He leído y estoy de acuerdo con los <a href="" onclick="viewTerm(event);">términos y condiciones</a> de
+            la web</span>
           <div class="term__conditions-information" id="term__conditions-information">
             <h2>Terminos y condiciones</h2>
             <div>
               <h3>Información Relevante</h3>
               <p>
-                Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y acepte los siguientes Términos y Condiciones. El uso de nuestros servicios así como la compra de nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el presente documento.<br>
-                Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un proceso de confirmación y verificación, el cual podría incluir la validación de la forma de pago, y el cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que se requiera una verificación por medio de correo electrónico.<br>
-                Los precios de los productos ofrecidos  es válido solamente en las compras realizadas en este sitio web.
+                Es requisito necesario para la adquisición de los productos que se ofrecen en este sitio, que lea y
+                acepte los siguientes Términos y Condiciones. El uso de nuestros servicios así como la compra de
+                nuestros productos implicará que usted ha leído y aceptado los Términos y Condiciones de Uso en el
+                presente documento.<br>
+                Todas las compras y transacciones que se lleven a cabo por medio de este sitio web, están sujetas a un
+                proceso de confirmación y verificación, el cual podría incluir la validación de la forma de pago, y el
+                cumplimiento de las condiciones requeridas por el medio de pago seleccionado. En algunos casos puede que
+                se requiera una verificación por medio de correo electrónico.<br>
+                Los precios de los productos ofrecidos es válido solamente en las compras realizadas en este sitio web.
               </p>
               <h3>Licencia</h3>
               <p>
-                <strong> Construtec Perú </strong>A través de su sitio concede una licencia para que los usuarios utilicen  los productos que son vendidos en este sitio web de acuerdo a los Términos y Condiciones que se describen en este documento.
+                <strong> Construtec Perú </strong>A través de su sitio concede una licencia para que los usuarios
+                utilicen los productos que son vendidos en este sitio web de acuerdo a los Términos y Condiciones que se
+                describen en este documento.
               </p>
               <h3>Uso no Autorizado</h3>
               <p>
-                Usted no puede colocar uno de nuestros productos, modificado o sin modificar, en un CD, sitio web o ningún otro medio y ofrecerlos para la redistribución o la reventa de ningún tipo.
+                Usted no puede colocar uno de nuestros productos, modificado o sin modificar, en un CD, sitio web o
+                ningún otro medio y ofrecerlos para la redistribución o la reventa de ningún tipo.
               </p>
               <h3>propiedad</h3>
               <p>
-                Usted no puede declarar la propiedad intelectual o exclusiva a ninguno de nuestros productos (modificado o sin modificar). Todos los productos son propiedad  de Construtec Perú, en ningún caso esta compañía será responsables de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales, fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestros productos.
+                Usted no puede declarar la propiedad intelectual o exclusiva a ninguno de nuestros productos (modificado
+                o sin modificar). Todos los productos son propiedad de Construtec Perú, en ningún caso esta compañía
+                será responsables de ningún daño incluyendo, pero no limitado a, daños directos, indirectos, especiales,
+                fortuitos o consecuentes u otras pérdidas resultantes del uso o de la imposibilidad de utilizar nuestros
+                productos.
               </p>
               <h3>Política de envio</h3>
               <p>
-                No realizamos reembolsos después de que se envíe el software, usted tiene la responsabilidad de entender antes de comprarlo.  Le pedimos que lea cuidadosamente antes de comprarlo. 
+                No realizamos reembolsos después de que se envíe el software, usted tiene la responsabilidad de entender
+                antes de comprarlo. Le pedimos que lea cuidadosamente antes de comprarlo.
               </p>
               <h3>Privacidad</h3>
               <p>
-                <strong>Construtec Perú</strong> garantiza que la información personal que usted envía cuenta con la seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial o requerimientos legales.
-                <strong>Construtec Perú</strong> se reserva los derechos de cambiar o de modificar estos términos sin previo aviso.
+                <strong>Construtec Perú</strong> garantiza que la información personal que usted envía cuenta con la
+                seguridad necesaria. Los datos ingresados por usuario o en el caso de requerir una validación de los
+                pedidos no serán entregados a terceros, salvo que deba ser revelada en cumplimiento a una orden judicial
+                o requerimientos legales.
+                <strong>Construtec Perú</strong> se reserva los derechos de cambiar o de modificar estos términos sin
+                previo aviso.
               </p>
             </div>
           </div>
@@ -211,13 +229,16 @@
           <p>*Debe seleccionar un metodo de pago</p>
         </div>
         <div class="pay__deposit" id="pay_deposit">
-          <input type="submit"  form="form_sale" class="button__pay" name="boton1" onclick="varButton('1');" value="Pagar con deposito"> 
+          <input type="submit" form="form_sale" class="button__pay" name="boton1" onclick="varButton('1');"
+            value="Pagar con deposito">
         </div>
         <div class="pay__transfer" id="pay_transfer">
-          <input type="submit" form="form_sale" class="button__pay"  name="boton2" onclick="varButton('2');" value="Pagar tarjeta">
+          <input type="submit" form="form_sale" class="button__pay" name="boton2" onclick="varButton('2');"
+            value="Pagar tarjeta">
         </div>
         <div class="pay__yape" id="pay_yape">
-          <input type="submit"  form="form_sale" class="button__pay" name="boton3" onclick="varButton('3');" value="Pagar con Yape"> 
+          <input type="submit" form="form_sale" class="button__pay" name="boton3" onclick="varButton('3');"
+            value="Pagar con Yape">
         </div>
       </div>
     </section>
@@ -228,18 +249,22 @@
     <div class="footer-redSocial">
       <table>
         <tr>
-          <td class="footer-redSocial-whatsApp"><a href="http://bit.ly/WhatsAppConstrutec" target="_blank"><span></span>WhatsApp</a></td>
-          <td class="footer-redSocial-facebook"><a href="https://www.facebook.com/ConstrutecPeru3" target="_blank"><span></span>Facebook</a></td>
-          <td class="footer-redSocial-youtube"><a href="https://www.youtube.com/channel/UCuquY3djKK46Enk6MNKIulw" target="_blank"><span></span>Youtube</a></td>
+          <td class="footer-redSocial-whatsApp"><a href="http://bit.ly/WhatsAppConstrutec"
+              target="_blank"><span></span>WhatsApp</a></td>
+          <td class="footer-redSocial-facebook"><a href="https://www.facebook.com/ConstrutecPeru3"
+              target="_blank"><span></span>Facebook</a></td>
+          <td class="footer-redSocial-youtube"><a href="https://www.youtube.com/channel/UCuquY3djKK46Enk6MNKIulw"
+              target="_blank"><span></span>Youtube</a></td>
         </tr>
       </table>
     </div>
     <div class="autorRight">
-      <p>® Construtec Perú 2021</p>
+      <p>® Construtec Perú 2022</p>
     </div>
   </footer>
   <script src="./js/renderButtonPay.js"></script>
   <script src="./js/renderProduct.js"></script>
   <script src="./js/termConditions.js"></script>
 </body>
+
 </html>
